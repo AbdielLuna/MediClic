@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MediClic_v._0._0._1
 {
-    public partial class main : Form
+    public partial class login : Form
     {
-        public main()
+        public login()
         {
             InitializeComponent();
         }

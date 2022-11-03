@@ -1,6 +1,6 @@
 ﻿namespace MediClic_v._0._0._1
 {
-    partial class main
+    partial class main_Recepcion_
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // main
+            // main_Recepcion_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1073, 601);
-            this.Name = "main";
-            this.Text = "main";
+            this.Name = "main_Recepcion_";
+            this.Text = "main_Recepcion_";
             this.ResumeLayout(false);
 
         }
