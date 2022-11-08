@@ -16,5 +16,11 @@ namespace MediClic_v._0._0._1
         {
             InitializeComponent();
         }
+
+        //Reloj para Lobby
+        private void tm_reloj_Tick(object sender, EventArgs e)
+        {
+            lb_reloj.Text = DateTime.Now.ToString("hh:mm:ss tt");
+        }
     }
 }

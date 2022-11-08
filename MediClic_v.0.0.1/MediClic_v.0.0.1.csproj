@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Calendario">
+      <HintPath>..\packages\Calendario.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
@@ -105,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="main%28Recepcion%29.resx">
       <DependentUpon>main%28Recepcion%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_lobby.resx">
+      <DependentUpon>main_lobby.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

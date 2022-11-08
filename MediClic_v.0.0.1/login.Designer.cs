@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.txtbx_user = new System.Windows.Forms.TextBox();
             this.txtbx_pass = new System.Windows.Forms.TextBox();
             this.btn_startSession = new System.Windows.Forms.Button();
@@ -122,6 +123,7 @@
             this.Controls.Add(this.txtbx_pass);
             this.Controls.Add(this.txtbx_user);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "login";
             this.Opacity = 0.98D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

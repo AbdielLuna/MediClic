@@ -28,82 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_Doctor_));
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.flowlayautBarra_btns = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnl_containerPrimary = new System.Windows.Forms.Panel();
+            this.icnbtn_home = new FontAwesome.Sharp.IconButton();
+            this.icnbtn_pacientes = new FontAwesome.Sharp.IconButton();
+            this.icnbtn_citas = new FontAwesome.Sharp.IconButton();
+            this.icnbtn_receta = new FontAwesome.Sharp.IconButton();
+            this.icnbtn_info = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.flowlayautBarra_btns.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.panel1.Controls.Add(this.iconButton5);
-            this.panel1.Controls.Add(this.iconButton4);
-            this.panel1.Controls.Add(this.iconButton3);
-            this.panel1.Controls.Add(this.iconButton2);
-            this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(147, 605);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(153, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(920, 605);
-            this.panel2.TabIndex = 1;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(157)))), ((int)(((byte)(127)))));
-            this.panel4.Controls.Add(this.panel7);
+            this.panel4.Controls.Add(this.panel3);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(920, 118);
+            this.panel4.Size = new System.Drawing.Size(1073, 121);
             this.panel4.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 118);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(920, 501);
-            this.panel5.TabIndex = 1;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(185)))), ((int)(((byte)(146)))));
             this.panel6.Controls.Add(this.label2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(646, 0);
+            this.panel6.Location = new System.Drawing.Point(799, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(274, 118);
+            this.panel6.Size = new System.Drawing.Size(274, 121);
             this.panel6.TabIndex = 0;
             // 
             // label1
@@ -111,21 +75,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(34, 42);
+            this.label1.Location = new System.Drawing.Point(174, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(161, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "MediClic";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(185)))), ((int)(((byte)(146)))));
-            this.panel7.Controls.Add(this.label1);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(229, 118);
-            this.panel7.TabIndex = 2;
             // 
             // label2
             // 
@@ -140,112 +94,133 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(185)))), ((int)(((byte)(146)))));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.ForeColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(147, 118);
+            this.panel3.Size = new System.Drawing.Size(375, 121);
             this.panel3.TabIndex = 0;
             // 
-            // iconButton5
+            // flowlayautBarra_btns
             // 
-            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton5.ForeColor = System.Drawing.Color.White;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.GooglePay;
-            this.iconButton5.IconColor = System.Drawing.Color.White;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 60;
-            this.iconButton5.Location = new System.Drawing.Point(0, 506);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(147, 97);
-            this.iconButton5.TabIndex = 4;
-            this.iconButton5.Text = "Ayuda";
-            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.iconButton5.UseVisualStyleBackColor = false;
+            this.flowlayautBarra_btns.BackColor = System.Drawing.Color.White;
+            this.flowlayautBarra_btns.Controls.Add(this.icnbtn_home);
+            this.flowlayautBarra_btns.Controls.Add(this.icnbtn_pacientes);
+            this.flowlayautBarra_btns.Controls.Add(this.icnbtn_citas);
+            this.flowlayautBarra_btns.Controls.Add(this.icnbtn_receta);
+            this.flowlayautBarra_btns.Controls.Add(this.icnbtn_info);
+            this.flowlayautBarra_btns.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowlayautBarra_btns.Location = new System.Drawing.Point(0, 121);
+            this.flowlayautBarra_btns.Name = "flowlayautBarra_btns";
+            this.flowlayautBarra_btns.Size = new System.Drawing.Size(152, 484);
+            this.flowlayautBarra_btns.TabIndex = 3;
             // 
-            // iconButton4
+            // pnl_containerPrimary
             // 
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 60;
-            this.iconButton4.Location = new System.Drawing.Point(0, 409);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(147, 97);
-            this.iconButton4.TabIndex = 3;
-            this.iconButton4.Text = "Home";
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.iconButton4.UseVisualStyleBackColor = false;
+            this.pnl_containerPrimary.BackColor = System.Drawing.Color.White;
+            this.pnl_containerPrimary.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_containerPrimary.Location = new System.Drawing.Point(152, 121);
+            this.pnl_containerPrimary.Name = "pnl_containerPrimary";
+            this.pnl_containerPrimary.Size = new System.Drawing.Size(921, 484);
+            this.pnl_containerPrimary.TabIndex = 4;
             // 
-            // iconButton3
+            // icnbtn_home
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 60;
-            this.iconButton3.Location = new System.Drawing.Point(0, 312);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(147, 97);
-            this.iconButton3.TabIndex = 2;
-            this.iconButton3.Text = "Recetas";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.iconButton3.UseVisualStyleBackColor = false;
+            this.icnbtn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_home.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icnbtn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icnbtn_home.ForeColor = System.Drawing.Color.White;
+            this.icnbtn_home.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.icnbtn_home.IconColor = System.Drawing.Color.White;
+            this.icnbtn_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icnbtn_home.IconSize = 55;
+            this.icnbtn_home.Location = new System.Drawing.Point(3, 3);
+            this.icnbtn_home.Name = "icnbtn_home";
+            this.icnbtn_home.Size = new System.Drawing.Size(147, 88);
+            this.icnbtn_home.TabIndex = 3;
+            this.icnbtn_home.Text = "Home";
+            this.icnbtn_home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.icnbtn_home.UseVisualStyleBackColor = false;
+            this.icnbtn_home.Click += new System.EventHandler(this.icnbtn_home_Click_1);
             // 
-            // iconButton2
+            // icnbtn_pacientes
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.CalendarPlus;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 60;
-            this.iconButton2.Location = new System.Drawing.Point(0, 215);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(147, 97);
-            this.iconButton2.TabIndex = 1;
-            this.iconButton2.Text = "Citas";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.icnbtn_pacientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_pacientes.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_pacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icnbtn_pacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icnbtn_pacientes.ForeColor = System.Drawing.Color.White;
+            this.icnbtn_pacientes.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
+            this.icnbtn_pacientes.IconColor = System.Drawing.Color.White;
+            this.icnbtn_pacientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icnbtn_pacientes.IconSize = 55;
+            this.icnbtn_pacientes.Location = new System.Drawing.Point(3, 97);
+            this.icnbtn_pacientes.Name = "icnbtn_pacientes";
+            this.icnbtn_pacientes.Size = new System.Drawing.Size(147, 88);
+            this.icnbtn_pacientes.TabIndex = 0;
+            this.icnbtn_pacientes.Text = "Pacientes";
+            this.icnbtn_pacientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.icnbtn_pacientes.UseVisualStyleBackColor = false;
             // 
-            // iconButton1
+            // icnbtn_citas
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 60;
-            this.iconButton1.Location = new System.Drawing.Point(0, 118);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(147, 97);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "Pacientes";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.icnbtn_citas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_citas.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_citas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icnbtn_citas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icnbtn_citas.ForeColor = System.Drawing.Color.White;
+            this.icnbtn_citas.IconChar = FontAwesome.Sharp.IconChar.CalendarPlus;
+            this.icnbtn_citas.IconColor = System.Drawing.Color.White;
+            this.icnbtn_citas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icnbtn_citas.IconSize = 55;
+            this.icnbtn_citas.Location = new System.Drawing.Point(3, 191);
+            this.icnbtn_citas.Name = "icnbtn_citas";
+            this.icnbtn_citas.Size = new System.Drawing.Size(147, 88);
+            this.icnbtn_citas.TabIndex = 1;
+            this.icnbtn_citas.Text = "Citas";
+            this.icnbtn_citas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.icnbtn_citas.UseVisualStyleBackColor = false;
+            // 
+            // icnbtn_receta
+            // 
+            this.icnbtn_receta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_receta.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_receta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icnbtn_receta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icnbtn_receta.ForeColor = System.Drawing.Color.White;
+            this.icnbtn_receta.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
+            this.icnbtn_receta.IconColor = System.Drawing.Color.White;
+            this.icnbtn_receta.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icnbtn_receta.IconSize = 55;
+            this.icnbtn_receta.Location = new System.Drawing.Point(3, 285);
+            this.icnbtn_receta.Name = "icnbtn_receta";
+            this.icnbtn_receta.Size = new System.Drawing.Size(147, 88);
+            this.icnbtn_receta.TabIndex = 2;
+            this.icnbtn_receta.Text = "Recetas";
+            this.icnbtn_receta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.icnbtn_receta.UseVisualStyleBackColor = false;
+            // 
+            // icnbtn_info
+            // 
+            this.icnbtn_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_info.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icnbtn_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icnbtn_info.ForeColor = System.Drawing.Color.White;
+            this.icnbtn_info.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            this.icnbtn_info.IconColor = System.Drawing.Color.White;
+            this.icnbtn_info.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icnbtn_info.IconSize = 55;
+            this.icnbtn_info.Location = new System.Drawing.Point(3, 379);
+            this.icnbtn_info.Name = "icnbtn_info";
+            this.icnbtn_info.Size = new System.Drawing.Size(147, 88);
+            this.icnbtn_info.TabIndex = 4;
+            this.icnbtn_info.Text = "Info";
+            this.icnbtn_info.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.icnbtn_info.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -262,40 +237,39 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1073, 605);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl_containerPrimary);
+            this.Controls.Add(this.flowlayautBarra_btns);
+            this.Controls.Add(this.panel4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main_Doctor_";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "main_Doctor_";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.main_Doctor__Load);
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.flowlayautBarra_btns.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.FlowLayoutPanel flowlayautBarra_btns;
+        private FontAwesome.Sharp.IconButton icnbtn_home;
+        private FontAwesome.Sharp.IconButton icnbtn_pacientes;
+        private FontAwesome.Sharp.IconButton icnbtn_citas;
+        private FontAwesome.Sharp.IconButton icnbtn_receta;
+        private FontAwesome.Sharp.IconButton icnbtn_info;
+        private System.Windows.Forms.Panel pnl_containerPrimary;
     }
 }
