@@ -59,6 +59,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Pacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Pacientes.Designer.cs">
+      <DependentUpon>frm_Pacientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,10 +83,19 @@
     <Compile Include="main%28Recepcion%29.Designer.cs">
       <DependentUpon>main%28Recepcion%29.cs</DependentUpon>
     </Compile>
+    <Compile Include="main_lobby.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_lobby.Designer.cs">
+      <DependentUpon>main_lobby.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Pacientes.resx">
+      <DependentUpon>frm_Pacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -99,6 +114,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -113,6 +129,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prototipo_LOGO-200x200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prototipo_LOGO-300x300.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
