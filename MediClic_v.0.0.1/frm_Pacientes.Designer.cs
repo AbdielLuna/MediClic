@@ -97,7 +97,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(935, 58);
+            this.panel9.Size = new System.Drawing.Size(935, 53);
             this.panel9.TabIndex = 1;
             // 
             // icbtn_addPaciente
@@ -158,7 +158,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(469, 244);
+            this.panel4.Size = new System.Drawing.Size(469, 239);
             this.panel4.TabIndex = 2;
             // 
             // icnpic_pacienteIMC
@@ -171,7 +171,7 @@
             this.icnpic_pacienteIMC.IconColor = System.Drawing.SystemColors.ControlText;
             this.icnpic_pacienteIMC.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icnpic_pacienteIMC.IconSize = 136;
-            this.icnpic_pacienteIMC.Location = new System.Drawing.Point(54, 73);
+            this.icnpic_pacienteIMC.Location = new System.Drawing.Point(57, 54);
             this.icnpic_pacienteIMC.Name = "icnpic_pacienteIMC";
             this.icnpic_pacienteIMC.Size = new System.Drawing.Size(136, 136);
             this.icnpic_pacienteIMC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -182,7 +182,7 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::MediClic_v._0._0._1.Properties.Resources.Tabla_IMC;
-            this.pictureBox2.Location = new System.Drawing.Point(245, 54);
+            this.pictureBox2.Location = new System.Drawing.Point(244, 49);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(212, 184);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -193,7 +193,7 @@
             // 
             this.lb_dtoIMC.AutoSize = true;
             this.lb_dtoIMC.BackColor = System.Drawing.Color.Transparent;
-            this.lb_dtoIMC.Location = new System.Drawing.Point(97, 220);
+            this.lb_dtoIMC.Location = new System.Drawing.Point(97, 193);
             this.lb_dtoIMC.Name = "lb_dtoIMC";
             this.lb_dtoIMC.Size = new System.Drawing.Size(56, 13);
             this.lb_dtoIMC.TabIndex = 4;
@@ -236,9 +236,9 @@
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 244);
+            this.panel3.Location = new System.Drawing.Point(0, 238);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(466, 230);
+            this.panel3.Size = new System.Drawing.Size(466, 231);
             this.panel3.TabIndex = 2;
             // 
             // textBox10
@@ -365,7 +365,7 @@
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 244);
+            this.panel2.Location = new System.Drawing.Point(0, 239);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(469, 230);
             this.panel2.TabIndex = 1;
@@ -444,7 +444,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(466, 244);
+            this.panel1.Size = new System.Drawing.Size(466, 238);
             this.panel1.TabIndex = 0;
             // 
             // textBox5
@@ -538,9 +538,9 @@
             this.panel10.Controls.Add(this.panel3);
             this.panel10.Controls.Add(this.panel1);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel10.Location = new System.Drawing.Point(0, 58);
+            this.panel10.Location = new System.Drawing.Point(0, 53);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(466, 474);
+            this.panel10.Size = new System.Drawing.Size(466, 479);
             this.panel10.TabIndex = 3;
             // 
             // panel11
@@ -549,9 +549,9 @@
             this.panel11.Controls.Add(this.panel2);
             this.panel11.Controls.Add(this.panel4);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel11.Location = new System.Drawing.Point(466, 58);
+            this.panel11.Location = new System.Drawing.Point(466, 53);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(469, 474);
+            this.panel11.Size = new System.Drawing.Size(469, 479);
             this.panel11.TabIndex = 4;
             // 
             // frm_Pacientes

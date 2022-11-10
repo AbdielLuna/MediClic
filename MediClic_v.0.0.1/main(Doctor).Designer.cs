@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.flowlayautBarra_btns = new System.Windows.Forms.FlowLayoutPanel();
             this.icnbtn_home = new FontAwesome.Sharp.IconButton();
@@ -42,13 +43,12 @@
             this.icnbtn_receta = new FontAwesome.Sharp.IconButton();
             this.icnbtn_info = new FontAwesome.Sharp.IconButton();
             this.pnl_containerPrimary = new System.Windows.Forms.Panel();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
-            this.flowlayautBarra_btns.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.flowlayautBarra_btns.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -59,7 +59,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1073, 121);
+            this.panel4.Size = new System.Drawing.Size(1073, 97);
             this.panel4.TabIndex = 0;
             // 
             // panel3
@@ -72,7 +72,7 @@
             this.panel3.ForeColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(375, 121);
+            this.panel3.Size = new System.Drawing.Size(375, 97);
             this.panel3.TabIndex = 0;
             // 
             // label1
@@ -80,7 +80,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(174, 47);
+            this.label1.Location = new System.Drawing.Point(156, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(161, 42);
             this.label1.TabIndex = 1;
@@ -89,9 +89,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MediClic_v._0._0._1.Properties.Resources.Prototipo_LOGO_200x200;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.Size = new System.Drawing.Size(87, 85);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -104,15 +104,29 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel6.Location = new System.Drawing.Point(799, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(274, 121);
+            this.panel6.Size = new System.Drawing.Size(274, 97);
             this.panel6.TabIndex = 0;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(185)))), ((int)(((byte)(146)))));
+            this.iconPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserDoctor;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 86;
+            this.iconPictureBox1.Location = new System.Drawing.Point(175, 6);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(87, 86);
+            this.iconPictureBox1.TabIndex = 1;
+            this.iconPictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(17, 65);
+            this.label2.Location = new System.Drawing.Point(27, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 24);
             this.label2.TabIndex = 0;
@@ -127,9 +141,9 @@
             this.flowlayautBarra_btns.Controls.Add(this.icnbtn_receta);
             this.flowlayautBarra_btns.Controls.Add(this.icnbtn_info);
             this.flowlayautBarra_btns.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowlayautBarra_btns.Location = new System.Drawing.Point(0, 121);
+            this.flowlayautBarra_btns.Location = new System.Drawing.Point(0, 97);
             this.flowlayautBarra_btns.Name = "flowlayautBarra_btns";
-            this.flowlayautBarra_btns.Size = new System.Drawing.Size(152, 484);
+            this.flowlayautBarra_btns.Size = new System.Drawing.Size(152, 508);
             this.flowlayautBarra_btns.TabIndex = 3;
             // 
             // icnbtn_home
@@ -233,24 +247,10 @@
             // 
             this.pnl_containerPrimary.BackColor = System.Drawing.Color.White;
             this.pnl_containerPrimary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_containerPrimary.Location = new System.Drawing.Point(152, 121);
+            this.pnl_containerPrimary.Location = new System.Drawing.Point(152, 97);
             this.pnl_containerPrimary.Name = "pnl_containerPrimary";
-            this.pnl_containerPrimary.Size = new System.Drawing.Size(921, 484);
+            this.pnl_containerPrimary.Size = new System.Drawing.Size(921, 508);
             this.pnl_containerPrimary.TabIndex = 4;
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(185)))), ((int)(((byte)(146)))));
-            this.iconPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserDoctor;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 100;
-            this.iconPictureBox1.Location = new System.Drawing.Point(142, 12);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(102, 100);
-            this.iconPictureBox1.TabIndex = 1;
-            this.iconPictureBox1.TabStop = false;
             // 
             // main_Doctor_
             // 
@@ -272,8 +272,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.flowlayautBarra_btns.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.flowlayautBarra_btns.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
