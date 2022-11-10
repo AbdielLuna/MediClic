@@ -53,8 +53,8 @@
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.LightGray;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.99448F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.00552F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.64641F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.35359F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -74,17 +74,17 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(365, 439);
+            this.panel1.Size = new System.Drawing.Size(389, 439);
             this.panel1.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.uI_Calendario1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 98);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 45);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(365, 341);
+            this.panel3.Size = new System.Drawing.Size(389, 394);
             this.panel3.TabIndex = 1;
             // 
             // uI_Calendario1
@@ -92,7 +92,7 @@
             this.uI_Calendario1.BackColor = System.Drawing.Color.White;
             this.uI_Calendario1.ButtonCollapse = true;
             this.uI_Calendario1.ButtonDay = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.uI_Calendario1.ButtonDayFont = new System.Drawing.Font("Arial", 5.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uI_Calendario1.ButtonDayFont = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uI_Calendario1.ButtonDownColor = System.Drawing.Color.WhiteSmoke;
             this.uI_Calendario1.ButtonOverColor = System.Drawing.Color.WhiteSmoke;
             this.uI_Calendario1.ButtonTextFormat = true;
@@ -105,10 +105,9 @@
             this.uI_Calendario1.DaySemanaFont = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uI_Calendario1.DaysForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.uI_Calendario1.DayWeekForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
-            this.uI_Calendario1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uI_Calendario1.ElipceSize = 5;
             this.uI_Calendario1.HourFont = new System.Drawing.Font("Arial", 1.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uI_Calendario1.Location = new System.Drawing.Point(0, 0);
+            this.uI_Calendario1.Location = new System.Drawing.Point(9, 11);
             this.uI_Calendario1.MonthFont = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uI_Calendario1.MonthForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
             this.uI_Calendario1.MoveCalendar = false;
@@ -119,7 +118,7 @@
             this.uI_Calendario1.PanelDayBackColor = System.Drawing.Color.White;
             this.uI_Calendario1.PanelLowerBackColor = System.Drawing.Color.White;
             this.uI_Calendario1.SemanaFont = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uI_Calendario1.Size = new System.Drawing.Size(365, 338);
+            this.uI_Calendario1.Size = new System.Drawing.Size(365, 374);
             this.uI_Calendario1.TabIndex = 0;
             this.uI_Calendario1.Text = "uI_Calendario1";
             this.uI_Calendario1.TimeForeColor = System.Drawing.Color.White;
@@ -135,23 +134,23 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
             this.panel2.Controls.Add(this.lb_reloj);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(365, 98);
+            this.panel2.Size = new System.Drawing.Size(389, 45);
             this.panel2.TabIndex = 0;
             // 
             // lb_reloj
             // 
             this.lb_reloj.AutoSize = true;
-            this.lb_reloj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_reloj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lb_reloj.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_reloj.Location = new System.Drawing.Point(77, 29);
+            this.lb_reloj.ForeColor = System.Drawing.Color.White;
+            this.lb_reloj.Location = new System.Drawing.Point(89, 6);
             this.lb_reloj.Name = "lb_reloj";
-            this.lb_reloj.Size = new System.Drawing.Size(180, 35);
+            this.lb_reloj.Size = new System.Drawing.Size(178, 33);
             this.lb_reloj.TabIndex = 2;
             this.lb_reloj.Text = "hh:mm:ss tt";
             // 
@@ -161,9 +160,9 @@
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(374, 3);
+            this.panel4.Location = new System.Drawing.Point(398, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(528, 439);
+            this.panel4.Size = new System.Drawing.Size(504, 439);
             this.panel4.TabIndex = 1;
             // 
             // panel5
@@ -173,25 +172,26 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(528, 75);
+            this.panel5.Size = new System.Drawing.Size(504, 45);
             this.panel5.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(200, 16);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(200, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 42);
+            this.label1.Size = new System.Drawing.Size(105, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "CITAS";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 81);
+            this.dataGridView1.Location = new System.Drawing.Point(47, 51);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(493, 349);
+            this.dataGridView1.Size = new System.Drawing.Size(417, 379);
             this.dataGridView1.TabIndex = 0;
             // 
             // tm_reloj

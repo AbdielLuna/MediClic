@@ -13,7 +13,7 @@ namespace MediClic_v._0._0._1
 {
     public partial class main_Doctor_ : Form
     {
-        int count;
+        int count =0;
         public main_Doctor_()
         {
             InitializeComponent();
@@ -21,14 +21,14 @@ namespace MediClic_v._0._0._1
 
         private void main_Doctor__Load(object sender, EventArgs e)
         {
-
+            openFrm(new main_lobby());
         }
 
         //AccionesBotones
         private void icnbtn_home_Click_1(object sender, EventArgs e)
         {
             openFrm(new main_lobby());
-            efectoBtn(this.icnbtn_home);
+            efectoIcobtn(icnbtn_home);
         }
 
 
@@ -51,7 +51,7 @@ namespace MediClic_v._0._0._1
 
         }
 
-        private void efectoBtn(IconButton btn) {
+        private void efectoBtn(Button btn) {
             if (count == 0)
             {
                 btn.ForeColor = Color.FromArgb(33, 171, 138);
@@ -63,6 +63,19 @@ namespace MediClic_v._0._0._1
                 btn.ForeColor = Color.FromArgb(255, 255, 240);
                 btn.BackColor = Color.FromArgb(33, 171, 138);
             }
+        }
+
+        private void efectoIcobtn(IconButton icobtn) {
+            icobtn.IconColor = System.Drawing.Color.FromArgb(33, 171, 138);
+            icobtn.ForeColor = System.Drawing.Color.FromArgb(33, 171, 138);
+            icobtn.BackColor = System.Drawing.Color.White;
+            
+        }
+
+        private void icnbtn_pacientes_Click(object sender, EventArgs e)
+        {
+            efectoIcobtn(icnbtn_pacientes);
+            openFrm(new frm_Pacientes());
         }
     }
 }
