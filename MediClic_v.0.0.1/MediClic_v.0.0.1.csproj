@@ -68,6 +68,12 @@
     <Compile Include="Frm_Agenda.Designer.cs">
       <DependentUpon>Frm_Agenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_AngendaMsj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AngendaMsj.Designer.cs">
+      <DependentUpon>Frm_AngendaMsj.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Citas.cs">
       <SubType>Form</SubType>
     </Compile>
