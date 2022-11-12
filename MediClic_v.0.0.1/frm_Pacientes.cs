@@ -6,13 +6,22 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace MediClic_v._0._0._1
 {
     public partial class frm_Pacientes : Form
     {
+        ConexionDB metodos = new ConexionDB();
         double IMC,estatura=1.81,peso=180;
+        frm_AddPct addp = new frm_AddPct();
+        private void icbtn_addPaciente_Click(object sender, EventArgs e)
+        {
+            addp.Show();
+        }
+
         public frm_Pacientes()
         {
             InitializeComponent();
@@ -62,6 +71,8 @@ namespace MediClic_v._0._0._1
                 icnpic_pacienteIMC.ForeColor = System.Drawing.Color.FromArgb(255, 87, 87);
             }
         }
+    
+    
     }
 
 }

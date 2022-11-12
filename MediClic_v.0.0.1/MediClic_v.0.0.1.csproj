@@ -56,11 +56,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConexionDB.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AddPct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AddPct.Designer.cs">
+      <DependentUpon>frm_AddPct.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Agenda.cs">
       <SubType>Form</SubType>
@@ -73,12 +80,6 @@
     </Compile>
     <Compile Include="Frm_AngendaMsj.Designer.cs">
       <DependentUpon>Frm_AngendaMsj.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_Citas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_Citas.Designer.cs">
-      <DependentUpon>frm_Citas.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Pacientes.cs">
       <SubType>Form</SubType>
@@ -115,8 +116,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Citas.resx">
-      <DependentUpon>frm_Citas.cs</DependentUpon>
+    <EmbeddedResource Include="frm_AddPct.resx">
+      <DependentUpon>frm_AddPct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Pacientes.resx">
       <DependentUpon>frm_Pacientes.cs</DependentUpon>

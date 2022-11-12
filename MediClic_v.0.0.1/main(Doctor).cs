@@ -30,7 +30,11 @@ namespace MediClic_v._0._0._1
             openFrm(new main_lobby());
             efectoIcobtn(icnbtn_home);
         }
-
+        private void icnbtn_pacientes_Click(object sender, EventArgs e)
+        {
+            efectoIcobtn(icnbtn_pacientes);
+            openFrm(new frm_Pacientes());
+        }
 
         //Metodos############################
         private void openFrm(Object f)
@@ -72,10 +76,6 @@ namespace MediClic_v._0._0._1
             
         }
 
-        private void icnbtn_pacientes_Click(object sender, EventArgs e)
-        {
-            efectoIcobtn(icnbtn_pacientes);
-            openFrm(new frm_Pacientes());
-        }
+
     }
 }

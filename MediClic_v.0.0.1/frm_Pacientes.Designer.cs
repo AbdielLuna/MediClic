@@ -29,12 +29,8 @@
         private void InitializeComponent()
         {
             this.panel9 = new System.Windows.Forms.Panel();
-            this.icbtn_addPaciente = new FontAwesome.Sharp.IconButton();
-            this.icnbtn_bsqPacientes = new FontAwesome.Sharp.IconButton();
             this.txtbx_bsqPacientes = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.icnpic_pacienteIMC = new FontAwesome.Sharp.IconPictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lb_dtoIMC = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -73,10 +69,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.icnpic_pacienteIMC = new FontAwesome.Sharp.IconPictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.icbtn_addPaciente = new FontAwesome.Sharp.IconButton();
+            this.icnbtn_bsqPacientes = new FontAwesome.Sharp.IconButton();
             this.panel9.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.icnpic_pacienteIMC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -86,6 +84,8 @@
             this.panel5.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.icnpic_pacienteIMC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel9
@@ -99,45 +99,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(935, 53);
             this.panel9.TabIndex = 1;
-            // 
-            // icbtn_addPaciente
-            // 
-            this.icbtn_addPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icbtn_addPaciente.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.icbtn_addPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.icbtn_addPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.icbtn_addPaciente.ForeColor = System.Drawing.Color.White;
-            this.icbtn_addPaciente.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.icbtn_addPaciente.IconColor = System.Drawing.Color.White;
-            this.icbtn_addPaciente.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icbtn_addPaciente.IconSize = 35;
-            this.icbtn_addPaciente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.icbtn_addPaciente.Location = new System.Drawing.Point(33, 7);
-            this.icbtn_addPaciente.Name = "icbtn_addPaciente";
-            this.icbtn_addPaciente.Size = new System.Drawing.Size(173, 40);
-            this.icbtn_addPaciente.TabIndex = 2;
-            this.icbtn_addPaciente.Text = "Agregar Nuevo";
-            this.icbtn_addPaciente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.icbtn_addPaciente.UseVisualStyleBackColor = false;
-            // 
-            // icnbtn_bsqPacientes
-            // 
-            this.icnbtn_bsqPacientes.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.icnbtn_bsqPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.icnbtn_bsqPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.icnbtn_bsqPacientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_bsqPacientes.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.icnbtn_bsqPacientes.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_bsqPacientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icnbtn_bsqPacientes.IconSize = 25;
-            this.icnbtn_bsqPacientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.icnbtn_bsqPacientes.Location = new System.Drawing.Point(807, 12);
-            this.icnbtn_bsqPacientes.Name = "icnbtn_bsqPacientes";
-            this.icnbtn_bsqPacientes.Size = new System.Drawing.Size(85, 26);
-            this.icnbtn_bsqPacientes.TabIndex = 1;
-            this.icnbtn_bsqPacientes.Text = "Buscar";
-            this.icnbtn_bsqPacientes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.icnbtn_bsqPacientes.UseVisualStyleBackColor = true;
             // 
             // txtbx_bsqPacientes
             // 
@@ -160,34 +121,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(469, 239);
             this.panel4.TabIndex = 2;
-            // 
-            // icnpic_pacienteIMC
-            // 
-            this.icnpic_pacienteIMC.BackColor = System.Drawing.Color.White;
-            this.icnpic_pacienteIMC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.icnpic_pacienteIMC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.icnpic_pacienteIMC.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.icnpic_pacienteIMC.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
-            this.icnpic_pacienteIMC.IconColor = System.Drawing.SystemColors.ControlText;
-            this.icnpic_pacienteIMC.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icnpic_pacienteIMC.IconSize = 136;
-            this.icnpic_pacienteIMC.Location = new System.Drawing.Point(57, 54);
-            this.icnpic_pacienteIMC.Name = "icnpic_pacienteIMC";
-            this.icnpic_pacienteIMC.Size = new System.Drawing.Size(136, 136);
-            this.icnpic_pacienteIMC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.icnpic_pacienteIMC.TabIndex = 6;
-            this.icnpic_pacienteIMC.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = global::MediClic_v._0._0._1.Properties.Resources.Tabla_IMC;
-            this.pictureBox2.Location = new System.Drawing.Point(244, 49);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(212, 184);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
             // 
             // lb_dtoIMC
             // 
@@ -554,6 +487,74 @@
             this.panel11.Size = new System.Drawing.Size(469, 479);
             this.panel11.TabIndex = 4;
             // 
+            // icnpic_pacienteIMC
+            // 
+            this.icnpic_pacienteIMC.BackColor = System.Drawing.Color.White;
+            this.icnpic_pacienteIMC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.icnpic_pacienteIMC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.icnpic_pacienteIMC.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.icnpic_pacienteIMC.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.icnpic_pacienteIMC.IconColor = System.Drawing.SystemColors.ControlText;
+            this.icnpic_pacienteIMC.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icnpic_pacienteIMC.IconSize = 136;
+            this.icnpic_pacienteIMC.Location = new System.Drawing.Point(57, 54);
+            this.icnpic_pacienteIMC.Name = "icnpic_pacienteIMC";
+            this.icnpic_pacienteIMC.Size = new System.Drawing.Size(136, 136);
+            this.icnpic_pacienteIMC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.icnpic_pacienteIMC.TabIndex = 6;
+            this.icnpic_pacienteIMC.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = global::MediClic_v._0._0._1.Properties.Resources.Tabla_IMC;
+            this.pictureBox2.Location = new System.Drawing.Point(244, 49);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(212, 184);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // icbtn_addPaciente
+            // 
+            this.icbtn_addPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icbtn_addPaciente.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.icbtn_addPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icbtn_addPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icbtn_addPaciente.ForeColor = System.Drawing.Color.White;
+            this.icbtn_addPaciente.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.icbtn_addPaciente.IconColor = System.Drawing.Color.White;
+            this.icbtn_addPaciente.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icbtn_addPaciente.IconSize = 35;
+            this.icbtn_addPaciente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.icbtn_addPaciente.Location = new System.Drawing.Point(33, 7);
+            this.icbtn_addPaciente.Name = "icbtn_addPaciente";
+            this.icbtn_addPaciente.Size = new System.Drawing.Size(181, 40);
+            this.icbtn_addPaciente.TabIndex = 2;
+            this.icbtn_addPaciente.Text = "Agregar Nuevo";
+            this.icbtn_addPaciente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.icbtn_addPaciente.UseVisualStyleBackColor = false;
+            this.icbtn_addPaciente.Click += new System.EventHandler(this.icbtn_addPaciente_Click);
+            // 
+            // icnbtn_bsqPacientes
+            // 
+            this.icnbtn_bsqPacientes.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.icnbtn_bsqPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icnbtn_bsqPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icnbtn_bsqPacientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_bsqPacientes.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.icnbtn_bsqPacientes.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_bsqPacientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icnbtn_bsqPacientes.IconSize = 25;
+            this.icnbtn_bsqPacientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.icnbtn_bsqPacientes.Location = new System.Drawing.Point(807, 12);
+            this.icnbtn_bsqPacientes.Name = "icnbtn_bsqPacientes";
+            this.icnbtn_bsqPacientes.Size = new System.Drawing.Size(85, 26);
+            this.icnbtn_bsqPacientes.TabIndex = 1;
+            this.icnbtn_bsqPacientes.Text = "Buscar";
+            this.icnbtn_bsqPacientes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.icnbtn_bsqPacientes.UseVisualStyleBackColor = true;
+            // 
             // frm_Pacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -570,8 +571,6 @@
             this.panel9.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.icnpic_pacienteIMC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -588,6 +587,8 @@
             this.panel5.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.icnpic_pacienteIMC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
