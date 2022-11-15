@@ -56,7 +56,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -65,6 +64,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel11.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -134,7 +134,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(323, 294);
+            this.panel2.Size = new System.Drawing.Size(323, 287);
             this.panel2.TabIndex = 1;
             // 
             // textBox10
@@ -246,10 +246,10 @@
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(129, 182);
+            this.textBox11.Location = new System.Drawing.Point(129, 166);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(161, 36);
+            this.textBox11.Size = new System.Drawing.Size(161, 52);
             this.textBox11.TabIndex = 17;
             // 
             // label3
@@ -265,10 +265,10 @@
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(129, 125);
+            this.textBox12.Location = new System.Drawing.Point(129, 111);
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(161, 35);
+            this.textBox12.Size = new System.Drawing.Size(161, 49);
             this.textBox12.TabIndex = 16;
             // 
             // label10
@@ -283,10 +283,10 @@
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(129, 67);
+            this.textBox13.Location = new System.Drawing.Point(129, 54);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(161, 38);
+            this.textBox13.Size = new System.Drawing.Size(161, 51);
             this.textBox13.TabIndex = 15;
             // 
             // label12
@@ -351,8 +351,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label8);
@@ -369,16 +369,10 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(110, 167);
+            this.textBox5.MaxLength = 10;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(180, 20);
             this.textBox5.TabIndex = 9;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(110, 132);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(180, 20);
-            this.textBox4.TabIndex = 8;
             // 
             // textBox3
             // 
@@ -455,6 +449,17 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Datos Generales";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
+            this.comboBox1.Location = new System.Drawing.Point(110, 132);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(180, 21);
+            this.comboBox1.TabIndex = 10;
+            // 
             // frm_AddPct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -464,7 +469,7 @@
             this.Controls.Add(this.panel10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_AddPct";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_AddPct";
             this.panel11.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -502,7 +507,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
@@ -523,5 +527,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

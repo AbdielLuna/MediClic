@@ -32,9 +32,12 @@ namespace MediClic_v._0._0._1
         //Metodos##############################
         public void mostrarPass()
         {
-            if (chckbx_showpass.Checked == false)
+            if (chckbx_showpass.Checked == true)
             {
-                txtbx_pass.PasswordChar = '☼';
+                txtbx_pass.UseSystemPasswordChar = false;
+            }
+            else {
+            txtbx_pass.UseSystemPasswordChar=true;
             }
 
         }

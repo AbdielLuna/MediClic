@@ -54,6 +54,7 @@
             this.txtbx_pass.Name = "txtbx_pass";
             this.txtbx_pass.Size = new System.Drawing.Size(200, 26);
             this.txtbx_pass.TabIndex = 2;
+            this.txtbx_pass.UseSystemPasswordChar = true;
             // 
             // btn_startSession
             // 
