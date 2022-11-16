@@ -12,9 +12,13 @@ namespace MediClic_v._0._0._1
 {
     public partial class login : Form
     {
+        //Conexion DB
+        ConexionDB conexionDB = new ConexionDB();
+
         public login()
         {
             InitializeComponent();
+            conexionDB.abrir();
             mostrarPass();
         }
 

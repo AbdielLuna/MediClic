@@ -41,8 +41,8 @@
             this.icnbtn_users = new FontAwesome.Sharp.IconButton();
             this.icnbtn_docList = new FontAwesome.Sharp.IconButton();
             this.icnbtn_info = new FontAwesome.Sharp.IconButton();
-            this.pnl_containerPrimary = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.pnl_containerPrimary = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,6 +54,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(157)))), ((int)(((byte)(127)))));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.panel3);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -72,7 +73,7 @@
             this.panel3.ForeColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(375, 97);
+            this.panel3.Size = new System.Drawing.Size(375, 95);
             this.panel3.TabIndex = 0;
             // 
             // label1
@@ -102,9 +103,9 @@
             this.panel6.Controls.Add(this.iconPictureBox1);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(799, 0);
+            this.panel6.Location = new System.Drawing.Point(797, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(274, 97);
+            this.panel6.Size = new System.Drawing.Size(274, 95);
             this.panel6.TabIndex = 0;
             // 
             // iconPictureBox1
@@ -135,6 +136,7 @@
             // flowlayautBarra_btns
             // 
             this.flowlayautBarra_btns.BackColor = System.Drawing.Color.White;
+            this.flowlayautBarra_btns.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowlayautBarra_btns.Controls.Add(this.icnbtn_home);
             this.flowlayautBarra_btns.Controls.Add(this.icnbtn_users);
             this.flowlayautBarra_btns.Controls.Add(this.icnbtn_docList);
@@ -224,15 +226,6 @@
             this.icnbtn_info.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.icnbtn_info.UseVisualStyleBackColor = false;
             // 
-            // pnl_containerPrimary
-            // 
-            this.pnl_containerPrimary.BackColor = System.Drawing.Color.White;
-            this.pnl_containerPrimary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_containerPrimary.Location = new System.Drawing.Point(152, 97);
-            this.pnl_containerPrimary.Name = "pnl_containerPrimary";
-            this.pnl_containerPrimary.Size = new System.Drawing.Size(921, 508);
-            this.pnl_containerPrimary.TabIndex = 7;
-            // 
             // iconButton1
             // 
             this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
@@ -252,6 +245,15 @@
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
+            // pnl_containerPrimary
+            // 
+            this.pnl_containerPrimary.BackColor = System.Drawing.Color.White;
+            this.pnl_containerPrimary.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_containerPrimary.Location = new System.Drawing.Point(152, 97);
+            this.pnl_containerPrimary.Name = "pnl_containerPrimary";
+            this.pnl_containerPrimary.Size = new System.Drawing.Size(921, 508);
+            this.pnl_containerPrimary.TabIndex = 7;
+            // 
             // main_Administracion_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,6 +264,7 @@
             this.Controls.Add(this.panel4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main_Administracion_";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "main_Administracion_";
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

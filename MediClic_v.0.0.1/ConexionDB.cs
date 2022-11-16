@@ -11,7 +11,7 @@ namespace MediClic_v._0._0._1
     internal class ConexionDB
     {
         //Cadena de Conexion
-        string cadena = "data source = DESKTOP-D9LJ3R4\\SQLEXPRESS; initial catalog = ConexionPbD; Integrated Security=True;";
+        string cadena = "data source = DESKTOP-D9LJ3R4\\SQLEXPRESS; initial catalog = MediClicDB; Integrated Security=True;";
 
         public SqlConnection Conectarbd = new SqlConnection();
 
