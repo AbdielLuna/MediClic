@@ -268,10 +268,11 @@
             this.Controls.Add(this.pnl_containerPrimary);
             this.Controls.Add(this.flowlayautBarra_btns);
             this.Controls.Add(this.panel4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main_Administracion_";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "main_Administracion_";
+            this.Text = "Menú Administración";
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

@@ -18,10 +18,17 @@ namespace MediClic_v._0._0._1
             InitializeComponent();
             this.MaximizeBox = false;
         }
+
+        private void main_Recepcion__Load(object sender, EventArgs e)
+        {
+            openFrm(new main_lobby());
+        }
+
         //acciones btn
         private void icnbtn_home_Click(object sender, EventArgs e)
         {
             efectoIcobtn(false,icnbtn_docList,icnbtn_citas,icnbtn_info);
+            openFrm(new main_lobby());
         }
 
         private void icnbtn_docList_Click(object sender, EventArgs e)
@@ -101,5 +108,7 @@ namespace MediClic_v._0._0._1
                 log.Show();
             }
         }
+
+        
     }
 }

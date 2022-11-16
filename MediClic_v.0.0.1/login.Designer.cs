@@ -43,17 +43,17 @@
             // txtbx_user
             // 
             this.txtbx_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_user.Location = new System.Drawing.Point(94, 283);
+            this.txtbx_user.Location = new System.Drawing.Point(83, 283);
             this.txtbx_user.Name = "txtbx_user";
-            this.txtbx_user.Size = new System.Drawing.Size(200, 26);
+            this.txtbx_user.Size = new System.Drawing.Size(219, 26);
             this.txtbx_user.TabIndex = 1;
             // 
             // txtbx_pass
             // 
             this.txtbx_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_pass.Location = new System.Drawing.Point(94, 349);
+            this.txtbx_pass.Location = new System.Drawing.Point(83, 349);
             this.txtbx_pass.Name = "txtbx_pass";
-            this.txtbx_pass.Size = new System.Drawing.Size(200, 26);
+            this.txtbx_pass.Size = new System.Drawing.Size(219, 26);
             this.txtbx_pass.TabIndex = 2;
             this.txtbx_pass.UseSystemPasswordChar = true;
             // 
@@ -90,7 +90,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(90, 260);
+            this.label1.Location = new System.Drawing.Point(79, 260);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 20);
             this.label1.TabIndex = 5;
@@ -100,7 +100,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(90, 326);
+            this.label2.Location = new System.Drawing.Point(79, 326);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 6;
@@ -145,11 +145,11 @@
             this.Controls.Add(this.txtbx_pass);
             this.Controls.Add(this.txtbx_user);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "login";
             this.Opacity = 0.98D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

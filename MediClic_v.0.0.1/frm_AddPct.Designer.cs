@@ -140,24 +140,25 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(140, 237);
+            this.textBox10.Location = new System.Drawing.Point(140, 255);
+            this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(154, 20);
+            this.textBox10.Size = new System.Drawing.Size(154, 88);
             this.textBox10.TabIndex = 24;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(140, 169);
+            this.textBox6.Location = new System.Drawing.Point(140, 161);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(154, 62);
+            this.textBox6.Size = new System.Drawing.Size(154, 88);
             this.textBox6.TabIndex = 23;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(16, 237);
+            this.label16.Location = new System.Drawing.Point(16, 255);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(90, 20);
             this.label16.TabIndex = 19;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_Recepcion_));
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -35,12 +36,12 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.icnpic_perfiluser = new FontAwesome.Sharp.IconPictureBox();
             this.lb_nmUser = new System.Windows.Forms.Label();
-            this.pnl_containerPrimary = new System.Windows.Forms.Panel();
             this.flowlayautBarra_btns = new System.Windows.Forms.FlowLayoutPanel();
             this.icnbtn_home = new FontAwesome.Sharp.IconButton();
             this.icnbtn_docList = new FontAwesome.Sharp.IconButton();
             this.icnbtn_citas = new FontAwesome.Sharp.IconButton();
             this.icnbtn_info = new FontAwesome.Sharp.IconButton();
+            this.pnl_containerPrimary = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -132,15 +133,6 @@
             this.lb_nmUser.TabIndex = 0;
             this.lb_nmUser.Text = "Guest#3001";
             // 
-            // pnl_containerPrimary
-            // 
-            this.pnl_containerPrimary.BackColor = System.Drawing.Color.White;
-            this.pnl_containerPrimary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_containerPrimary.Location = new System.Drawing.Point(152, 97);
-            this.pnl_containerPrimary.Name = "pnl_containerPrimary";
-            this.pnl_containerPrimary.Size = new System.Drawing.Size(921, 508);
-            this.pnl_containerPrimary.TabIndex = 6;
-            // 
             // flowlayautBarra_btns
             // 
             this.flowlayautBarra_btns.BackColor = System.Drawing.Color.White;
@@ -152,13 +144,12 @@
             this.flowlayautBarra_btns.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowlayautBarra_btns.Location = new System.Drawing.Point(0, 97);
             this.flowlayautBarra_btns.Name = "flowlayautBarra_btns";
-            this.flowlayautBarra_btns.Size = new System.Drawing.Size(152, 508);
+            this.flowlayautBarra_btns.Size = new System.Drawing.Size(153, 508);
             this.flowlayautBarra_btns.TabIndex = 5;
             // 
             // icnbtn_home
             // 
             this.icnbtn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_home.Dock = System.Windows.Forms.DockStyle.Top;
             this.icnbtn_home.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.icnbtn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -180,7 +171,6 @@
             // icnbtn_docList
             // 
             this.icnbtn_docList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_docList.Dock = System.Windows.Forms.DockStyle.Top;
             this.icnbtn_docList.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.icnbtn_docList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_docList.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -240,6 +230,15 @@
             this.icnbtn_info.UseVisualStyleBackColor = false;
             this.icnbtn_info.Click += new System.EventHandler(this.icnbtn_info_Click);
             // 
+            // pnl_containerPrimary
+            // 
+            this.pnl_containerPrimary.BackColor = System.Drawing.Color.White;
+            this.pnl_containerPrimary.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_containerPrimary.Location = new System.Drawing.Point(153, 97);
+            this.pnl_containerPrimary.Name = "pnl_containerPrimary";
+            this.pnl_containerPrimary.Size = new System.Drawing.Size(920, 508);
+            this.pnl_containerPrimary.TabIndex = 6;
+            // 
             // main_Recepcion_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,9 +247,12 @@
             this.Controls.Add(this.pnl_containerPrimary);
             this.Controls.Add(this.flowlayautBarra_btns);
             this.Controls.Add(this.panel4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main_Recepcion_";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "main_Recepcion_";
+            this.Text = "Menú Recepción";
+            this.Load += new System.EventHandler(this.main_Recepcion__Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -272,11 +274,11 @@
         private System.Windows.Forms.Panel panel6;
         private FontAwesome.Sharp.IconPictureBox icnpic_perfiluser;
         private System.Windows.Forms.Label lb_nmUser;
-        private System.Windows.Forms.Panel pnl_containerPrimary;
         private System.Windows.Forms.FlowLayoutPanel flowlayautBarra_btns;
         private FontAwesome.Sharp.IconButton icnbtn_home;
         private FontAwesome.Sharp.IconButton icnbtn_docList;
         private FontAwesome.Sharp.IconButton icnbtn_citas;
         private FontAwesome.Sharp.IconButton icnbtn_info;
+        private System.Windows.Forms.Panel pnl_containerPrimary;
     }
 }
