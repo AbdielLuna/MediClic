@@ -23,11 +23,16 @@ namespace MediClic_v._0._0._1
             mostrarPass();
         }
 
+        //botones 
         private void btn_startSession_Click(object sender, EventArgs e)
         {
             autentificacion();
         }
 
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
         //Metodos##############################
         public void mostrarPass()
@@ -45,7 +50,15 @@ namespace MediClic_v._0._0._1
         public void autentificacion()
         {
             if(txtbx_user.Text == "admin" && txtbx_pass.Text == "admin"){
+                openFrm(new main_Administracion_());
+            }
+            if (txtbx_user.Text == "doc" && txtbx_pass.Text == "doc")
+            {
                 openFrm(new main_Doctor_());
+            }
+            if (txtbx_user.Text == "rec" && txtbx_pass.Text == "rec")
+            {
+                openFrm(new main_Recepcion_());
             }
         }
 
@@ -56,5 +69,7 @@ namespace MediClic_v._0._0._1
             this.Hide();
 
         }
+
+       
     }
 }

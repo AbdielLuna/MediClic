@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,19 +10,37 @@ namespace MediClic_v._0._0._1
 {
     internal class ConexionDB
     {
-       /* int x;
-        public void Accion(int act) { 
-            x= act; 
+        //Cadena de Conexion
+        string cadena = "data source = DESKTOP-D9LJ3R4\\SQLEXPRESS; initial catalog = ConexionPbD; Integrated Security=True;";
+
+        public SqlConnection Conectarbd = new SqlConnection();
+
+        //Constructor
+        public ConexionDB()
+        {
+            Conectarbd.ConnectionString = cadena;
         }
-        public void AccionBTN(Form frm) {
-            if (x == 1)
+
+        //Metodo para abrir la conexion
+        public void abrir()
+        {
+            try
             {
-                frm.Enabled = false;
+                Conectarbd.Open();
+                Console.WriteLine("Conexion Exitosa");
             }
-            else {
-                frm.Enabled = true;
-            }*/
-             
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error Conexion BD ", ex.Message);
+            }
         }
+
+        //Metodo para cerrar la conexion
+        public void cerrar()
+        {
+            Conectarbd.Close();
+        }
+
+    }
     }
 

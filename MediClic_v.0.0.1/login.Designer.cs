@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +60,7 @@
             // btn_startSession
             // 
             this.btn_startSession.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.btn_startSession.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_startSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_startSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_startSession.ForeColor = System.Drawing.Color.White;
@@ -73,12 +75,15 @@
             // chckbx_showpass
             // 
             this.chckbx_showpass.AutoSize = true;
+            this.chckbx_showpass.BackColor = System.Drawing.Color.White;
+            this.chckbx_showpass.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.chckbx_showpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
             this.chckbx_showpass.Location = new System.Drawing.Point(94, 391);
             this.chckbx_showpass.Name = "chckbx_showpass";
             this.chckbx_showpass.Size = new System.Drawing.Size(118, 17);
             this.chckbx_showpass.TabIndex = 4;
             this.chckbx_showpass.Text = "Mostrar Contraseña";
-            this.chckbx_showpass.UseVisualStyleBackColor = true;
+            this.chckbx_showpass.UseVisualStyleBackColor = false;
             this.chckbx_showpass.CheckedChanged += new System.EventHandler(this.chckbx_showpass_CheckedChanged);
             // 
             // label1
@@ -111,12 +116,28 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_exit
+            // 
+            this.btn_exit.BackColor = System.Drawing.Color.White;
+            this.btn_exit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.btn_exit.Location = new System.Drawing.Point(107, 503);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(174, 46);
+            this.btn_exit.TabIndex = 7;
+            this.btn_exit.Text = "Salir";
+            this.btn_exit.UseVisualStyleBackColor = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(382, 523);
+            this.ClientSize = new System.Drawing.Size(382, 561);
+            this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chckbx_showpass);
@@ -144,5 +165,6 @@
         private System.Windows.Forms.CheckBox chckbx_showpass;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_exit;
     }
 }

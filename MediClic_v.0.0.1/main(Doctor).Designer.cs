@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.icpic_perfiluser = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.flowlayautBarra_btns = new System.Windows.Forms.FlowLayoutPanel();
             this.icnbtn_home = new FontAwesome.Sharp.IconButton();
@@ -47,13 +47,14 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icpic_perfiluser)).BeginInit();
             this.flowlayautBarra_btns.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(157)))), ((int)(((byte)(127)))));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.panel3);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -72,7 +73,7 @@
             this.panel3.ForeColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(375, 97);
+            this.panel3.Size = new System.Drawing.Size(375, 95);
             this.panel3.TabIndex = 0;
             // 
             // label1
@@ -99,27 +100,28 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(185)))), ((int)(((byte)(146)))));
-            this.panel6.Controls.Add(this.iconPictureBox1);
+            this.panel6.Controls.Add(this.icpic_perfiluser);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(799, 0);
+            this.panel6.Location = new System.Drawing.Point(797, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(274, 97);
+            this.panel6.Size = new System.Drawing.Size(274, 95);
             this.panel6.TabIndex = 0;
             // 
-            // iconPictureBox1
+            // icpic_perfiluser
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(185)))), ((int)(((byte)(146)))));
-            this.iconPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserDoctor;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 86;
-            this.iconPictureBox1.Location = new System.Drawing.Point(175, 6);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(87, 86);
-            this.iconPictureBox1.TabIndex = 1;
-            this.iconPictureBox1.TabStop = false;
+            this.icpic_perfiluser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(185)))), ((int)(((byte)(146)))));
+            this.icpic_perfiluser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.icpic_perfiluser.IconChar = FontAwesome.Sharp.IconChar.UserDoctor;
+            this.icpic_perfiluser.IconColor = System.Drawing.Color.White;
+            this.icpic_perfiluser.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icpic_perfiluser.IconSize = 86;
+            this.icpic_perfiluser.Location = new System.Drawing.Point(175, 6);
+            this.icpic_perfiluser.Name = "icpic_perfiluser";
+            this.icpic_perfiluser.Size = new System.Drawing.Size(87, 86);
+            this.icpic_perfiluser.TabIndex = 1;
+            this.icpic_perfiluser.TabStop = false;
+            this.icpic_perfiluser.Click += new System.EventHandler(this.icpic_perfiluser_Click);
             // 
             // label2
             // 
@@ -135,6 +137,7 @@
             // flowlayautBarra_btns
             // 
             this.flowlayautBarra_btns.BackColor = System.Drawing.Color.White;
+            this.flowlayautBarra_btns.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowlayautBarra_btns.Controls.Add(this.icnbtn_home);
             this.flowlayautBarra_btns.Controls.Add(this.icnbtn_pacientes);
             this.flowlayautBarra_btns.Controls.Add(this.icnbtn_citas);
@@ -204,6 +207,7 @@
             this.icnbtn_citas.Text = "Citas";
             this.icnbtn_citas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.icnbtn_citas.UseVisualStyleBackColor = false;
+            this.icnbtn_citas.Click += new System.EventHandler(this.icnbtn_citas_Click);
             // 
             // icnbtn_receta
             // 
@@ -272,7 +276,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icpic_perfiluser)).EndInit();
             this.flowlayautBarra_btns.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -292,6 +296,6 @@
         private FontAwesome.Sharp.IconButton icnbtn_receta;
         private FontAwesome.Sharp.IconButton icnbtn_info;
         private System.Windows.Forms.Panel pnl_containerPrimary;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox icpic_perfiluser;
     }
 }
