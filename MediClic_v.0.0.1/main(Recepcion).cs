@@ -16,6 +16,7 @@ namespace MediClic_v._0._0._1
         public main_Recepcion_()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
         }
         //acciones btn
         private void icnbtn_home_Click(object sender, EventArgs e)
@@ -39,6 +40,25 @@ namespace MediClic_v._0._0._1
 
 
         //metodos
+
+        private void openFrm(Object f)
+        {
+            if (this.pnl_containerPrimary.Controls.Count > 0)
+            {
+                this.pnl_containerPrimary.Controls.RemoveAt(0);
+            }
+            Form newf = f as Form;
+
+            newf.TopLevel = false;
+            newf.Dock = DockStyle.Fill;
+
+            //f.BringToFront();
+            this.pnl_containerPrimary.Controls.Add(newf);
+            this.pnl_containerPrimary.Tag = newf;
+            newf.Show();
+
+        }
+
         private void efectoIcobtn(bool act, IconButton btnactv, IconButton btn2, IconButton btn3)
         {
             if (act == true)

@@ -44,6 +44,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.txtbx_kgPhm = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btn_saveHM = new FontAwesome.Sharp.IconButton();
             this.icnbtn_editHM = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
             this.txtbx_mtsPhm = new System.Windows.Forms.TextBox();
@@ -56,6 +57,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtbx_enffPant = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btn_saveANT = new FontAwesome.Sharp.IconButton();
             this.icnbtn_editAnt = new FontAwesome.Sharp.IconButton();
             this.txtbx_notpatPant = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -77,8 +79,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.btn_saveHM = new FontAwesome.Sharp.IconButton();
-            this.btn_saveANT = new FontAwesome.Sharp.IconButton();
             this.panel9.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icnpic_pacienteIMC)).BeginInit();
@@ -97,6 +97,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.icbtn_addPaciente);
             this.panel9.Controls.Add(this.icnbtn_bsqP);
             this.panel9.Controls.Add(this.txtbx_bsqPacientes);
@@ -165,7 +166,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(469, 239);
+            this.panel4.Size = new System.Drawing.Size(467, 239);
             this.panel4.TabIndex = 2;
             // 
             // icnpic_pacienteIMC
@@ -213,7 +214,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(467, 48);
+            this.panel8.Size = new System.Drawing.Size(465, 48);
             this.panel8.TabIndex = 2;
             // 
             // label4
@@ -295,6 +296,25 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(464, 48);
             this.panel7.TabIndex = 2;
+            // 
+            // btn_saveHM
+            // 
+            this.btn_saveHM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_saveHM.ForeColor = System.Drawing.Color.DarkGray;
+            this.btn_saveHM.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
+            this.btn_saveHM.IconColor = System.Drawing.Color.White;
+            this.btn_saveHM.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btn_saveHM.IconSize = 25;
+            this.btn_saveHM.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_saveHM.Location = new System.Drawing.Point(266, 14);
+            this.btn_saveHM.Name = "btn_saveHM";
+            this.btn_saveHM.Size = new System.Drawing.Size(88, 23);
+            this.btn_saveHM.TabIndex = 3;
+            this.btn_saveHM.Text = "Guardar";
+            this.btn_saveHM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_saveHM.UseVisualStyleBackColor = true;
+            this.btn_saveHM.Visible = false;
+            this.btn_saveHM.Click += new System.EventHandler(this.btn_saveHM_Click);
             // 
             // icnbtn_editHM
             // 
@@ -407,7 +427,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 239);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(469, 230);
+            this.panel2.Size = new System.Drawing.Size(467, 230);
             this.panel2.TabIndex = 1;
             // 
             // txtbx_enffPant
@@ -428,8 +448,27 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(467, 48);
+            this.panel6.Size = new System.Drawing.Size(465, 48);
             this.panel6.TabIndex = 2;
+            // 
+            // btn_saveANT
+            // 
+            this.btn_saveANT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_saveANT.ForeColor = System.Drawing.Color.DarkGray;
+            this.btn_saveANT.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
+            this.btn_saveANT.IconColor = System.Drawing.Color.White;
+            this.btn_saveANT.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btn_saveANT.IconSize = 25;
+            this.btn_saveANT.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_saveANT.Location = new System.Drawing.Point(263, 13);
+            this.btn_saveANT.Name = "btn_saveANT";
+            this.btn_saveANT.Size = new System.Drawing.Size(88, 23);
+            this.btn_saveANT.TabIndex = 4;
+            this.btn_saveANT.Text = "Guardar";
+            this.btn_saveANT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_saveANT.UseVisualStyleBackColor = true;
+            this.btn_saveANT.Visible = false;
+            this.btn_saveANT.Click += new System.EventHandler(this.btn_saveANT_Click);
             // 
             // icnbtn_editAnt
             // 
@@ -664,6 +703,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.LightGray;
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.panel2);
             this.panel11.Controls.Add(this.panel4);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
@@ -671,44 +711,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(469, 479);
             this.panel11.TabIndex = 4;
-            // 
-            // btn_saveHM
-            // 
-            this.btn_saveHM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_saveHM.ForeColor = System.Drawing.Color.DarkGray;
-            this.btn_saveHM.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
-            this.btn_saveHM.IconColor = System.Drawing.Color.White;
-            this.btn_saveHM.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btn_saveHM.IconSize = 25;
-            this.btn_saveHM.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_saveHM.Location = new System.Drawing.Point(266, 14);
-            this.btn_saveHM.Name = "btn_saveHM";
-            this.btn_saveHM.Size = new System.Drawing.Size(88, 23);
-            this.btn_saveHM.TabIndex = 3;
-            this.btn_saveHM.Text = "Guardar";
-            this.btn_saveHM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_saveHM.UseVisualStyleBackColor = true;
-            this.btn_saveHM.Visible = false;
-            this.btn_saveHM.Click += new System.EventHandler(this.btn_saveHM_Click);
-            // 
-            // btn_saveANT
-            // 
-            this.btn_saveANT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_saveANT.ForeColor = System.Drawing.Color.DarkGray;
-            this.btn_saveANT.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
-            this.btn_saveANT.IconColor = System.Drawing.Color.White;
-            this.btn_saveANT.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btn_saveANT.IconSize = 25;
-            this.btn_saveANT.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_saveANT.Location = new System.Drawing.Point(263, 13);
-            this.btn_saveANT.Name = "btn_saveANT";
-            this.btn_saveANT.Size = new System.Drawing.Size(88, 23);
-            this.btn_saveANT.TabIndex = 4;
-            this.btn_saveANT.Text = "Guardar";
-            this.btn_saveANT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_saveANT.UseVisualStyleBackColor = true;
-            this.btn_saveANT.Visible = false;
-            this.btn_saveANT.Click += new System.EventHandler(this.btn_saveANT_Click);
             // 
             // frm_Pacientes
             // 

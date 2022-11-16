@@ -17,6 +17,7 @@ namespace MediClic_v._0._0._1
         public main_Doctor_()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
         }
 
         private void main_Doctor__Load(object sender, EventArgs e)

@@ -18,6 +18,7 @@ namespace MediClic_v._0._0._1
         public login()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
             conexionDB.abrir();
             mostrarPass();
         }
