@@ -432,11 +432,11 @@
             // 
             // txtbx_enffPant
             // 
-            this.txtbx_enffPant.Location = new System.Drawing.Point(150, 169);
+            this.txtbx_enffPant.Location = new System.Drawing.Point(150, 159);
             this.txtbx_enffPant.Multiline = true;
             this.txtbx_enffPant.Name = "txtbx_enffPant";
             this.txtbx_enffPant.ReadOnly = true;
-            this.txtbx_enffPant.Size = new System.Drawing.Size(275, 46);
+            this.txtbx_enffPant.Size = new System.Drawing.Size(275, 38);
             this.txtbx_enffPant.TabIndex = 17;
             // 
             // panel6
@@ -491,7 +491,7 @@
             // 
             // txtbx_notpatPant
             // 
-            this.txtbx_notpatPant.Location = new System.Drawing.Point(151, 123);
+            this.txtbx_notpatPant.Location = new System.Drawing.Point(151, 106);
             this.txtbx_notpatPant.Multiline = true;
             this.txtbx_notpatPant.Name = "txtbx_notpatPant";
             this.txtbx_notpatPant.ReadOnly = true;
@@ -510,7 +510,7 @@
             // 
             // txtbx_patPant
             // 
-            this.txtbx_patPant.Location = new System.Drawing.Point(150, 72);
+            this.txtbx_patPant.Location = new System.Drawing.Point(151, 54);
             this.txtbx_patPant.Multiline = true;
             this.txtbx_patPant.Name = "txtbx_patPant";
             this.txtbx_patPant.ReadOnly = true;

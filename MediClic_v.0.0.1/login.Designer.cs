@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.lb_errorAut = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             this.btn_startSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_startSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_startSession.ForeColor = System.Drawing.Color.White;
-            this.btn_startSession.Location = new System.Drawing.Point(107, 438);
+            this.btn_startSession.Location = new System.Drawing.Point(107, 446);
             this.btn_startSession.Name = "btn_startSession";
             this.btn_startSession.Size = new System.Drawing.Size(174, 46);
             this.btn_startSession.TabIndex = 3;
@@ -78,7 +79,7 @@
             this.chckbx_showpass.BackColor = System.Drawing.Color.White;
             this.chckbx_showpass.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.chckbx_showpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.chckbx_showpass.Location = new System.Drawing.Point(94, 391);
+            this.chckbx_showpass.Location = new System.Drawing.Point(83, 391);
             this.chckbx_showpass.Name = "chckbx_showpass";
             this.chckbx_showpass.Size = new System.Drawing.Size(118, 17);
             this.chckbx_showpass.TabIndex = 4;
@@ -123,7 +124,7 @@
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.btn_exit.Location = new System.Drawing.Point(107, 503);
+            this.btn_exit.Location = new System.Drawing.Point(107, 498);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(174, 46);
             this.btn_exit.TabIndex = 7;
@@ -131,12 +132,25 @@
             this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
+            // lb_errorAut
+            // 
+            this.lb_errorAut.AutoSize = true;
+            this.lb_errorAut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_errorAut.ForeColor = System.Drawing.Color.DarkRed;
+            this.lb_errorAut.Location = new System.Drawing.Point(67, 411);
+            this.lb_errorAut.Name = "lb_errorAut";
+            this.lb_errorAut.Size = new System.Drawing.Size(247, 32);
+            this.lb_errorAut.TabIndex = 8;
+            this.lb_errorAut.Text = "Usuario o Contraseña incorrectos, \r\nporfavor ingrese un usuario valido.";
+            this.lb_errorAut.Visible = false;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(382, 561);
+            this.ClientSize = new System.Drawing.Size(382, 554);
+            this.Controls.Add(this.lb_errorAut);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -166,5 +180,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Label lb_errorAut;
     }
 }

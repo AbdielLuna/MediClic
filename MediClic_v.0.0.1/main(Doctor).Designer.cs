@@ -128,11 +128,11 @@
             this.lb_nmUser.AutoSize = true;
             this.lb_nmUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_nmUser.ForeColor = System.Drawing.Color.White;
-            this.lb_nmUser.Location = new System.Drawing.Point(27, 46);
+            this.lb_nmUser.Location = new System.Drawing.Point(17, 46);
             this.lb_nmUser.Name = "lb_nmUser";
-            this.lb_nmUser.Size = new System.Drawing.Size(119, 24);
+            this.lb_nmUser.Size = new System.Drawing.Size(152, 24);
             this.lb_nmUser.TabIndex = 0;
-            this.lb_nmUser.Text = "Guest#1001";
+            this.lb_nmUser.Text = "Guest031#1001";
             // 
             // flowlayautBarra_btns
             // 
@@ -268,7 +268,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main_Doctor_";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "main_Doctor_";
+            this.Text = "Menú Doctor";
             this.Load += new System.EventHandler(this.main_Doctor__Load);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -287,7 +287,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lb_nmUser;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel flowlayautBarra_btns;
         private FontAwesome.Sharp.IconButton icnbtn_home;
@@ -297,5 +296,6 @@
         private FontAwesome.Sharp.IconButton icnbtn_info;
         private System.Windows.Forms.Panel pnl_containerPrimary;
         private FontAwesome.Sharp.IconPictureBox icpic_perfiluser;
+        public System.Windows.Forms.Label lb_nmUser;
     }
 }
