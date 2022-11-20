@@ -35,7 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.icnbtn_perfiluser = new FontAwesome.Sharp.IconPictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb_nmUser = new System.Windows.Forms.Label();
             this.flowlayautBarra_btns = new System.Windows.Forms.FlowLayoutPanel();
             this.icnbtn_home = new FontAwesome.Sharp.IconButton();
             this.icnbtn_users = new FontAwesome.Sharp.IconButton();
@@ -101,7 +101,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(185)))), ((int)(((byte)(146)))));
             this.panel6.Controls.Add(this.icnbtn_perfiluser);
-            this.panel6.Controls.Add(this.label2);
+            this.panel6.Controls.Add(this.lb_nmUser);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel6.Location = new System.Drawing.Point(797, 0);
             this.panel6.Name = "panel6";
@@ -123,16 +123,16 @@
             this.icnbtn_perfiluser.TabStop = false;
             this.icnbtn_perfiluser.Click += new System.EventHandler(this.icnbtn_perfiluser_Click);
             // 
-            // label2
+            // lb_nmUser
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(27, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Guest#2001";
+            this.lb_nmUser.AutoSize = true;
+            this.lb_nmUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nmUser.ForeColor = System.Drawing.Color.White;
+            this.lb_nmUser.Location = new System.Drawing.Point(27, 46);
+            this.lb_nmUser.Name = "lb_nmUser";
+            this.lb_nmUser.Size = new System.Drawing.Size(119, 24);
+            this.lb_nmUser.TabIndex = 0;
+            this.lb_nmUser.Text = "Guest#2001";
             // 
             // flowlayautBarra_btns
             // 
@@ -293,7 +293,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel6;
         private FontAwesome.Sharp.IconPictureBox icnbtn_perfiluser;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel flowlayautBarra_btns;
         private FontAwesome.Sharp.IconButton icnbtn_home;
         private FontAwesome.Sharp.IconButton icnbtn_users;
@@ -301,5 +300,6 @@
         private FontAwesome.Sharp.IconButton icnbtn_DBconfig;
         private FontAwesome.Sharp.IconButton icnbtn_info;
         private System.Windows.Forms.Panel pnl_containerPrimary;
+        public System.Windows.Forms.Label lb_nmUser;
     }
 }

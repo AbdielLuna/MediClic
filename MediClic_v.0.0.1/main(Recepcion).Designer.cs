@@ -273,12 +273,12 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
         private FontAwesome.Sharp.IconPictureBox icnpic_perfiluser;
-        private System.Windows.Forms.Label lb_nmUser;
         private System.Windows.Forms.FlowLayoutPanel flowlayautBarra_btns;
         private FontAwesome.Sharp.IconButton icnbtn_home;
         private FontAwesome.Sharp.IconButton icnbtn_docList;
         private FontAwesome.Sharp.IconButton icnbtn_citas;
         private FontAwesome.Sharp.IconButton icnbtn_info;
         private System.Windows.Forms.Panel pnl_containerPrimary;
+        public System.Windows.Forms.Label lb_nmUser;
     }
 }

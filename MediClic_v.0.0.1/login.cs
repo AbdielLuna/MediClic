@@ -14,6 +14,10 @@ namespace MediClic_v._0._0._1
 {
     public partial class login : Form
     {
+        //Inicializacion
+        main_Doctor_ startsesionDOC = new main_Doctor_();
+        main_Recepcion_ startsesionRec = new main_Recepcion_();
+        main_Administracion_ startsesionAdm = new main_Administracion_();
         //Conexion DB
         ConexionDB conexionDB = new ConexionDB();
         
@@ -68,13 +72,26 @@ namespace MediClic_v._0._0._1
                 
 
                 if (reader.Read()) {
-                    main_Doctor_ startsesion = new main_Doctor_();
+                    
                     string id = reader["id_usuarios"].ToString();
                     string iduser = (txtbx_user.Text + "#"+ id );
-                    startsesion.lb_nmUser.Text = iduser;
-                    startsesion.Show();
-                    this.Close();
-                    //openFrm(new main_Doctor_());
+                    if (reader["tipo_usuario"].ToString() == "doc") {
+                        startsesionDOC.lb_nmUser.Text = iduser;
+                        startsesionDOC.Show();
+                        this.Close();
+                    }
+                    if (reader["tipo_usuario"].ToString() == "sec") {
+                        startsesionRec.lb_nmUser.Text = iduser;
+                        startsesionRec.Show();
+                        this.Close();
+                    }
+                    if (reader["tipo_usuario"].ToString() == "adm")
+                    {
+                        startsesionAdm.lb_nmUser.Text = iduser;
+                        startsesionAdm.Show();
+                        this.Close();
+                    }
+
                 }
                 else {
                     lb_errorAut.Visible = true;
@@ -98,13 +115,6 @@ namespace MediClic_v._0._0._1
              }*/
         }
 
-        private void openFrm(Object f)
-        {
-            Form newf = f as Form;
-            newf.Show();
-            this.Hide();
-
-        }
 
        
     }
