@@ -30,42 +30,42 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_AddPct));
             this.panel11 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_savePct = new System.Windows.Forms.Button();
             this.btn_cancelAcc = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtbx_Adcc = new System.Windows.Forms.TextBox();
+            this.txtbx_Alg = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtbx_kg = new System.Windows.Forms.TextBox();
+            this.txtbx_Mts = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtbx_Enf = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtbx_noPat = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtbx_Pat = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cmbx_Sx = new System.Windows.Forms.ComboBox();
+            this.txtbx_Tel = new System.Windows.Forms.TextBox();
+            this.txtbx_nmFull = new System.Windows.Forms.TextBox();
+            this.txtbx_idP = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.cmbx_tpSg = new System.Windows.Forms.ComboBox();
             this.panel11.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -79,7 +79,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Controls.Add(this.button2);
+            this.panel11.Controls.Add(this.btn_savePct);
             this.panel11.Controls.Add(this.btn_cancelAcc);
             this.panel11.Controls.Add(this.panel2);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
@@ -88,19 +88,20 @@
             this.panel11.Size = new System.Drawing.Size(323, 469);
             this.panel11.TabIndex = 6;
             // 
-            // button2
+            // btn_savePct
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(176, 421);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 36);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_savePct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.btn_savePct.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_savePct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_savePct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_savePct.ForeColor = System.Drawing.Color.White;
+            this.btn_savePct.Location = new System.Drawing.Point(176, 421);
+            this.btn_savePct.Name = "btn_savePct";
+            this.btn_savePct.Size = new System.Drawing.Size(103, 36);
+            this.btn_savePct.TabIndex = 3;
+            this.btn_savePct.Text = "Guardar";
+            this.btn_savePct.UseVisualStyleBackColor = false;
+            this.btn_savePct.Click += new System.EventHandler(this.btn_savePct_Click);
             // 
             // btn_cancelAcc
             // 
@@ -121,13 +122,13 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.textBox10);
-            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.cmbx_tpSg);
+            this.panel2.Controls.Add(this.txtbx_Adcc);
+            this.panel2.Controls.Add(this.txtbx_Alg);
             this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.textBox7);
-            this.panel2.Controls.Add(this.textBox8);
+            this.panel2.Controls.Add(this.txtbx_kg);
+            this.panel2.Controls.Add(this.txtbx_Mts);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.textBox9);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label13);
@@ -138,21 +139,21 @@
             this.panel2.Size = new System.Drawing.Size(323, 399);
             this.panel2.TabIndex = 1;
             // 
-            // textBox10
+            // txtbx_Adcc
             // 
-            this.textBox10.Location = new System.Drawing.Point(140, 255);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(154, 88);
-            this.textBox10.TabIndex = 24;
+            this.txtbx_Adcc.Location = new System.Drawing.Point(140, 255);
+            this.txtbx_Adcc.Multiline = true;
+            this.txtbx_Adcc.Name = "txtbx_Adcc";
+            this.txtbx_Adcc.Size = new System.Drawing.Size(154, 88);
+            this.txtbx_Adcc.TabIndex = 24;
             // 
-            // textBox6
+            // txtbx_Alg
             // 
-            this.textBox6.Location = new System.Drawing.Point(140, 161);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(154, 88);
-            this.textBox6.TabIndex = 23;
+            this.txtbx_Alg.Location = new System.Drawing.Point(140, 161);
+            this.txtbx_Alg.Multiline = true;
+            this.txtbx_Alg.Name = "txtbx_Alg";
+            this.txtbx_Alg.Size = new System.Drawing.Size(154, 88);
+            this.txtbx_Alg.TabIndex = 23;
             // 
             // label16
             // 
@@ -164,19 +165,19 @@
             this.label16.TabIndex = 19;
             this.label16.Text = "Adicciones:";
             // 
-            // textBox7
+            // txtbx_kg
             // 
-            this.textBox7.Location = new System.Drawing.Point(140, 134);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(71, 20);
-            this.textBox7.TabIndex = 22;
+            this.txtbx_kg.Location = new System.Drawing.Point(140, 134);
+            this.txtbx_kg.Name = "txtbx_kg";
+            this.txtbx_kg.Size = new System.Drawing.Size(71, 20);
+            this.txtbx_kg.TabIndex = 22;
             // 
-            // textBox8
+            // txtbx_Mts
             // 
-            this.textBox8.Location = new System.Drawing.Point(140, 101);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(71, 20);
-            this.textBox8.TabIndex = 21;
+            this.txtbx_Mts.Location = new System.Drawing.Point(140, 101);
+            this.txtbx_Mts.Name = "txtbx_Mts";
+            this.txtbx_Mts.Size = new System.Drawing.Size(71, 20);
+            this.txtbx_Mts.TabIndex = 21;
             // 
             // label9
             // 
@@ -187,13 +188,6 @@
             this.label9.Size = new System.Drawing.Size(70, 20);
             this.label9.TabIndex = 18;
             this.label9.Text = "Alergias:";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(140, 70);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(71, 20);
-            this.textBox9.TabIndex = 20;
             // 
             // label15
             // 
@@ -246,13 +240,13 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Historial Medico";
             // 
-            // textBox11
+            // txtbx_Enf
             // 
-            this.textBox11.Location = new System.Drawing.Point(129, 166);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(161, 52);
-            this.textBox11.TabIndex = 17;
+            this.txtbx_Enf.Location = new System.Drawing.Point(129, 166);
+            this.txtbx_Enf.Multiline = true;
+            this.txtbx_Enf.Name = "txtbx_Enf";
+            this.txtbx_Enf.Size = new System.Drawing.Size(161, 52);
+            this.txtbx_Enf.TabIndex = 17;
             // 
             // label3
             // 
@@ -265,13 +259,13 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Antecedentes";
             // 
-            // textBox12
+            // txtbx_noPat
             // 
-            this.textBox12.Location = new System.Drawing.Point(129, 111);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(161, 49);
-            this.textBox12.TabIndex = 16;
+            this.txtbx_noPat.Location = new System.Drawing.Point(129, 111);
+            this.txtbx_noPat.Multiline = true;
+            this.txtbx_noPat.Name = "txtbx_noPat";
+            this.txtbx_noPat.Size = new System.Drawing.Size(161, 49);
+            this.txtbx_noPat.TabIndex = 16;
             // 
             // label10
             // 
@@ -283,13 +277,13 @@
             this.label10.TabIndex = 8;
             this.label10.Text = "Enfermedades:";
             // 
-            // textBox13
+            // txtbx_Pat
             // 
-            this.textBox13.Location = new System.Drawing.Point(129, 54);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(161, 51);
-            this.textBox13.TabIndex = 15;
+            this.txtbx_Pat.Location = new System.Drawing.Point(129, 54);
+            this.txtbx_Pat.Multiline = true;
+            this.txtbx_Pat.Name = "txtbx_Pat";
+            this.txtbx_Pat.Size = new System.Drawing.Size(161, 51);
+            this.txtbx_Pat.TabIndex = 15;
             // 
             // label12
             // 
@@ -326,10 +320,10 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.textBox11);
+            this.panel3.Controls.Add(this.txtbx_Enf);
             this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.textBox13);
-            this.panel3.Controls.Add(this.textBox12);
+            this.panel3.Controls.Add(this.txtbx_Pat);
+            this.panel3.Controls.Add(this.txtbx_noPat);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label12);
@@ -353,10 +347,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.cmbx_Sx);
+            this.panel1.Controls.Add(this.txtbx_Tel);
+            this.panel1.Controls.Add(this.txtbx_nmFull);
+            this.panel1.Controls.Add(this.txtbx_idP);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -368,38 +362,39 @@
             this.panel1.Size = new System.Drawing.Size(314, 238);
             this.panel1.TabIndex = 0;
             // 
-            // comboBox1
+            // cmbx_Sx
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Masculino",
-            "Femenino"});
-            this.comboBox1.Location = new System.Drawing.Point(110, 132);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 21);
-            this.comboBox1.TabIndex = 10;
+            this.cmbx_Sx.FormattingEnabled = true;
+            this.cmbx_Sx.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.cmbx_Sx.Location = new System.Drawing.Point(110, 132);
+            this.cmbx_Sx.Name = "cmbx_Sx";
+            this.cmbx_Sx.Size = new System.Drawing.Size(61, 21);
+            this.cmbx_Sx.TabIndex = 10;
             // 
-            // textBox5
+            // txtbx_Tel
             // 
-            this.textBox5.Location = new System.Drawing.Point(110, 167);
-            this.textBox5.MaxLength = 10;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(180, 20);
-            this.textBox5.TabIndex = 9;
+            this.txtbx_Tel.Location = new System.Drawing.Point(110, 167);
+            this.txtbx_Tel.MaxLength = 10;
+            this.txtbx_Tel.Name = "txtbx_Tel";
+            this.txtbx_Tel.Size = new System.Drawing.Size(180, 20);
+            this.txtbx_Tel.TabIndex = 9;
             // 
-            // textBox3
+            // txtbx_nmFull
             // 
-            this.textBox3.Location = new System.Drawing.Point(110, 99);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(180, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtbx_nmFull.Location = new System.Drawing.Point(110, 99);
+            this.txtbx_nmFull.Name = "txtbx_nmFull";
+            this.txtbx_nmFull.Size = new System.Drawing.Size(180, 20);
+            this.txtbx_nmFull.TabIndex = 7;
             // 
-            // textBox2
+            // txtbx_idP
             // 
-            this.textBox2.Location = new System.Drawing.Point(110, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtbx_idP.Location = new System.Drawing.Point(110, 68);
+            this.txtbx_idP.Name = "txtbx_idP";
+            this.txtbx_idP.ReadOnly = true;
+            this.txtbx_idP.Size = new System.Drawing.Size(61, 20);
+            this.txtbx_idP.TabIndex = 6;
             // 
             // label8
             // 
@@ -462,6 +457,19 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Datos Generales";
             // 
+            // cmbx_tpSg
+            // 
+            this.cmbx_tpSg.FormattingEnabled = true;
+            this.cmbx_tpSg.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "AB",
+            "O"});
+            this.cmbx_tpSg.Location = new System.Drawing.Point(140, 67);
+            this.cmbx_tpSg.Name = "cmbx_tpSg";
+            this.cmbx_tpSg.Size = new System.Drawing.Size(71, 21);
+            this.cmbx_tpSg.TabIndex = 11;
+            // 
             // frm_AddPct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -496,12 +504,12 @@
 
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtbx_Enf;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtbx_noPat;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtbx_Pat;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel10;
@@ -509,27 +517,27 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtbx_Tel;
+        private System.Windows.Forms.TextBox txtbx_nmFull;
+        private System.Windows.Forms.TextBox txtbx_idP;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_savePct;
         private System.Windows.Forms.Button btn_cancelAcc;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtbx_Adcc;
+        private System.Windows.Forms.TextBox txtbx_Alg;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtbx_kg;
+        private System.Windows.Forms.TextBox txtbx_Mts;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbx_Sx;
+        private System.Windows.Forms.ComboBox cmbx_tpSg;
     }
 }

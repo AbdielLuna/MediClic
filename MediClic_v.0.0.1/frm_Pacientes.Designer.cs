@@ -146,6 +146,7 @@
             this.icnbtn_bsqP.Text = "Buscar";
             this.icnbtn_bsqP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.icnbtn_bsqP.UseVisualStyleBackColor = true;
+            this.icnbtn_bsqP.Click += new System.EventHandler(this.icnbtn_bsqP_Click);
             // 
             // txtbx_bsqPacientes
             // 

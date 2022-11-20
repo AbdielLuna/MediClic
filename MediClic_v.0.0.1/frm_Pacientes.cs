@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,18 +17,18 @@ namespace MediClic_v._0._0._1
 {
     public partial class frm_Pacientes : Form
     {
-        ConexionDB metodos = new ConexionDB();
-        double IMC, estatura = 1.81, peso = 180;
-        frm_AddPct addp = new frm_AddPct();
+        ConexionDB conexionDB = new ConexionDB();
+        double IMC, estatura = 0, peso = 0;
+        
         private void icbtn_addPaciente_Click(object sender, EventArgs e)
         {
+            frm_AddPct addp = new frm_AddPct();
             addp.Show();
         }
 
         public frm_Pacientes()
         {
-            InitializeComponent();
-            Cl_IMC();
+            InitializeComponent();        
         }
 
         //btn EdicionDts
@@ -128,18 +129,91 @@ namespace MediClic_v._0._0._1
             }
         }
 
-
-
         public void editar(TextBox txt, bool act) {
             if (act == true) { txt.ReadOnly = false;  }
             if (act == false) { txt.ReadOnly = true;  }
         }
+
+        private void icnbtn_bsqP_Click(object sender, EventArgs e)
+        {
+            if (txtbx_bsqPacientes != null)
+            {
+                LoadPacientes();
+                Cl_IMC();
+                conexionDB.cerrar();
+            }
+            else {
+                conexionDB.cerrar();
+                limpDts();
+            }
+        }
+
         public void editarbtn(IconButton icnbtn, IconButton icnbtnSave, bool actt) {
             if (actt == true) {icnbtn.Enabled = false; icnbtnSave.Visible = true;}
             if (actt == false) { icnbtn.Enabled = true; icnbtnSave.Visible = false; }
         }
-    
-        
+
+        public void LoadPacientes() {
+            try {
+                conexionDB.abrir();
+                string query = "select * from Pacientes where nombre_pac =@name";
+                SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
+                comando.Parameters.AddWithValue("@name", txtbx_bsqPacientes.Text);
+                //comando.Parameters.AddWithValue("@user", );
+                SqlDataReader reader = comando.ExecuteReader();
+                if (reader.Read())
+                {
+                    //prfP
+                    txtbx_idPdg.Text = reader["id_paciente"].ToString();
+                    txtbx_namePdg.Text = reader["nombre_pac"].ToString();
+                    txtbx_sxPdg.Text = reader["sexo_pac"].ToString();
+                    txtbx_telPdg.Text = reader["telefono_pac"].ToString();
+                    //HSM
+                    txtbx_tsgPhm.Text = reader["tipo_sangre"].ToString();
+                    txtbx_mtsPhm.Text = reader["estatura_pac"].ToString();
+                    txtbx_kgPhm.Text = reader["peso_pac"].ToString();
+                    txtbx_algPdts.Text = reader["alergias"].ToString();
+                    txtbx_addcPdts.Text = reader["adicciones"].ToString();
+                    //Ant
+                    txtbx_patPant.Text = reader["patologicos"].ToString();
+                    txtbx_notpatPant.Text = reader["nopatologicos"].ToString();
+                    txtbx_enffPant.Text = reader["enfermedades"].ToString();
+                    //dts IMC
+                    estatura = Convert.ToDouble(txtbx_mtsPhm.Text);
+                    peso = Convert.ToDouble(txtbx_kgPhm.Text);
+                }
+                else {
+                    MessageBox.Show("Paciente no encotrado!","Advertencia",MessageBoxButtons.OK);
+                }
+                
+
+            }
+            catch {
+                MessageBox.Show("Lo sentimos \n Ah Ocurrido un problema, intenta mas tarde","",MessageBoxButtons.OK);
+            }
+            
+        }
+
+        public void limpDts() {
+            txtbx_idPdg.Text = "";
+            txtbx_namePdg.Text = "";
+            txtbx_sxPdg.Text = "";
+            txtbx_telPdg.Text = "";
+            //HSM
+            txtbx_tsgPhm.Text = "";
+            txtbx_mtsPhm.Text = "";
+            txtbx_kgPhm.Text = "";
+            txtbx_algPdts.Text = "";
+            txtbx_addcPdts.Text = "";
+            //Ant
+            txtbx_patPant.Text = "";
+            txtbx_notpatPant.Text = "";
+            txtbx_enffPant.Text = "";
+            //dts IMC
+            estatura = 0;
+            peso = 0;
+        }
+
     }
 
 }
