@@ -42,8 +42,8 @@ namespace MediClic_v._0._0._1
 
         //Metodos
         public void almacenPacientes() {
-            /*try
-            {*/
+            try
+            {
                 
                 string query = "insert into Pacientes(id_paciente,nombre_pac,sexo_pac,telefono_pac,tipo_sangre,estatura_pac,peso_pac,alergias,enfermedades,patologicos,nopatologicos,adicciones) values(@id,@namefull,@sx,@tel,@tpsg,@alt,@kg,@alergias,@enf,@pat,@nopat,@adcc)";
                 SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
@@ -61,11 +61,11 @@ namespace MediClic_v._0._0._1
                 comando.Parameters.AddWithValue("@adcc", txtbx_Adcc.Text);
                 comando.ExecuteNonQuery();
                 conexionDB.cerrar();
-            /*}
+            }
             catch
             {
                 MessageBox.Show("Ocurrio un error en la conexion \n porfavor vuelvalo a intentar mas tarde","Lo sentimos!",MessageBoxButtons.OK);
-            }*/
+            }
         }
 
         public void asignacionID() {

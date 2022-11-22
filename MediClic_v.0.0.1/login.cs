@@ -64,7 +64,7 @@ namespace MediClic_v._0._0._1
             try
             {
                 conexionDB.abrir();
-                string query = "select id_usuarios,nombre_usuario,psswrd,tipo_usuario from Usuarios where nombre_usuario = @user and psswrd = @pass";
+                string query = "select id_usuarios,nm_usuario,psswrd,tipo_usuario from Usuarios where nm_usuario = @user and psswrd = @pass";
                 SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
                 comando.Parameters.AddWithValue("@user",txtbx_user.Text);
                 comando.Parameters.AddWithValue("@pass", txtbx_pass.Text);
@@ -102,17 +102,7 @@ namespace MediClic_v._0._0._1
             catch {
                 MessageBox.Show("Losiento! \n Ocurrio un error, porfavor intentelo mas tarde.","Advertencia",MessageBoxButtons.OK);
             }
-            /* if(txtbx_user.Text == "admin" && txtbx_pass.Text == "admin"){
-                 openFrm(new main_Administracion_());
-             }
-             if (txtbx_user.Text == "doc" && txtbx_pass.Text == "doc")
-             {
-                 openFrm(new main_Doctor_());
-             }
-             if (txtbx_user.Text == "rec" && txtbx_pass.Text == "rec")
-             {
-                 openFrm(new main_Recepcion_());
-             }*/
+
         }
 
 

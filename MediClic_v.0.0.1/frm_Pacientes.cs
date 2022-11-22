@@ -136,15 +136,16 @@ namespace MediClic_v._0._0._1
 
         private void icnbtn_bsqP_Click(object sender, EventArgs e)
         {
-            if (txtbx_bsqPacientes != null)
+            if (txtbx_bsqPacientes.Text == null || txtbx_bsqPacientes.Text == "")
             {
+                conexionDB.cerrar();
+                Cl_IMC();
+                limpDts();
+            }
+            else {
                 LoadPacientes();
                 Cl_IMC();
                 conexionDB.cerrar();
-            }
-            else {
-                conexionDB.cerrar();
-                limpDts();
             }
         }
 
