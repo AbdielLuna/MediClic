@@ -16,7 +16,7 @@ namespace MediClic_v._0._0._1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Splash_frm1());
+            Application.Run(new Frm_Agenda());
         }
     }
 }

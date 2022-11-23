@@ -56,12 +56,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_Agenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,42 +67,6 @@
     </Compile>
     <Compile Include="Frm_AngendaMsj.Designer.cs">
       <DependentUpon>Frm_AngendaMsj.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_Citas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_Citas.Designer.cs">
-      <DependentUpon>frm_Citas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_Pacientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_Pacientes.Designer.cs">
-      <DependentUpon>frm_Pacientes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="login.Designer.cs">
-      <DependentUpon>login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="main%28Doctor%29.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="main%28Doctor%29.Designer.cs">
-      <DependentUpon>main%28Doctor%29.cs</DependentUpon>
-    </Compile>
-    <Compile Include="main%28Recepcion%29.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="main%28Recepcion%29.Designer.cs">
-      <DependentUpon>main%28Recepcion%29.cs</DependentUpon>
-    </Compile>
-    <Compile Include="main_lobby.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="main_lobby.Designer.cs">
-      <DependentUpon>main_lobby.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,32 +82,11 @@
     <Compile Include="UserControlDias.Designer.cs">
       <DependentUpon>UserControlDias.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Agenda.resx">
       <DependentUpon>Frm_Agenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_AngendaMsj.resx">
       <DependentUpon>Frm_AngendaMsj.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_Citas.resx">
-      <DependentUpon>frm_Citas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_Pacientes.resx">
-      <DependentUpon>frm_Pacientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
-      <DependentUpon>login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="main%28Doctor%29.resx">
-      <DependentUpon>main%28Doctor%29.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="main%28Recepcion%29.resx">
-      <DependentUpon>main%28Recepcion%29.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="main_lobby.resx">
-      <DependentUpon>main_lobby.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
