@@ -112,8 +112,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlBlanco.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBlanco.Designer.cs">
+      <DependentUpon>UserControlBlanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDias.Designer.cs">
+      <DependentUpon>UserControlDias.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Agenda.resx">
+      <DependentUpon>Frm_Agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_AngendaMsj.resx">
+      <DependentUpon>Frm_AngendaMsj.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Citas.resx">
       <DependentUpon>frm_Citas.cs</DependentUpon>
@@ -143,6 +161,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControlBlanco.resx">
+      <DependentUpon>UserControlBlanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDias.resx">
+      <DependentUpon>UserControlDias.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
