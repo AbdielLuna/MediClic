@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.icnbtn_bsqP = new FontAwesome.Sharp.IconButton();
             this.txtbx_bsqPacientes = new System.Windows.Forms.TextBox();
@@ -39,10 +42,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbx_Tel = new System.Windows.Forms.TextBox();
+            this.txtbx_nmFull = new System.Windows.Forms.TextBox();
+            this.txtbx_tagUser = new System.Windows.Forms.TextBox();
+            this.txtbx_tpUser = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -136,9 +139,43 @@
             // 
             // dtgrd_listUsuarios
             // 
+            this.dtgrd_listUsuarios.AllowUserToAddRows = false;
+            this.dtgrd_listUsuarios.AllowUserToDeleteRows = false;
+            this.dtgrd_listUsuarios.AllowUserToOrderColumns = true;
+            this.dtgrd_listUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgrd_listUsuarios.BackgroundColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgrd_listUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgrd_listUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgrd_listUsuarios.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgrd_listUsuarios.EnableHeadersVisualStyles = false;
             this.dtgrd_listUsuarios.Location = new System.Drawing.Point(12, 61);
+            this.dtgrd_listUsuarios.MultiSelect = false;
             this.dtgrd_listUsuarios.Name = "dtgrd_listUsuarios";
+            this.dtgrd_listUsuarios.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgrd_listUsuarios.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgrd_listUsuarios.RowHeadersVisible = false;
+            this.dtgrd_listUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgrd_listUsuarios.Size = new System.Drawing.Size(443, 371);
             this.dtgrd_listUsuarios.TabIndex = 7;
             // 
@@ -197,10 +234,10 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.textBox4);
-            this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Controls.Add(this.textBox2);
-            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Controls.Add(this.txtbx_Tel);
+            this.panel5.Controls.Add(this.txtbx_nmFull);
+            this.panel5.Controls.Add(this.txtbx_tagUser);
+            this.panel5.Controls.Add(this.txtbx_tpUser);
             this.panel5.Controls.Add(this.button2);
             this.panel5.Controls.Add(this.button1);
             this.panel5.Controls.Add(this.iconPictureBox1);
@@ -215,33 +252,33 @@
             this.panel5.Size = new System.Drawing.Size(413, 470);
             this.panel5.TabIndex = 0;
             // 
-            // textBox4
+            // txtbx_Tel
             // 
-            this.textBox4.Location = new System.Drawing.Point(145, 321);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(113, 20);
-            this.textBox4.TabIndex = 11;
+            this.txtbx_Tel.Location = new System.Drawing.Point(145, 321);
+            this.txtbx_Tel.Name = "txtbx_Tel";
+            this.txtbx_Tel.Size = new System.Drawing.Size(113, 20);
+            this.txtbx_Tel.TabIndex = 11;
             // 
-            // textBox3
+            // txtbx_nmFull
             // 
-            this.textBox3.Location = new System.Drawing.Point(144, 284);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(113, 20);
-            this.textBox3.TabIndex = 10;
+            this.txtbx_nmFull.Location = new System.Drawing.Point(144, 284);
+            this.txtbx_nmFull.Name = "txtbx_nmFull";
+            this.txtbx_nmFull.Size = new System.Drawing.Size(113, 20);
+            this.txtbx_nmFull.TabIndex = 10;
             // 
-            // textBox2
+            // txtbx_tagUser
             // 
-            this.textBox2.Location = new System.Drawing.Point(145, 248);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(113, 20);
-            this.textBox2.TabIndex = 9;
+            this.txtbx_tagUser.Location = new System.Drawing.Point(145, 248);
+            this.txtbx_tagUser.Name = "txtbx_tagUser";
+            this.txtbx_tagUser.Size = new System.Drawing.Size(113, 20);
+            this.txtbx_tagUser.TabIndex = 9;
             // 
-            // textBox1
+            // txtbx_tpUser
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 212);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(113, 20);
-            this.textBox1.TabIndex = 8;
+            this.txtbx_tpUser.Location = new System.Drawing.Point(145, 212);
+            this.txtbx_tpUser.Name = "txtbx_tpUser";
+            this.txtbx_tpUser.Size = new System.Drawing.Size(113, 20);
+            this.txtbx_tpUser.TabIndex = 8;
             // 
             // button2
             // 
@@ -389,10 +426,10 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbx_Tel;
+        private System.Windows.Forms.TextBox txtbx_nmFull;
+        private System.Windows.Forms.TextBox txtbx_tagUser;
+        private System.Windows.Forms.TextBox txtbx_tpUser;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;

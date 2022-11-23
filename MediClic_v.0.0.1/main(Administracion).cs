@@ -35,6 +35,7 @@ namespace MediClic_v._0._0._1
         private void icnbtn_docList_Click(object sender, EventArgs e)
         {
             efectoIcobtn(true, icnbtn_docList, icnbtn_users, icnbtn_DBconfig, icnbtn_info);
+            openFrm(new Frm_listDocs());
         }
 
         private void icnbtn_DBconfig_Click(object sender, EventArgs e)

@@ -44,20 +44,20 @@ namespace MediClic_v._0._0._1
             conexionDB.abrir();
             try
             {
-                
-                string query = "select * from Usuarios";
-                SqlDataAdapter adapter = new SqlDataAdapter(query,conexionDB.Conectarbd);
+                string query = "select id_usuarios,nm_usuario,tipo_usuario from Usuarios";
+                SqlDataAdapter apt = new SqlDataAdapter(query, conexionDB.Conectarbd);
                 DataTable dt = new DataTable();
-                adapter.Fill(dt);
+                apt.Fill(dt);
                 dtgrd_listUsuarios.DataSource = dt;
-                
             }
             catch {
-                MessageBox.Show("Lo sentimos \nHubo un problema con la Conexion porfavor itentalo mas tarde","Advertencia",MessageBoxButtons.OK);
+                MessageBox.Show("Lo sentimos \nHubo un problema con la Conexion porfavor itentalo mas tarde", "Advertencia", MessageBoxButtons.OK);
             }
             conexionDB.cerrar();
+            dtgrd_listUsuarios.Columns[0].HeaderText = "ID";
+            dtgrd_listUsuarios.Columns[1].HeaderText = "Nombre";
+            dtgrd_listUsuarios.Columns[2].HeaderText = "Rol";
         }
 
-        
     }
 }

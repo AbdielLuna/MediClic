@@ -121,6 +121,12 @@
     <Compile Include="Frm_Info.Designer.cs">
       <DependentUpon>Frm_Info.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_listDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_listDocs.Designer.cs">
+      <DependentUpon>Frm_listDocs.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Pacientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_adduser.resx">
       <DependentUpon>frm_adduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_listDocs.resx">
+      <DependentUpon>Frm_listDocs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Pacientes.resx">
       <DependentUpon>frm_Pacientes.cs</DependentUpon>
