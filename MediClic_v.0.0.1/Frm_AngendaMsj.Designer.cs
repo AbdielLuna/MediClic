@@ -1,6 +1,6 @@
 ﻿namespace MediClic_v._0._0._1
 {
-    partial class main
+    partial class Frm_AngendaMsj
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "main";
+            this.Text = "Frm_AngendaMsj";
         }
 
         #endregion
