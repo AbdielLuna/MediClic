@@ -40,6 +40,16 @@ namespace MediClic_v._0._0._1
         {
             efectoIcobtn(true,icnbtn_citas, icnbtn_pacientes, icnbtn_receta, icnbtn_info);
         }
+        private void icnbtn_receta_Click(object sender, EventArgs e)
+        {
+            efectoIcobtn(true, icnbtn_receta, icnbtn_citas, icnbtn_pacientes, icnbtn_info);
+            openFrm(new Frm_receta());
+        }
+        private void icnbtn_info_Click(object sender, EventArgs e)
+        {
+            efectoIcobtn(true, icnbtn_info, icnbtn_receta, icnbtn_citas, icnbtn_pacientes);
+            //openFrm();
+        }
 
         //Metodos############################
         private void openFrm(Object f)
@@ -119,5 +129,7 @@ namespace MediClic_v._0._0._1
                 log.Show();
             }
         }
+
+        
     }
 }

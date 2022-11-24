@@ -227,6 +227,7 @@
             this.icnbtn_receta.Text = "Recetas";
             this.icnbtn_receta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.icnbtn_receta.UseVisualStyleBackColor = false;
+            this.icnbtn_receta.Click += new System.EventHandler(this.icnbtn_receta_Click);
             // 
             // icnbtn_info
             // 
@@ -246,6 +247,7 @@
             this.icnbtn_info.Text = "Info";
             this.icnbtn_info.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.icnbtn_info.UseVisualStyleBackColor = false;
+            this.icnbtn_info.Click += new System.EventHandler(this.icnbtn_info_Click);
             // 
             // pnl_containerPrimary
             // 

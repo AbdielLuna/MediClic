@@ -133,6 +133,12 @@
     <Compile Include="frm_Pacientes.Designer.cs">
       <DependentUpon>frm_Pacientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_receta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_receta.Designer.cs">
+      <DependentUpon>Frm_receta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Users.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,11 +186,17 @@
     <EmbeddedResource Include="frm_adduser.resx">
       <DependentUpon>frm_adduser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Info.resx">
+      <DependentUpon>Frm_Info.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_listDocs.resx">
       <DependentUpon>Frm_listDocs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Pacientes.resx">
       <DependentUpon>frm_Pacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_receta.resx">
+      <DependentUpon>Frm_receta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Users.resx">
       <DependentUpon>Frm_Users.cs</DependentUpon>
