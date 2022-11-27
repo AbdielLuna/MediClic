@@ -112,7 +112,7 @@
             // 
             this.icnbtn_perfiluser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(185)))), ((int)(((byte)(146)))));
             this.icnbtn_perfiluser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.icnbtn_perfiluser.IconChar = FontAwesome.Sharp.IconChar.UserDoctor;
+            this.icnbtn_perfiluser.IconChar = FontAwesome.Sharp.IconChar.UserCog;
             this.icnbtn_perfiluser.IconColor = System.Drawing.Color.White;
             this.icnbtn_perfiluser.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icnbtn_perfiluser.IconSize = 86;

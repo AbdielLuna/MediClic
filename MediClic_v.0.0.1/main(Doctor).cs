@@ -34,7 +34,7 @@ namespace MediClic_v._0._0._1
         private void icnbtn_pacientes_Click(object sender, EventArgs e)
         {
             efectoIcobtn(true, icnbtn_pacientes,icnbtn_citas,icnbtn_receta,icnbtn_info);
-            openFrm(new frm_Pacientes());
+            openFrm(new Frm_PacientesFull());
         }
         private void icnbtn_citas_Click(object sender, EventArgs e)
         {

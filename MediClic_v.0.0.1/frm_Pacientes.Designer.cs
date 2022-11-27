@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.icbtn_addPaciente = new FontAwesome.Sharp.IconButton();
-            this.icnbtn_bsqP = new FontAwesome.Sharp.IconButton();
-            this.txtbx_bsqPacientes = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.icnpic_pacienteIMC = new FontAwesome.Sharp.IconPictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -79,7 +75,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.panel9.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icnpic_pacienteIMC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -94,68 +89,6 @@
             this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.icbtn_addPaciente);
-            this.panel9.Controls.Add(this.icnbtn_bsqP);
-            this.panel9.Controls.Add(this.txtbx_bsqPacientes);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(935, 53);
-            this.panel9.TabIndex = 1;
-            // 
-            // icbtn_addPaciente
-            // 
-            this.icbtn_addPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icbtn_addPaciente.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.icbtn_addPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.icbtn_addPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.icbtn_addPaciente.ForeColor = System.Drawing.Color.White;
-            this.icbtn_addPaciente.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.icbtn_addPaciente.IconColor = System.Drawing.Color.White;
-            this.icbtn_addPaciente.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icbtn_addPaciente.IconSize = 35;
-            this.icbtn_addPaciente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.icbtn_addPaciente.Location = new System.Drawing.Point(13, 7);
-            this.icbtn_addPaciente.Name = "icbtn_addPaciente";
-            this.icbtn_addPaciente.Size = new System.Drawing.Size(181, 40);
-            this.icbtn_addPaciente.TabIndex = 2;
-            this.icbtn_addPaciente.Text = "Agregar Nuevo";
-            this.icbtn_addPaciente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.icbtn_addPaciente.UseVisualStyleBackColor = false;
-            this.icbtn_addPaciente.Click += new System.EventHandler(this.icbtn_addPaciente_Click);
-            // 
-            // icnbtn_bsqP
-            // 
-            this.icnbtn_bsqP.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.icnbtn_bsqP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.icnbtn_bsqP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.icnbtn_bsqP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_bsqP.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.icnbtn_bsqP.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_bsqP.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icnbtn_bsqP.IconSize = 25;
-            this.icnbtn_bsqP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.icnbtn_bsqP.Location = new System.Drawing.Point(807, 12);
-            this.icnbtn_bsqP.Name = "icnbtn_bsqP";
-            this.icnbtn_bsqP.Size = new System.Drawing.Size(85, 26);
-            this.icnbtn_bsqP.TabIndex = 1;
-            this.icnbtn_bsqP.Text = "Buscar";
-            this.icnbtn_bsqP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.icnbtn_bsqP.UseVisualStyleBackColor = true;
-            this.icnbtn_bsqP.Click += new System.EventHandler(this.icnbtn_bsqP_Click);
-            // 
-            // txtbx_bsqPacientes
-            // 
-            this.txtbx_bsqPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_bsqPacientes.Location = new System.Drawing.Point(601, 12);
-            this.txtbx_bsqPacientes.Name = "txtbx_bsqPacientes";
-            this.txtbx_bsqPacientes.Size = new System.Drawing.Size(200, 26);
-            this.txtbx_bsqPacientes.TabIndex = 0;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
@@ -167,7 +100,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(467, 239);
+            this.panel4.Size = new System.Drawing.Size(467, 275);
             this.panel4.TabIndex = 2;
             // 
             // icnpic_pacienteIMC
@@ -180,7 +113,7 @@
             this.icnpic_pacienteIMC.IconColor = System.Drawing.SystemColors.ControlText;
             this.icnpic_pacienteIMC.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icnpic_pacienteIMC.IconSize = 136;
-            this.icnpic_pacienteIMC.Location = new System.Drawing.Point(57, 54);
+            this.icnpic_pacienteIMC.Location = new System.Drawing.Point(57, 72);
             this.icnpic_pacienteIMC.Name = "icnpic_pacienteIMC";
             this.icnpic_pacienteIMC.Size = new System.Drawing.Size(136, 136);
             this.icnpic_pacienteIMC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -202,7 +135,7 @@
             // 
             this.lb_dtoIMC.AutoSize = true;
             this.lb_dtoIMC.BackColor = System.Drawing.Color.Transparent;
-            this.lb_dtoIMC.Location = new System.Drawing.Point(97, 193);
+            this.lb_dtoIMC.Location = new System.Drawing.Point(103, 220);
             this.lb_dtoIMC.Name = "lb_dtoIMC";
             this.lb_dtoIMC.Size = new System.Drawing.Size(56, 13);
             this.lb_dtoIMC.TabIndex = 4;
@@ -245,9 +178,9 @@
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 238);
+            this.panel3.Location = new System.Drawing.Point(0, 276);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(466, 231);
+            this.panel3.Size = new System.Drawing.Size(466, 256);
             this.panel3.TabIndex = 2;
             // 
             // txtbx_addcPdts
@@ -426,9 +359,9 @@
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 239);
+            this.panel2.Location = new System.Drawing.Point(0, 275);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(467, 230);
+            this.panel2.Size = new System.Drawing.Size(467, 256);
             this.panel2.TabIndex = 1;
             // 
             // txtbx_enffPant
@@ -554,7 +487,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(466, 238);
+            this.panel1.Size = new System.Drawing.Size(466, 276);
             this.panel1.TabIndex = 0;
             // 
             // txtbx_telPdg
@@ -696,9 +629,9 @@
             this.panel10.Controls.Add(this.panel3);
             this.panel10.Controls.Add(this.panel1);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel10.Location = new System.Drawing.Point(0, 53);
+            this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(466, 479);
+            this.panel10.Size = new System.Drawing.Size(466, 532);
             this.panel10.TabIndex = 3;
             // 
             // panel11
@@ -708,9 +641,9 @@
             this.panel11.Controls.Add(this.panel2);
             this.panel11.Controls.Add(this.panel4);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel11.Location = new System.Drawing.Point(466, 53);
+            this.panel11.Location = new System.Drawing.Point(466, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(469, 479);
+            this.panel11.Size = new System.Drawing.Size(469, 532);
             this.panel11.TabIndex = 4;
             // 
             // frm_Pacientes
@@ -720,13 +653,10 @@
             this.ClientSize = new System.Drawing.Size(935, 532);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel9);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frm_Pacientes";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frm_Pacientes";
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Datos del Paciente";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icnpic_pacienteIMC)).EndInit();
@@ -752,13 +682,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel9;
-        private FontAwesome.Sharp.IconButton icbtn_addPaciente;
-        private FontAwesome.Sharp.IconButton icnbtn_bsqP;
-        private System.Windows.Forms.TextBox txtbx_bsqPacientes;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label3;
@@ -782,26 +707,27 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtbx_addcPdts;
-        private System.Windows.Forms.TextBox txtbx_algPdts;
-        private System.Windows.Forms.TextBox txtbx_kgPhm;
-        private System.Windows.Forms.TextBox txtbx_mtsPhm;
-        private System.Windows.Forms.TextBox txtbx_tsgPhm;
-        private System.Windows.Forms.TextBox txtbx_enffPant;
-        private System.Windows.Forms.TextBox txtbx_notpatPant;
-        private System.Windows.Forms.TextBox txtbx_patPant;
-        private System.Windows.Forms.TextBox txtbx_telPdg;
-        private System.Windows.Forms.TextBox txtbx_sxPdg;
-        private System.Windows.Forms.TextBox txtbx_namePdg;
-        private System.Windows.Forms.TextBox txtbx_idPdg;
-        private FontAwesome.Sharp.IconPictureBox icnpic_pacienteIMC;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lb_dtoIMC;
         private FontAwesome.Sharp.IconButton icnbtn_editHM;
         private FontAwesome.Sharp.IconButton icnbtn_editAnt;
         private FontAwesome.Sharp.IconButton icnbtn_editDG;
         private FontAwesome.Sharp.IconButton btn_saveDg;
         private FontAwesome.Sharp.IconButton btn_saveHM;
         private FontAwesome.Sharp.IconButton btn_saveANT;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox txtbx_idPdg;
+        public System.Windows.Forms.TextBox txtbx_addcPdts;
+        public System.Windows.Forms.TextBox txtbx_algPdts;
+        public System.Windows.Forms.TextBox txtbx_kgPhm;
+        public System.Windows.Forms.TextBox txtbx_mtsPhm;
+        public System.Windows.Forms.TextBox txtbx_tsgPhm;
+        public System.Windows.Forms.TextBox txtbx_enffPant;
+        public System.Windows.Forms.TextBox txtbx_notpatPant;
+        public System.Windows.Forms.TextBox txtbx_patPant;
+        public System.Windows.Forms.TextBox txtbx_telPdg;
+        public System.Windows.Forms.TextBox txtbx_sxPdg;
+        public System.Windows.Forms.TextBox txtbx_namePdg;
+        public FontAwesome.Sharp.IconPictureBox icnpic_pacienteIMC;
+        public System.Windows.Forms.Label lb_dtoIMC;
     }
 }

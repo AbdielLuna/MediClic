@@ -111,7 +111,7 @@
             // 
             this.icnpic_perfiluser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(185)))), ((int)(((byte)(146)))));
             this.icnpic_perfiluser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.icnpic_perfiluser.IconChar = FontAwesome.Sharp.IconChar.UserDoctor;
+            this.icnpic_perfiluser.IconChar = FontAwesome.Sharp.IconChar.UserNurse;
             this.icnpic_perfiluser.IconColor = System.Drawing.Color.White;
             this.icnpic_perfiluser.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icnpic_perfiluser.IconSize = 86;
@@ -159,7 +159,7 @@
             this.icnbtn_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icnbtn_home.IconSize = 55;
             this.icnbtn_home.Location = new System.Drawing.Point(3, 10);
-            this.icnbtn_home.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.icnbtn_home.Margin = new System.Windows.Forms.Padding(3, 10, 3, 20);
             this.icnbtn_home.Name = "icnbtn_home";
             this.icnbtn_home.Size = new System.Drawing.Size(147, 88);
             this.icnbtn_home.TabIndex = 3;
@@ -179,8 +179,8 @@
             this.icnbtn_docList.IconColor = System.Drawing.Color.White;
             this.icnbtn_docList.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icnbtn_docList.IconSize = 55;
-            this.icnbtn_docList.Location = new System.Drawing.Point(3, 111);
-            this.icnbtn_docList.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
+            this.icnbtn_docList.Location = new System.Drawing.Point(3, 121);
+            this.icnbtn_docList.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.icnbtn_docList.Name = "icnbtn_docList";
             this.icnbtn_docList.Size = new System.Drawing.Size(147, 88);
             this.icnbtn_docList.TabIndex = 0;
@@ -200,8 +200,8 @@
             this.icnbtn_citas.IconColor = System.Drawing.Color.White;
             this.icnbtn_citas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icnbtn_citas.IconSize = 55;
-            this.icnbtn_citas.Location = new System.Drawing.Point(3, 212);
-            this.icnbtn_citas.Margin = new System.Windows.Forms.Padding(3, 3, 3, 100);
+            this.icnbtn_citas.Location = new System.Drawing.Point(3, 232);
+            this.icnbtn_citas.Margin = new System.Windows.Forms.Padding(3, 3, 3, 80);
             this.icnbtn_citas.Name = "icnbtn_citas";
             this.icnbtn_citas.Size = new System.Drawing.Size(147, 88);
             this.icnbtn_citas.TabIndex = 1;

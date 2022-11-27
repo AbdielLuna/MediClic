@@ -150,7 +150,7 @@
             this.dtgrd_listDoc.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgrd_listDoc.RowHeadersVisible = false;
             this.dtgrd_listDoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgrd_listDoc.Size = new System.Drawing.Size(443, 371);
+            this.dtgrd_listDoc.Size = new System.Drawing.Size(443, 403);
             this.dtgrd_listDoc.TabIndex = 7;
             this.dtgrd_listDoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrd_listDoc_CellClick);
             // 
@@ -177,9 +177,9 @@
             this.panel2.Controls.Add(this.dtgrd_listDoc);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 62);
+            this.panel2.Location = new System.Drawing.Point(0, 42);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(475, 470);
+            this.panel2.Size = new System.Drawing.Size(475, 490);
             this.panel2.TabIndex = 4;
             // 
             // panel4
@@ -224,9 +224,9 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 62);
+            this.panel3.Location = new System.Drawing.Point(0, 42);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(935, 470);
+            this.panel3.Size = new System.Drawing.Size(935, 490);
             this.panel3.TabIndex = 5;
             // 
             // panel5
@@ -253,7 +253,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(522, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(413, 470);
+            this.panel5.Size = new System.Drawing.Size(413, 490);
             this.panel5.TabIndex = 0;
             // 
             // txtbx_modfTel
@@ -410,7 +410,7 @@
             this.icnbtn_bsqP.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icnbtn_bsqP.IconSize = 25;
             this.icnbtn_bsqP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.icnbtn_bsqP.Location = new System.Drawing.Point(787, 19);
+            this.icnbtn_bsqP.Location = new System.Drawing.Point(787, 12);
             this.icnbtn_bsqP.Name = "icnbtn_bsqP";
             this.icnbtn_bsqP.Size = new System.Drawing.Size(85, 26);
             this.icnbtn_bsqP.TabIndex = 8;
@@ -421,7 +421,7 @@
             // txtbx_bsqPacientes
             // 
             this.txtbx_bsqPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_bsqPacientes.Location = new System.Drawing.Point(581, 19);
+            this.txtbx_bsqPacientes.Location = new System.Drawing.Point(581, 10);
             this.txtbx_bsqPacientes.Name = "txtbx_bsqPacientes";
             this.txtbx_bsqPacientes.Size = new System.Drawing.Size(200, 26);
             this.txtbx_bsqPacientes.TabIndex = 7;
@@ -434,7 +434,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(935, 62);
+            this.panel1.Size = new System.Drawing.Size(935, 42);
             this.panel1.TabIndex = 3;
             // 
             // Frm_listDocs
