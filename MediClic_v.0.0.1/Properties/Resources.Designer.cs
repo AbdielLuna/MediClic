@@ -82,29 +82,32 @@ namespace MediClic_v._0._0._1.Properties {
         
         /// <summary>
         ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
-        ///&lt;html lang=&quot;es&quot;&gt;
-        ///    &lt;head&gt;
-        ///        &lt;style&gt;
-        ///            .container{
+        ///&lt;html lang=&quot;es&quot; xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+        ///&lt;head&gt;
+        ///    &lt;style&gt;
         ///
-        ///                border: 2px solid #000;
-        ///                background-color: white;
-        ///                border-radius: 5px;
-        ///                height: 420px;
-        ///                
-        ///            }
-        ///            label{
-        ///                text-align: center; 
-        ///                background-color: white;
-        ///            }
-        ///            p{
-        ///                text-align: left; background-color: white; color: black;
-        ///            }
-        ///            .tit [resto de la cadena truncado]&quot;;.
+        ///        .espacio {
+        ///            height: 30px;
+        ///        }
+        ///
+        ///        p {
+        ///            text-align: left;
+        ///            background-color: white;
+        ///            color: black;
+        ///            font-weight: bold;
+        ///            font-family: &apos;Times New Roman&apos;;
+        ///        }
+        ///
+        ///        .title {
+        ///            text-align: center;
+        ///            background-color: white;
+        ///            color: rgb(7, 25, 104);
+        ///            margin-bottom: 0%;
+        /// [resto de la cadena truncado]&quot;;.
         /// </summary>
-        internal static string recetaMediClic {
+        internal static string RecetaMediClicOffc {
             get {
-                return ResourceManager.GetString("recetaMediClic", resourceCulture);
+                return ResourceManager.GetString("RecetaMediClicOffc", resourceCulture);
             }
         }
         

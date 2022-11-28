@@ -8,6 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
+using System.IO;
 
 namespace MediClic_v._0._0._1
 {
@@ -32,6 +36,7 @@ namespace MediClic_v._0._0._1
             var res = MessageBox.Show("Desea guardar la receta?", "Confirmacion", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes) {
                 idFl = Convert.ToInt32(txtbx_idFolio.Text) +1;
+                imprimir();
             }
         }
         private void dtgrd_listPac_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -51,15 +56,18 @@ namespace MediClic_v._0._0._1
             } 
         }
         public void imprimir() {
-            
-            /*
-                SaveFileDialog savefile = new SaveFileDialog();
-               savefile.FileName = string.Format("{0}.pdf", DateTime.Now.ToString("ddMMyyyyHHmmss"));
+            SaveFileDialog savefile = new SaveFileDialog();
+            savefile.FileName = string.Format("{0}.pdf", (txtbx_idFolio.Text+ DateTime.Now.ToString("ddMMyyyyHHmmss")));
 
-               string PaginaHTML_Texto = Properties.Resources.Receta.ToString();
-               PaginaHTML_Texto = PaginaHTML_Texto.Replace("@palabra", label1.Text);
-
-               if (savefile.ShowDialog() == DialogResult.OK)
+            string PaginaHTML_Texto = Properties.Resources.RecetaMediClicOffc.ToString();
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@idFl", txtbx_idFolio.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@nmPaciente", txtbx_rcNmfull.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@fch", DateTime.Now.ToShortDateString());
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@mts", txtbx_rcmts.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@kg", txtbx_rcKg.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@edd", txtbx_rcEdd.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@alg", txtbx_rcAlg.Text);
+            if (savefile.ShowDialog() == DialogResult.OK)
                {
                    using (FileStream stream = new FileStream(savefile.FileName, FileMode.Create))
                    {
@@ -91,7 +99,7 @@ namespace MediClic_v._0._0._1
                    }
 
                }
-                */
+                
         }
         public void cargarListdocs()
         {
@@ -137,5 +145,9 @@ namespace MediClic_v._0._0._1
             conexionDB.cerrar();
         }
 
+        private void icnbtn_editIdfl_Click(object sender, EventArgs e)
+        {
+            txtbx_idFolio.ReadOnly = false;
+        }
     }
 }

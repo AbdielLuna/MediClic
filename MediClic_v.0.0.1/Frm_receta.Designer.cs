@@ -46,7 +46,7 @@
             this.txtbx_rcKg = new System.Windows.Forms.TextBox();
             this.txtbx_rcAlg = new System.Windows.Forms.TextBox();
             this.txtbx_idFolio = new System.Windows.Forms.TextBox();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.icnbtn_editIdfl = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dtgrd_listPac = new System.Windows.Forms.DataGridView();
@@ -215,20 +215,21 @@
             this.txtbx_idFolio.Size = new System.Drawing.Size(69, 24);
             this.txtbx_idFolio.TabIndex = 14;
             // 
-            // iconButton2
+            // icnbtn_editIdfl
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 25;
-            this.iconButton2.Location = new System.Drawing.Point(225, 80);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(29, 24);
-            this.iconButton2.TabIndex = 16;
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.icnbtn_editIdfl.BackColor = System.Drawing.Color.Transparent;
+            this.icnbtn_editIdfl.FlatAppearance.BorderSize = 0;
+            this.icnbtn_editIdfl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icnbtn_editIdfl.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.icnbtn_editIdfl.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_editIdfl.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icnbtn_editIdfl.IconSize = 25;
+            this.icnbtn_editIdfl.Location = new System.Drawing.Point(225, 80);
+            this.icnbtn_editIdfl.Name = "icnbtn_editIdfl";
+            this.icnbtn_editIdfl.Size = new System.Drawing.Size(29, 24);
+            this.icnbtn_editIdfl.TabIndex = 16;
+            this.icnbtn_editIdfl.UseVisualStyleBackColor = false;
+            this.icnbtn_editIdfl.Click += new System.EventHandler(this.icnbtn_editIdfl_Click);
             // 
             // panel3
             // 
@@ -236,7 +237,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.panel1);
-            this.panel3.Controls.Add(this.iconButton2);
+            this.panel3.Controls.Add(this.icnbtn_editIdfl);
             this.panel3.Controls.Add(this.txtbx_rcNmfull);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.txtbx_idFolio);
@@ -382,7 +383,7 @@
         private System.Windows.Forms.TextBox txtbx_rcKg;
         private System.Windows.Forms.TextBox txtbx_rcAlg;
         private System.Windows.Forms.TextBox txtbx_idFolio;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton icnbtn_editIdfl;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
