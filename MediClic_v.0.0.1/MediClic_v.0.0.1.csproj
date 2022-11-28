@@ -207,6 +207,9 @@
     <EmbeddedResource Include="frm_adduser.resx">
       <DependentUpon>frm_adduser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Agenda.resx">
+      <DependentUpon>Frm_Agenda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_DBconf.resx">
       <DependentUpon>Frm_DBconf.cs</DependentUpon>
     </EmbeddedResource>
