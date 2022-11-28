@@ -31,7 +31,7 @@ namespace MediClic_v._0._0._1
 
         private void btn_savePct_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("Agregar Nuevo Paciente", "Confirmacion", MessageBoxButtons.YesNo);
+            var result = MessageBox.Show("Agregar Nuevo Paciente", "Confirmacion", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes) {
                 almacenPacientes();

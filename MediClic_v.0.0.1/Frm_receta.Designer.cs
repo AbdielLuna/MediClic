@@ -38,7 +38,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_impresion = new System.Windows.Forms.Button();
             this.txtbx_rcNmfull = new System.Windows.Forms.TextBox();
             this.txtbx_rcmts = new System.Windows.Forms.TextBox();
@@ -136,19 +136,20 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Receta:";
             // 
-            // button1
+            // btn_Cancelar
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.button1.Location = new System.Drawing.Point(142, 454);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 41);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_Cancelar.BackColor = System.Drawing.Color.White;
+            this.btn_Cancelar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.btn_Cancelar.Location = new System.Drawing.Point(142, 432);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(103, 41);
+            this.btn_Cancelar.TabIndex = 7;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = false;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // btn_impresion
             // 
@@ -157,7 +158,7 @@
             this.btn_impresion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_impresion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_impresion.ForeColor = System.Drawing.Color.White;
-            this.btn_impresion.Location = new System.Drawing.Point(264, 454);
+            this.btn_impresion.Location = new System.Drawing.Point(264, 432);
             this.btn_impresion.Name = "btn_impresion";
             this.btn_impresion.Size = new System.Drawing.Size(103, 41);
             this.btn_impresion.TabIndex = 8;
@@ -250,7 +251,7 @@
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.txtbx_rcmts);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.btn_Cancelar);
             this.panel3.Controls.Add(this.btn_impresion);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(10, 10);
@@ -375,7 +376,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_impresion;
         private System.Windows.Forms.TextBox txtbx_rcNmfull;
         private System.Windows.Forms.TextBox txtbx_rcmts;

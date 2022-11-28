@@ -22,7 +22,7 @@ namespace MediClic_v._0._0._1
 
         private void icnbtn_home_Click(object sender, EventArgs e)
         {
-            efectoIcobtn(false,icnbtn_users,icnbtn_docList,icnbtn_DBconfig,icnbtn_info);
+            
         }
 
         private void icnbtn_users_Click(object sender, EventArgs e)
@@ -41,6 +41,7 @@ namespace MediClic_v._0._0._1
         private void icnbtn_DBconfig_Click(object sender, EventArgs e)
         {
             efectoIcobtn(true, icnbtn_DBconfig, icnbtn_users, icnbtn_docList, icnbtn_info);
+            openFrm(new Frm_DBconf());
         }
 
         private void icnbtn_info_Click(object sender, EventArgs e)
@@ -106,13 +107,18 @@ namespace MediClic_v._0._0._1
         //Out Sesion
         private void icnbtn_perfiluser_Click(object sender, EventArgs e)
         {
-            var r = MessageBox.Show("Quieres Cerrar la Sesión??", "Cerrar Sesion", MessageBoxButtons.YesNo);
+            var r = MessageBox.Show("Quieres Cerrar la Sesión??", "Cerrar Sesion", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             if (r == DialogResult.Yes)
             {
                 this.Close();
                 login log = new login();
                 log.Show();
             }
+        }
+
+        private void main_Administracion__Load(object sender, EventArgs e)
+        {
+            openFrm(new Frm_Users());
         }
     }
 }

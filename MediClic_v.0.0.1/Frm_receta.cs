@@ -33,7 +33,7 @@ namespace MediClic_v._0._0._1
         //btn Accions
         private void btn_impresion_Click(object sender, EventArgs e)
         {
-            var res = MessageBox.Show("Desea guardar la receta?", "Confirmacion", MessageBoxButtons.YesNo);
+            var res = MessageBox.Show("Desea guardar la receta?", "Confirmacion", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             if (res == DialogResult.Yes) {
                 idFl = Convert.ToInt32(txtbx_idFolio.Text) +1;
                 imprimir();
@@ -50,14 +50,19 @@ namespace MediClic_v._0._0._1
         }
         //Metodos
         public void clearall() {
-            var res = MessageBox.Show("Seguro que quieres cancelar?\nLos datos no se guardaran","Confirmacion",MessageBoxButtons.YesNoCancel);
+            var res = MessageBox.Show("Seguro que quieres cancelar?\nNo se guardaran los cambios realizados.", "Advertencia", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
             if (res == DialogResult.Yes) {
-                Console.Write("OK");
+                txtbx_rcAlg.Text = "";
+                txtbx_rcNmfull.Text = "";
+                txtbx_rcEdd.Text = "";
+                txtbx_rcmts.Text = "";
+                txtbx_rcKg.Text = "";
+                txtbx_rcAlg.Text = "";
             } 
         }
         public void imprimir() {
             SaveFileDialog savefile = new SaveFileDialog();
-            savefile.FileName = string.Format("{0}.pdf", (txtbx_idFolio.Text+ DateTime.Now.ToString("ddMMyyyyHHmmss")));
+            savefile.FileName = string.Format("{0}.pdf", ("Receta_No._"+txtbx_idFolio.Text +"_"+ DateTime.Now.ToString("ddMMyyyyHHmmss")));
 
             string PaginaHTML_Texto = Properties.Resources.RecetaMediClicOffc.ToString();
             PaginaHTML_Texto = PaginaHTML_Texto.Replace("@idFl", txtbx_idFolio.Text);
@@ -148,6 +153,11 @@ namespace MediClic_v._0._0._1
         private void icnbtn_editIdfl_Click(object sender, EventArgs e)
         {
             txtbx_idFolio.ReadOnly = false;
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            clearall();
         }
     }
 }

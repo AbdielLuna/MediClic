@@ -49,6 +49,12 @@ namespace MediClic_v._0._0._1
             Form newf = f as Form;
             newf.Show();
         }
+
+        private void icbtn_Refresh_Click(object sender, EventArgs e)
+        {
+            cargarListpac();
+        }
+
         public void cargarListpac()
         {
             conexionDB.abrir();
@@ -62,7 +68,7 @@ namespace MediClic_v._0._0._1
             }
             catch
             {
-                MessageBox.Show("Lo sentimos \nHubo un problema con la Conexion porfavor itentelo mas tarde", "Advertencia", MessageBoxButtons.OK);
+                MessageBox.Show("Lo sentimos \nHubo un problema con la Conexion porfavor itentelo mas tarde", "Advertencia", MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             conexionDB.cerrar();
             dtgrd_listPac.Columns[0].HeaderText = "Matricula";
