@@ -29,24 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lb_reloj = new System.Windows.Forms.Label();
             this.uI_Calendario1 = new Calendario.UI_Calendario();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tm_reloj = new System.Windows.Forms.Timer(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lb_reloj = new System.Windows.Forms.Label();
+            this.dtgrd_listCitas = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrd_listCitas)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -87,6 +90,28 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(389, 439);
             this.panel3.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            this.panel2.Controls.Add(this.lb_reloj);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(387, 45);
+            this.panel2.TabIndex = 1;
+            // 
+            // lb_reloj
+            // 
+            this.lb_reloj.AutoSize = true;
+            this.lb_reloj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lb_reloj.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_reloj.ForeColor = System.Drawing.Color.White;
+            this.lb_reloj.Location = new System.Drawing.Point(89, 6);
+            this.lb_reloj.Name = "lb_reloj";
+            this.lb_reloj.Size = new System.Drawing.Size(178, 33);
+            this.lb_reloj.TabIndex = 2;
+            this.lb_reloj.Text = "hh:mm:ss tt";
             // 
             // uI_Calendario1
             // 
@@ -137,8 +162,8 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.dtgrd_listCitas);
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(398, 3);
             this.panel4.Name = "panel4";
@@ -166,41 +191,54 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "CITAS";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(47, 51);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(417, 379);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // tm_reloj
             // 
             this.tm_reloj.Enabled = true;
             this.tm_reloj.Interval = 1000;
             this.tm_reloj.Tick += new System.EventHandler(this.tm_reloj_Tick);
             // 
-            // panel2
+            // dtgrd_listCitas
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
-            this.panel2.Controls.Add(this.lb_reloj);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(387, 45);
-            this.panel2.TabIndex = 1;
-            // 
-            // lb_reloj
-            // 
-            this.lb_reloj.AutoSize = true;
-            this.lb_reloj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lb_reloj.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_reloj.ForeColor = System.Drawing.Color.White;
-            this.lb_reloj.Location = new System.Drawing.Point(89, 6);
-            this.lb_reloj.Name = "lb_reloj";
-            this.lb_reloj.Size = new System.Drawing.Size(178, 33);
-            this.lb_reloj.TabIndex = 2;
-            this.lb_reloj.Text = "hh:mm:ss tt";
+            this.dtgrd_listCitas.AllowUserToAddRows = false;
+            this.dtgrd_listCitas.AllowUserToDeleteRows = false;
+            this.dtgrd_listCitas.AllowUserToOrderColumns = true;
+            this.dtgrd_listCitas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgrd_listCitas.BackgroundColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgrd_listCitas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgrd_listCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgrd_listCitas.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgrd_listCitas.EnableHeadersVisualStyles = false;
+            this.dtgrd_listCitas.Location = new System.Drawing.Point(3, 52);
+            this.dtgrd_listCitas.MultiSelect = false;
+            this.dtgrd_listCitas.Name = "dtgrd_listCitas";
+            this.dtgrd_listCitas.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgrd_listCitas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgrd_listCitas.RowHeadersVisible = false;
+            this.dtgrd_listCitas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgrd_listCitas.Size = new System.Drawing.Size(491, 374);
+            this.dtgrd_listCitas.TabIndex = 9;
+            this.dtgrd_listCitas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrd_listCitas_CellClick);
             // 
             // main_lobby
             // 
@@ -213,15 +251,16 @@
             this.Name = "main_lobby";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "main_lobby";
+            this.Load += new System.EventHandler(this.main_lobby_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrd_listCitas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -234,10 +273,10 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Timer tm_reloj;
         private Calendario.UI_Calendario uI_Calendario1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lb_reloj;
+        private System.Windows.Forms.DataGridView dtgrd_listCitas;
     }
 }

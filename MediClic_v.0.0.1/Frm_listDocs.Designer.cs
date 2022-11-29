@@ -84,7 +84,7 @@
             // 
             this.icnbtn_refreshDtg.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
             this.icnbtn_refreshDtg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.icnbtn_refreshDtg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icnbtn_refreshDtg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icnbtn_refreshDtg.ForeColor = System.Drawing.Color.DimGray;
             this.icnbtn_refreshDtg.IconChar = FontAwesome.Sharp.IconChar.Rotate;
             this.icnbtn_refreshDtg.IconColor = System.Drawing.Color.White;
@@ -95,7 +95,7 @@
             this.icnbtn_refreshDtg.Name = "icnbtn_refreshDtg";
             this.icnbtn_refreshDtg.Size = new System.Drawing.Size(96, 32);
             this.icnbtn_refreshDtg.TabIndex = 2;
-            this.icnbtn_refreshDtg.Text = "Refrescar";
+            this.icnbtn_refreshDtg.Text = "Actualizar";
             this.icnbtn_refreshDtg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.icnbtn_refreshDtg.UseVisualStyleBackColor = true;
             this.icnbtn_refreshDtg.Click += new System.EventHandler(this.icnbtn_refreshDtg_Click);
@@ -324,6 +324,7 @@
             // 
             // dttm_modfAN
             // 
+            this.dttm_modfAN.CustomFormat = "yyyymmdd";
             this.dttm_modfAN.Enabled = false;
             this.dttm_modfAN.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dttm_modfAN.Location = new System.Drawing.Point(145, 254);

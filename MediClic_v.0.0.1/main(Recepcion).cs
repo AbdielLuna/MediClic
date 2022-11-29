@@ -40,6 +40,7 @@ namespace MediClic_v._0._0._1
         private void icnbtn_citas_Click(object sender, EventArgs e)
         {
             efectoIcobtn(true, icnbtn_citas, icnbtn_docList, icnbtn_info);
+            openFrm(new Frm_Agenda());
         }
         private void icnbtn_info_Click(object sender, EventArgs e)
         {
