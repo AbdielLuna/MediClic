@@ -15,12 +15,10 @@ namespace MediClic_v._0._0._1
     public partial class frm_AddPct : Form
     {
         ConexionDB conexionDB = new ConexionDB();
-        int id;
+        int id = 0;
         public frm_AddPct()
         {
-            InitializeComponent();
-            conexionDB.abrir();
-            asignacionID();
+            InitializeComponent();       
         }
 
         //Botones accion
@@ -44,7 +42,7 @@ namespace MediClic_v._0._0._1
         public void almacenPacientes() {
             try
             {
-                
+                conexionDB.abrir();
                 string query = "insert into Pacientes(id_paciente,nombre_pac,sexo_pac,telefono_pac,tipo_sangre,estatura_pac,peso_pac,alergias,enfermedades,patologicos,nopatologicos,adicciones) values(@id,@namefull,@sx,@tel,@tpsg,@alt,@kg,@alergias,@enf,@pat,@nopat,@adcc)";
                 SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
                 comando.Parameters.AddWithValue("@id",id.ToString());
@@ -69,15 +67,28 @@ namespace MediClic_v._0._0._1
         }
 
         public void asignacionID() {
+            conexionDB.abrir();
             string query = ("select id_paciente from Pacientes where id_paciente = (Select MAX( id_paciente) from Pacientes)");
             SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
             SqlDataReader read = comando.ExecuteReader();
             if (read.Read()) {
                 id = Convert.ToInt32(read["id_paciente"].ToString());
+                Console.WriteLine(">>ID = "+id.ToString());
                 id += 1;
-                txtbx_idP.Text=id.ToString();
+                txtbx_idP.Text = id.ToString();
                 read.Close();
             }
-        } 
+            conexionDB.cerrar();
+            if (id <= 0)
+            {
+                id = 1;
+                txtbx_idP.Text = id.ToString();
+            }
+        }
+
+        private void frm_AddPct_Load(object sender, EventArgs e)
+        {
+            asignacionID();
+        }
     }
 }

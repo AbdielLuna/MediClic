@@ -82,7 +82,7 @@ namespace MediClic_v._0._0._1
                 txtbx_idUser.Text = id.ToString();
                 read.Close();
             }
-            if (id == 0)
+            if (id <= 0)
             {
                 if (tp == "doc")
                 {

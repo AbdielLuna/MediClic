@@ -13,7 +13,7 @@ namespace MediClic_v._0._0._1
 {
     public partial class Frm_Agenda : Form
     {
-        int id;
+        int id =0;
         string estado = "Confirmada", Cdlselection;
         ConexionDB conexionDB = new ConexionDB();
         public Frm_Agenda()
@@ -114,23 +114,24 @@ namespace MediClic_v._0._0._1
         }
 
         public void agendarCita() {
-            try
-            {
-            conexionDB.abrir();
+             try
+             {
             
+            conexionDB.abrir();
+                string fecha = dtpic_fch.Value.ToShortDateString();
                 string hora = (cmbx_hrs.Text + ":" + cmbx_mins.Text + " " + cmbx_hrsAMPM.Text);
                 string query = "insert into Citas(id_cita,nm_cita,fecha,hora,motivo,estado)" +
                     "values(@id,@nmCita,@fch,@hora,@motivo,@estd)";
                 SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
                 comando.Parameters.AddWithValue("@id", id.ToString());
                 comando.Parameters.AddWithValue("@nmCita", txtbx_nmPacFull.Text);
-                comando.Parameters.AddWithValue("@fch", dtpic_fch.Text);
+                comando.Parameters.AddWithValue("@fch", fecha);
                 comando.Parameters.AddWithValue("@hora", hora);
                 comando.Parameters.AddWithValue("@motivo", txtbx_Motivo.Text);
                 comando.Parameters.AddWithValue("@estd", estado);
                 comando.ExecuteNonQuery();
                 conexionDB.cerrar();
-                MessageBox.Show("Se Agrego la cita Correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Se Agrego la cita Correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);         
             }
             catch
             {
@@ -150,6 +151,9 @@ namespace MediClic_v._0._0._1
                 read.Close();
             }
             conexionDB.cerrar();
+            if (id <=0) {
+            id = 1;
+            }
         }
 
         public void limparAll() {
@@ -189,12 +193,12 @@ namespace MediClic_v._0._0._1
             try
             {
                 conexionDB.abrir();
-
+                string fecha = dtpic_modfFch.Value.ToShortDateString();
                 string hora = (cmbx_modfHrs.Text + ":" + cmbx_modfMin.Text + " " + cmbx_modfAMPM.Text);
                 string query = "update Citas set fecha=@fch,estado=@estd,hora=@hora where id_cita = @id";
                 SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
                 comando.Parameters.AddWithValue("@id", Cdlselection);
-                comando.Parameters.AddWithValue("@fch", dtpic_modfFch.Text);
+                comando.Parameters.AddWithValue("@fch", fecha);
                 comando.Parameters.AddWithValue("@hora", hora);
                 comando.Parameters.AddWithValue("@estd", cmbx_modfEstado.Text);
                 comando.ExecuteNonQuery();
