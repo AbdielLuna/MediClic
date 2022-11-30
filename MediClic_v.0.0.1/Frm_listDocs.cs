@@ -14,6 +14,7 @@ namespace MediClic_v._0._0._1
     public partial class Frm_listDocs : Form
     {
         string Cdlselection;
+        public  bool varCond;
         ConexionDB conexionDB = new ConexionDB();
         public Frm_listDocs()
         {
@@ -22,6 +23,7 @@ namespace MediClic_v._0._0._1
         private void Frm_listDocs_Load(object sender, EventArgs e)
         {
             cargarListdocs();
+            condicion(varCond);
         }
 
         //Accion Btn
@@ -86,6 +88,13 @@ namespace MediClic_v._0._0._1
             
         }
 
-       
+        public void condicion(bool cond) {
+            if (cond == true){ 
+                btn_modfDoc.Visible = false;
+                btn_modfDoc.Enabled = false;
+                btn_deleteDoc.Visible = false;
+                btn_deleteDoc.Enabled = false;
+            }
+        }
     }
 }

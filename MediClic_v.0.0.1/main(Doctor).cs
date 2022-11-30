@@ -49,7 +49,7 @@ namespace MediClic_v._0._0._1
         private void icnbtn_info_Click(object sender, EventArgs e)
         {
             efectoIcobtn(true, icnbtn_info, icnbtn_receta, icnbtn_citas, icnbtn_pacientes);
-            //openFrm();
+            openFrm(new Frm_Info());
         }
 
         //Metodos############################
@@ -123,9 +123,10 @@ namespace MediClic_v._0._0._1
         //opc perfil User
         private void icpic_perfiluser_Click(object sender, EventArgs e)
         {
-            var r = MessageBox.Show("Quieres Cerrar la Sesión??","Cerrar Sesion",MessageBoxButtons.YesNo);
-            if (r == DialogResult.Yes) {
-            this.Close();
+            var r = MessageBox.Show("Desea cerrar la Sesión?", "Cerrar Sesion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+            {
+                this.Close();
                 login log = new login();
                 log.Show();
             }

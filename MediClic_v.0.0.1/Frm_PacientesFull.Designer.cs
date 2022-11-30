@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.icbtn_Refresh = new FontAwesome.Sharp.IconButton();
             this.dtgrd_listPac = new System.Windows.Forms.DataGridView();
             this.panel9 = new System.Windows.Forms.Panel();
             this.icbtn_addPaciente = new FontAwesome.Sharp.IconButton();
@@ -39,7 +40,6 @@
             this.txtbx_bsqPacientes = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.icbtn_Refresh = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrd_listPac)).BeginInit();
             this.panel9.SuspendLayout();
@@ -59,6 +59,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(899, 473);
             this.panel1.TabIndex = 0;
+            // 
+            // icbtn_Refresh
+            // 
+            this.icbtn_Refresh.FlatAppearance.BorderSize = 0;
+            this.icbtn_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icbtn_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icbtn_Refresh.ForeColor = System.Drawing.Color.DimGray;
+            this.icbtn_Refresh.IconChar = FontAwesome.Sharp.IconChar.Rotate;
+            this.icbtn_Refresh.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icbtn_Refresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icbtn_Refresh.IconSize = 20;
+            this.icbtn_Refresh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.icbtn_Refresh.Location = new System.Drawing.Point(759, 97);
+            this.icbtn_Refresh.Name = "icbtn_Refresh";
+            this.icbtn_Refresh.Size = new System.Drawing.Size(80, 23);
+            this.icbtn_Refresh.TabIndex = 11;
+            this.icbtn_Refresh.Text = "Actualizar";
+            this.icbtn_Refresh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.icbtn_Refresh.UseVisualStyleBackColor = true;
+            this.icbtn_Refresh.Click += new System.EventHandler(this.icbtn_Refresh_Click);
             // 
             // dtgrd_listPac
             // 
@@ -164,6 +184,8 @@
             this.txtbx_bsqPacientes.Name = "txtbx_bsqPacientes";
             this.txtbx_bsqPacientes.Size = new System.Drawing.Size(200, 26);
             this.txtbx_bsqPacientes.TabIndex = 0;
+            this.txtbx_bsqPacientes.TextChanged += new System.EventHandler(this.txtbx_bsqPacientes_TextChanged);
+            this.txtbx_bsqPacientes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbx_bsqPacientes_KeyPress);
             // 
             // panel2
             // 
@@ -187,26 +209,6 @@
             this.label1.Size = new System.Drawing.Size(179, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Lista de Pacientes";
-            // 
-            // icbtn_Refresh
-            // 
-            this.icbtn_Refresh.FlatAppearance.BorderSize = 0;
-            this.icbtn_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.icbtn_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.icbtn_Refresh.ForeColor = System.Drawing.Color.DimGray;
-            this.icbtn_Refresh.IconChar = FontAwesome.Sharp.IconChar.Rotate;
-            this.icbtn_Refresh.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icbtn_Refresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icbtn_Refresh.IconSize = 20;
-            this.icbtn_Refresh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.icbtn_Refresh.Location = new System.Drawing.Point(759, 97);
-            this.icbtn_Refresh.Name = "icbtn_Refresh";
-            this.icbtn_Refresh.Size = new System.Drawing.Size(80, 23);
-            this.icbtn_Refresh.TabIndex = 11;
-            this.icbtn_Refresh.Text = "Actualizar";
-            this.icbtn_Refresh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.icbtn_Refresh.UseVisualStyleBackColor = true;
-            this.icbtn_Refresh.Click += new System.EventHandler(this.icbtn_Refresh_Click);
             // 
             // Frm_PacientesFull
             // 

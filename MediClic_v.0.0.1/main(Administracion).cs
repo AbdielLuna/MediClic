@@ -47,6 +47,7 @@ namespace MediClic_v._0._0._1
         private void icnbtn_info_Click(object sender, EventArgs e)
         {
             efectoIcobtn(true, icnbtn_info, icnbtn_DBconfig, icnbtn_users, icnbtn_docList);
+            openFrm(new Frm_Info());
         }
 
         //Metodos

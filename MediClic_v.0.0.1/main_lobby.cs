@@ -55,9 +55,23 @@ namespace MediClic_v._0._0._1
             cargarListcitas();
         }
 
-        private void dtgrd_listCitas_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dtgrd_listCitas_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
-            
+            if (dtgrd_listCitas.Columns[e.ColumnIndex].Name == "estado")  //Si es la columna a evaluar
+            {
+                if (e.Value.ToString().Contains("Confirmada"))   //Si el valor de la celda contiene la palabra hora
+                {
+                    e.CellStyle.ForeColor = Color.White;
+                    e.CellStyle.BackColor = Color.FromArgb(145, 235, 146);
+                }
+                if (e.Value.ToString().Contains("Cancelada"))   //Si el valor de la celda contiene la palabra hora
+                {
+                    e.CellStyle.ForeColor = Color.White;
+                    e.CellStyle.BackColor = Color.FromArgb(228, 81, 81);
+                }
+            }
         }
+    
+
     }
 }

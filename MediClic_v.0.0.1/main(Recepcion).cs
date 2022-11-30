@@ -27,14 +27,14 @@ namespace MediClic_v._0._0._1
         //acciones btn
         private void icnbtn_home_Click(object sender, EventArgs e)
         {
-            efectoIcobtn(false,icnbtn_docList,icnbtn_citas,icnbtn_info);
+            efectoIcobtn(false, icnbtn_docList, icnbtn_citas, icnbtn_info);
             openFrm(new main_lobby());
         }
 
         private void icnbtn_docList_Click(object sender, EventArgs e)
         {
             efectoIcobtn(true, icnbtn_docList, icnbtn_citas, icnbtn_info);
-            openFrm(new Frm_listDocs());
+            CondicionCi();
         }
 
         private void icnbtn_citas_Click(object sender, EventArgs e)
@@ -45,6 +45,7 @@ namespace MediClic_v._0._0._1
         private void icnbtn_info_Click(object sender, EventArgs e)
         {
             efectoIcobtn(true, icnbtn_info, icnbtn_docList, icnbtn_citas);
+            openFrm(new Frm_Info());
         }
 
 
@@ -102,7 +103,7 @@ namespace MediClic_v._0._0._1
         //opc perfil User
         private void icnpic_perfiluser_Click(object sender, EventArgs e)
         {
-            var r = MessageBox.Show("Quieres Cerrar la Sesión??", "Cerrar Sesion", MessageBoxButtons.YesNo);
+            var r = MessageBox.Show("Desea cerrar la Sesión?", "Cerrar Sesion", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             if (r == DialogResult.Yes)
             {
                 this.Close();
@@ -111,6 +112,20 @@ namespace MediClic_v._0._0._1
             }
         }
 
-        
+        private void CondicionCi(){
+            Frm_listDocs doc = new Frm_listDocs();
+            
+            if (this.pnl_containerPrimary.Controls.Count > 0)
+            {
+                this.pnl_containerPrimary.Controls.RemoveAt(0);
+            }
+            doc.TopLevel = false;
+            doc.Dock = DockStyle.Fill;
+            doc.varCond = true;
+            //f.BringToFront();
+            this.pnl_containerPrimary.Controls.Add(doc);
+            this.pnl_containerPrimary.Tag = doc;
+            doc.Show();
+        }
     }
 }

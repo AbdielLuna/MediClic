@@ -105,7 +105,20 @@ namespace MediClic_v._0._0._1
 
         }
 
+        private void txtbx_user_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                autentificacion();
+            }
+        }
 
-       
+        private void txtbx_pass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                autentificacion();
+            }
+        }
     }
 }

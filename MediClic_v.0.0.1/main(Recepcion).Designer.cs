@@ -150,7 +150,7 @@
             // icnbtn_home
             // 
             this.icnbtn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_home.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_home.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icnbtn_home.ForeColor = System.Drawing.Color.White;
@@ -171,7 +171,7 @@
             // icnbtn_docList
             // 
             this.icnbtn_docList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_docList.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_docList.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_docList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_docList.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icnbtn_docList.ForeColor = System.Drawing.Color.White;
@@ -192,7 +192,7 @@
             // icnbtn_citas
             // 
             this.icnbtn_citas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_citas.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_citas.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_citas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_citas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icnbtn_citas.ForeColor = System.Drawing.Color.White;
@@ -213,7 +213,7 @@
             // icnbtn_info
             // 
             this.icnbtn_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_info.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_info.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icnbtn_info.ForeColor = System.Drawing.Color.White;

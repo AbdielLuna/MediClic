@@ -52,8 +52,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.dttm_modfAN = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_modfDoc = new System.Windows.Forms.Button();
+            this.btn_deleteDoc = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -243,8 +243,8 @@
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.txtbx_modfNmfull);
             this.panel5.Controls.Add(this.txtbx_modfCdla);
-            this.panel5.Controls.Add(this.button2);
-            this.panel5.Controls.Add(this.button1);
+            this.panel5.Controls.Add(this.btn_modfDoc);
+            this.panel5.Controls.Add(this.btn_deleteDoc);
             this.panel5.Controls.Add(this.iconPictureBox1);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.label5);
@@ -342,32 +342,32 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Fecha de\r\nNacimiento:";
             // 
-            // button2
+            // btn_modfDoc
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(104, 407);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 37);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_modfDoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.btn_modfDoc.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_modfDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_modfDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modfDoc.ForeColor = System.Drawing.Color.White;
+            this.btn_modfDoc.Location = new System.Drawing.Point(104, 407);
+            this.btn_modfDoc.Name = "btn_modfDoc";
+            this.btn_modfDoc.Size = new System.Drawing.Size(108, 37);
+            this.btn_modfDoc.TabIndex = 7;
+            this.btn_modfDoc.Text = "Modificar";
+            this.btn_modfDoc.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_deleteDoc
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.button1.Location = new System.Drawing.Point(227, 407);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 37);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_deleteDoc.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_deleteDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_deleteDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_deleteDoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.btn_deleteDoc.Location = new System.Drawing.Point(227, 407);
+            this.btn_deleteDoc.Name = "btn_deleteDoc";
+            this.btn_deleteDoc.Size = new System.Drawing.Size(108, 37);
+            this.btn_deleteDoc.TabIndex = 6;
+            this.btn_deleteDoc.Text = "Eliminar";
+            this.btn_deleteDoc.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -481,8 +481,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_modfDoc;
+        private System.Windows.Forms.Button btn_deleteDoc;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label2;

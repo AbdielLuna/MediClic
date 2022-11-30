@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iTextSharp.xmp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,13 +34,13 @@ namespace MediClic_v._0._0._1
         }
         private void icnbtn_bsqP_Click(object sender, EventArgs e)
         {
-            if (txtbx_bsqPacientes.Text == null || txtbx_bsqPacientes.Text == "")
+            if (!string.IsNullOrEmpty(txtbx_bsqPacientes.Text))
             {
-
+                busquedaPac();
             }
             else
             {
-
+                MessageBox.Show("Paciente no existe o no se encontro\nAsegurese de colocar el nombre correcto","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             }
         }
 
@@ -76,6 +77,34 @@ namespace MediClic_v._0._0._1
             dtgrd_listPac.Columns[2].HeaderText = "Sexo";
             dtgrd_listPac.Columns[3].HeaderText = "Contacto";
         }
+
+        private void txtbx_bsqPacientes_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtbx_bsqPacientes.Text))
+            {
+                busquedaPac();
+            }
+            if (string.IsNullOrEmpty(txtbx_bsqPacientes.Text))
+            {
+                cargarListpac();
+            }
+        }
+
+        private void txtbx_bsqPacientes_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                if (!string.IsNullOrEmpty(txtbx_bsqPacientes.Text))
+                {
+                    busquedaPac();
+                }
+                else
+                {
+                    MessageBox.Show("Paciente no existe o no se encontro\nAsegurese de colocar el nombre correcto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+        }
+
         private void dtgrd_listPac_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             frm_Pacientes viwpac = new frm_Pacientes();
@@ -168,5 +197,27 @@ namespace MediClic_v._0._0._1
             
         }
 
+        private void busquedaPac()
+        {
+            string nmBsq = "%"+txtbx_bsqPacientes.Text+"%";
+            conexionDB.abrir();
+            try {
+                string query = "select id_paciente,nombre_pac,sexo_pac,telefono_pac from Pacientes where nombre_pac LIKE @nmpc";
+                SqlCommand cmd = new SqlCommand(query,conexionDB.Conectarbd);
+                cmd.Parameters.AddWithValue("@nmpc", nmBsq);
+                SqlDataAdapter adpt = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adpt.Fill(dt);
+                dtgrd_listPac.DataSource = dt;
+
+            }catch {
+                Console.WriteLine(":::NO FUNCIONO");
+            }
+            conexionDB.cerrar();
+            dtgrd_listPac.Columns[0].HeaderText = "Matricula";
+            dtgrd_listPac.Columns[1].HeaderText = "Nombre";
+            dtgrd_listPac.Columns[2].HeaderText = "Sexo";
+            dtgrd_listPac.Columns[3].HeaderText = "Contacto";
+        }
     }
 }
