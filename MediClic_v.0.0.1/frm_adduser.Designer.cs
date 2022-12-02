@@ -34,9 +34,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.pnl_ContDoc = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbx_sxDoc = new System.Windows.Forms.ComboBox();
             this.txtbx_docCdprf = new System.Windows.Forms.TextBox();
             this.txtbx_docEsp = new System.Windows.Forms.TextBox();
+            this.dtatim_docAn = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtbx_crro = new System.Windows.Forms.TextBox();
@@ -48,7 +49,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_cnlAcc = new System.Windows.Forms.Button();
-            this.dtatim_docAn = new System.Windows.Forms.DateTimePicker();
             this.icnbtn_figurativa = new FontAwesome.Sharp.IconPictureBox();
             this.txtbx_idUser = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -132,7 +132,7 @@
             // pnl_ContDoc
             // 
             this.pnl_ContDoc.Controls.Add(this.label13);
-            this.pnl_ContDoc.Controls.Add(this.comboBox1);
+            this.pnl_ContDoc.Controls.Add(this.cmbx_sxDoc);
             this.pnl_ContDoc.Controls.Add(this.txtbx_docCdprf);
             this.pnl_ContDoc.Controls.Add(this.txtbx_docEsp);
             this.pnl_ContDoc.Controls.Add(this.dtatim_docAn);
@@ -155,17 +155,17 @@
             this.label13.TabIndex = 27;
             this.label13.Text = "Sexo:";
             // 
-            // comboBox1
+            // cmbx_sxDoc
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbx_sxDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_sxDoc.FormattingEnabled = true;
+            this.cmbx_sxDoc.Items.AddRange(new object[] {
             "M",
             "F"});
-            this.comboBox1.Location = new System.Drawing.Point(343, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(47, 24);
-            this.comboBox1.TabIndex = 26;
+            this.cmbx_sxDoc.Location = new System.Drawing.Point(343, 12);
+            this.cmbx_sxDoc.Name = "cmbx_sxDoc";
+            this.cmbx_sxDoc.Size = new System.Drawing.Size(47, 24);
+            this.cmbx_sxDoc.TabIndex = 26;
             // 
             // txtbx_docCdprf
             // 
@@ -182,6 +182,14 @@
             this.txtbx_docEsp.Name = "txtbx_docEsp";
             this.txtbx_docEsp.Size = new System.Drawing.Size(115, 22);
             this.txtbx_docEsp.TabIndex = 24;
+            // 
+            // dtatim_docAn
+            // 
+            this.dtatim_docAn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtatim_docAn.Location = new System.Drawing.Point(160, 73);
+            this.dtatim_docAn.Name = "dtatim_docAn";
+            this.dtatim_docAn.Size = new System.Drawing.Size(115, 20);
+            this.dtatim_docAn.TabIndex = 22;
             // 
             // label10
             // 
@@ -289,14 +297,6 @@
             this.btn_cnlAcc.Text = "Cancelar";
             this.btn_cnlAcc.UseVisualStyleBackColor = true;
             this.btn_cnlAcc.Click += new System.EventHandler(this.btn_cnlAcc_Click);
-            // 
-            // dtatim_docAn
-            // 
-            this.dtatim_docAn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtatim_docAn.Location = new System.Drawing.Point(160, 73);
-            this.dtatim_docAn.Name = "dtatim_docAn";
-            this.dtatim_docAn.Size = new System.Drawing.Size(99, 20);
-            this.dtatim_docAn.TabIndex = 22;
             // 
             // icnbtn_figurativa
             // 
@@ -498,7 +498,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel pnl_ContDoc;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbx_sxDoc;
         private System.Windows.Forms.TextBox txtbx_docCdprf;
         private System.Windows.Forms.TextBox txtbx_docEsp;
         private System.Windows.Forms.Label label10;

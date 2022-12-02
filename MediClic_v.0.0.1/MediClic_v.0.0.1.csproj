@@ -7,7 +7,7 @@
     <ProjectGuid>{D8D9B451-951C-487D-B109-98429EB087ED}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>MediClic_v._0._0._1</RootNamespace>
-    <AssemblyName>MediClic_v.0.0.1</AssemblyName>
+    <AssemblyName>MediClic_v._0._0._1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -60,6 +60,10 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MEDICLIC 2.0 %281%29-modified %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
@@ -117,12 +121,6 @@
     </Compile>
     <Compile Include="Frm_Agenda.Designer.cs">
       <DependentUpon>Frm_Agenda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frm_AngendaMsj.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_AngendaMsj.Designer.cs">
-      <DependentUpon>Frm_AngendaMsj.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_DBconf.cs">
       <SubType>Form</SubType>
@@ -293,6 +291,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\RecetaMediClicOffc.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MEDICLIC 2.0 %281%29-modified %281%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

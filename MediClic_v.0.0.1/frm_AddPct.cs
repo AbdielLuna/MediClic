@@ -24,7 +24,15 @@ namespace MediClic_v._0._0._1
         //Botones accion
         private void btn_cancelAcc_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (!string.IsNullOrEmpty(txtbx_nmFull.Text) || !string.IsNullOrEmpty(txtbx_Mts.Text))
+            {
+                var r = MessageBox.Show("Esta seguro de cancelar?\nLos datos no se guardaran", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                if (r == DialogResult.Yes)
+                {
+                    this.Close();
+                }
+            }
+            
         }
 
         private void btn_savePct_Click(object sender, EventArgs e)

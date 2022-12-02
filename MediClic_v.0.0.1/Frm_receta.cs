@@ -37,6 +37,7 @@ namespace MediClic_v._0._0._1
             if (res == DialogResult.Yes) {
                 idFl = Convert.ToInt32(txtbx_idFolio.Text) +1;
                 imprimir();
+                clearall();
             }
         }
         private void dtgrd_listPac_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -157,7 +158,16 @@ namespace MediClic_v._0._0._1
 
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
-            clearall();
+            if (string.IsNullOrEmpty(txtbx_rcNmfull.Text) || string.IsNullOrEmpty(txtbx_rcEdd.Text)){
+                clearall();
+            }
+            else {
+                var r = MessageBox.Show("Tienes datos sin guardar\nDeseas cancelar de cualquier modo?","Advertencia",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Question);
+                if (r == DialogResult.Yes) {
+                    clearall();
+                }
+            }
+            
         }
     }
 }

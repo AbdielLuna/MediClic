@@ -28,7 +28,6 @@ namespace MediClic_v._0._0._1
         //btn EdicionDts
         private void icnbtn_editDG_Click(object sender, EventArgs e)
         {
-            editar(txtbx_idPdg, true);
             editar(txtbx_namePdg, true);
             editar(txtbx_sxPdg, true);
             editar(txtbx_telPdg, true);
@@ -42,7 +41,7 @@ namespace MediClic_v._0._0._1
             editar(txtbx_kgPhm, true);
             editar(txtbx_algPdts, true);
             editar(txtbx_addcPdts, true);
-            editarbtn(icnbtn_editHM, btn_saveHM, false);
+            editarbtn(icnbtn_editHM, btn_saveHM, true);
         }
 
         private void icnbtn_editAnt_Click(object sender, EventArgs e)
@@ -50,7 +49,7 @@ namespace MediClic_v._0._0._1
             editar(txtbx_patPant, true);
             editar(txtbx_notpatPant, true);
             editar(txtbx_enffPant, true);
-            editarbtn(icnbtn_editAnt, btn_saveANT, false);
+            editarbtn(icnbtn_editAnt, btn_saveANT, true);
         }
         //btn saveDTS
         private void btn_saveDg_Click(object sender, EventArgs e)
@@ -60,24 +59,27 @@ namespace MediClic_v._0._0._1
             editar(txtbx_namePdg, false);
             editar(txtbx_sxPdg, false);
             editar(txtbx_telPdg, false);
+            save();
         }
 
         private void btn_saveHM_Click(object sender, EventArgs e)
         {
-            editarbtn(icnbtn_editHM, btn_saveHM, true);
+            editarbtn(icnbtn_editHM, btn_saveHM, false);
             editar(txtbx_tsgPhm, false);
             editar(txtbx_mtsPhm, false);
             editar(txtbx_kgPhm, false);
             editar(txtbx_algPdts, false);
             editar(txtbx_addcPdts, false);
+            save();
         }
 
         private void btn_saveANT_Click(object sender, EventArgs e)
         {
-            editarbtn(icnbtn_editAnt, btn_saveANT, true);
+            editarbtn(icnbtn_editAnt, btn_saveANT, false);
             editar(txtbx_patPant, false);
             editar(txtbx_notpatPant, false);
             editar(txtbx_enffPant, false);
+            save();
         }
 
         //Metodos
@@ -86,19 +88,42 @@ namespace MediClic_v._0._0._1
             if (act == true) { txt.ReadOnly = false;  }
             if (act == false) { txt.ReadOnly = true;  }
         }
-        //acciones btn superiores  
+        //Metodos btn superiores  
         public void editarbtn(IconButton icnbtn, IconButton icnbtnSave, bool actt) {
             if (actt == true) {icnbtn.Enabled = false; icnbtnSave.Visible = true;}
             if (actt == false) { icnbtn.Enabled = true; icnbtnSave.Visible = false; }
         }
 
         public void save() {
-            var res = MessageBox.Show("Seguro que quiere\nactualizar los datos?","Confirmacion",MessageBoxButtons.YesNoCancel);
+            var res = MessageBox.Show("Seguro que quiere actualizar los datos?","Confirmacion",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Question);
             if (res == DialogResult.Yes) { 
-            
+            updateDts();
             }
         }
 
+        public void updateDts() {
+            try {
+                conexionDB.abrir();
+                string query = "update Pacientes set nombre_pac=@nmPac,sexo_pac=@sx,telefono_pac=@tel,tipo_sangre=@tpsg,estatura_pac=@mts,peso_pac=@kg,alergias=@Alg,enfermedades=@enfer,patologicos=@pat,nopatologicos=@noPac,adicciones=@adcc where id_paciente = @idpac";
+                SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
+                comando.Parameters.AddWithValue("@idpac", txtbx_idPdg.Text);
+                comando.Parameters.AddWithValue("@nmPac",txtbx_namePdg.Text);
+                comando.Parameters.AddWithValue("@sx",txtbx_sxPdg.Text);
+                comando.Parameters.AddWithValue("@tel",txtbx_telPdg.Text);
+                comando.Parameters.AddWithValue("@tpsg",txtbx_tsgPhm.Text);
+                comando.Parameters.AddWithValue("@mts",txtbx_mtsPhm.Text);
+                comando.Parameters.AddWithValue("@kg",txtbx_kgPhm.Text);
+                comando.Parameters.AddWithValue("@Alg",txtbx_algPdts.Text);
+                comando.Parameters.AddWithValue("@enfer",txtbx_enffPant.Text);
+                comando.Parameters.AddWithValue("@pat",txtbx_patPant.Text);
+                comando.Parameters.AddWithValue("@noPac",txtbx_notpatPant.Text);
+                comando.Parameters.AddWithValue("@adcc",txtbx_addcPdts.Text);
+                comando.ExecuteNonQuery();
+                conexionDB.cerrar();
+            } catch(Exception e) {
+                Console.WriteLine("------------>>>>"+e);
+            }
+        }
     }
 
 }

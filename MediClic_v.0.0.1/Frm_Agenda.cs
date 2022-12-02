@@ -210,5 +210,6 @@ namespace MediClic_v._0._0._1
                 MessageBox.Show("Ocurrio un error en la conexion \n porfavor vuelvalo a intentar mas tarde", "Lo sentimos!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+    
     }
 }

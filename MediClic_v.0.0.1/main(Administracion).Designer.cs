@@ -151,7 +151,7 @@
             // 
             this.icnbtn_users.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
             this.icnbtn_users.Dock = System.Windows.Forms.DockStyle.Top;
-            this.icnbtn_users.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_users.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_users.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_users.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icnbtn_users.ForeColor = System.Drawing.Color.White;
@@ -172,7 +172,7 @@
             // icnbtn_docList
             // 
             this.icnbtn_docList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_docList.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_docList.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_docList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_docList.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icnbtn_docList.ForeColor = System.Drawing.Color.White;
@@ -193,7 +193,7 @@
             // icnbtn_DBconfig
             // 
             this.icnbtn_DBconfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_DBconfig.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_DBconfig.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_DBconfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_DBconfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icnbtn_DBconfig.ForeColor = System.Drawing.Color.White;
@@ -214,7 +214,7 @@
             // icnbtn_info
             // 
             this.icnbtn_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.icnbtn_info.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.icnbtn_info.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icnbtn_info.ForeColor = System.Drawing.Color.White;
