@@ -46,7 +46,7 @@ namespace MediClic_v._0._0._1
         {
             if (!string.IsNullOrEmpty(txtbx_tagUser.Text))
             {
-              var r =  MessageBox.Show("Seguro que quieres cancelar \n los datos no se guardaran","Confirmacion",MessageBoxButtons.YesNoCancel);
+              var r =  MessageBox.Show("Seguro que quieres cancelar \n los datos no se guardaran","Confirmacion",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Question);
                 if (r == DialogResult.Yes) {
                     this.Close();
                 }
@@ -58,13 +58,19 @@ namespace MediClic_v._0._0._1
         }
         private void btn_addUser_Click(object sender, EventArgs e)
         {
-  
-                var r = MessageBox.Show("Seguro que quieres agregar nuevo usuario?", "Confirmacion", MessageBoxButtons.YesNoCancel,MessageBoxIcon.Question);
+            if (txtbx_confirmPass.Text == txtbx_pass.Text)
+            {
+                var r = MessageBox.Show("Seguro que quieres agregar nuevo usuario?", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                 if (r == DialogResult.Yes)
                 {
-                addUsuarios();
-                this.Close();
+                    addUsuarios();
+                    this.Close();
                 }
+            }
+            else {
+                MessageBox.Show("Faltan datos por llenar","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+            }
+                
             
         }
         //Metodos
@@ -155,5 +161,36 @@ namespace MediClic_v._0._0._1
 
         }
 
+        private void chckbx_most_CheckedChanged(object sender, EventArgs e)
+        {
+            mostrarPass();
+        }
+
+        //Metodos
+        public void mostrarPass()
+        {
+            if (chckbx_most.Checked == true)
+            {
+                txtbx_pass.UseSystemPasswordChar = false;
+                txtbx_confirmPass.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtbx_pass.UseSystemPasswordChar = true;
+                txtbx_confirmPass.UseSystemPasswordChar = true;
+            }
+
+        }
+
+        private void txtbx_confirmPass_TextChanged(object sender, EventArgs e)
+        {
+            if (txtbx_confirmPass.Text != txtbx_pass.Text)
+            {
+                lb_concidencia.Visible = true;
+            }
+            else {
+                lb_concidencia.Visible = false;
+            }
+        }
     }
 }

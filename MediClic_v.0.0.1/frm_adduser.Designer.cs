@@ -31,7 +31,7 @@
             this.btn_addUser = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lb_concidencia = new System.Windows.Forms.Label();
             this.pnl_ContDoc = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.cmbx_sxDoc = new System.Windows.Forms.ComboBox();
@@ -63,6 +63,7 @@
             this.txtbx_nmFullUser = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chckbx_most = new System.Windows.Forms.CheckBox();
             this.panel3.SuspendLayout();
             this.pnl_ContDoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icnbtn_figurativa)).BeginInit();
@@ -100,7 +101,8 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.chckbx_most);
+            this.panel3.Controls.Add(this.lb_concidencia);
             this.panel3.Controls.Add(this.pnl_ContDoc);
             this.panel3.Controls.Add(this.txtbx_crro);
             this.panel3.Controls.Add(this.txtbx_tel);
@@ -118,16 +120,16 @@
             this.panel3.Size = new System.Drawing.Size(724, 226);
             this.panel3.TabIndex = 5;
             // 
-            // label14
+            // lb_concidencia
             // 
-            this.label14.AutoSize = true;
-            this.label14.ForeColor = System.Drawing.Color.DarkRed;
-            this.label14.Location = new System.Drawing.Point(558, 98);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(153, 13);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "Las Contraseñas no coinciden.";
-            this.label14.Visible = false;
+            this.lb_concidencia.AutoSize = true;
+            this.lb_concidencia.ForeColor = System.Drawing.Color.DarkRed;
+            this.lb_concidencia.Location = new System.Drawing.Point(558, 98);
+            this.lb_concidencia.Name = "lb_concidencia";
+            this.lb_concidencia.Size = new System.Drawing.Size(153, 13);
+            this.lb_concidencia.TabIndex = 24;
+            this.lb_concidencia.Text = "Las Contraseñas no coinciden.";
+            this.lb_concidencia.Visible = false;
             // 
             // pnl_ContDoc
             // 
@@ -255,6 +257,8 @@
             this.txtbx_confirmPass.Name = "txtbx_confirmPass";
             this.txtbx_confirmPass.Size = new System.Drawing.Size(132, 22);
             this.txtbx_confirmPass.TabIndex = 17;
+            this.txtbx_confirmPass.UseSystemPasswordChar = true;
+            this.txtbx_confirmPass.TextChanged += new System.EventHandler(this.txtbx_confirmPass_TextChanged);
             // 
             // txtbx_pass
             // 
@@ -263,6 +267,7 @@
             this.txtbx_pass.Name = "txtbx_pass";
             this.txtbx_pass.Size = new System.Drawing.Size(132, 22);
             this.txtbx_pass.TabIndex = 15;
+            this.txtbx_pass.UseSystemPasswordChar = true;
             // 
             // label7
             // 
@@ -462,6 +467,17 @@
             this.panel1.Size = new System.Drawing.Size(724, 209);
             this.panel1.TabIndex = 4;
             // 
+            // chckbx_most
+            // 
+            this.chckbx_most.AutoSize = true;
+            this.chckbx_most.Location = new System.Drawing.Point(561, 126);
+            this.chckbx_most.Name = "chckbx_most";
+            this.chckbx_most.Size = new System.Drawing.Size(117, 17);
+            this.chckbx_most.TabIndex = 25;
+            this.chckbx_most.Text = "Mostrar contraseña";
+            this.chckbx_most.UseVisualStyleBackColor = true;
+            this.chckbx_most.CheckedChanged += new System.EventHandler(this.chckbx_most_CheckedChanged);
+            // 
             // frm_adduser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -507,7 +523,7 @@
         private System.Windows.Forms.TextBox txtbx_tel;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lb_concidencia;
         private System.Windows.Forms.DateTimePicker dtatim_docAn;
         private FontAwesome.Sharp.IconPictureBox icnbtn_figurativa;
         private System.Windows.Forms.TextBox txtbx_idUser;
@@ -523,5 +539,6 @@
         private System.Windows.Forms.TextBox txtbx_nmFullUser;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox chckbx_most;
     }
 }
