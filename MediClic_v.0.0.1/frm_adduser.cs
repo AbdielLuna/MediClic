@@ -44,9 +44,9 @@ namespace MediClic_v._0._0._1
         //Btn Acciones
         private void btn_cnlAcc_Click(object sender, EventArgs e)
         {
-            if (txtbx_idUser.Text != null || txtbx_nmFullUser.Text != null)
+            if (!string.IsNullOrEmpty(txtbx_tagUser.Text))
             {
-              var r =  MessageBox.Show("Seguro que quieres cancelar \n los datos no se guardaran","Confirmacion",MessageBoxButtons.YesNoCancel);
+              var r =  MessageBox.Show("Seguro que quieres cancelar \n los datos no se guardaran","Confirmacion",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Question);
                 if (r == DialogResult.Yes) {
                     this.Close();
                 }
@@ -58,12 +58,19 @@ namespace MediClic_v._0._0._1
         }
         private void btn_addUser_Click(object sender, EventArgs e)
         {
-  
-                var r = MessageBox.Show("Seguro que quieres agregar nuevo usuario?", "Confirmacion", MessageBoxButtons.YesNoCancel);
+            if (txtbx_confirmPass.Text == txtbx_pass.Text)
+            {
+                var r = MessageBox.Show("Seguro que quieres agregar nuevo usuario?", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                 if (r == DialogResult.Yes)
                 {
-                addUsuarios();
+                    addUsuarios();
+                    this.Close();
                 }
+            }
+            else {
+                MessageBox.Show("Faltan datos por llenar","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+            }
+                
             
         }
         //Metodos
@@ -82,7 +89,7 @@ namespace MediClic_v._0._0._1
                 txtbx_idUser.Text = id.ToString();
                 read.Close();
             }
-            if (id == 0)
+            if (id <= 0)
             {
                 if (tp == "doc")
                 {
@@ -101,6 +108,32 @@ namespace MediClic_v._0._0._1
         public void addUsuarios() {
             conexionDB.abrir();
             if (tp == "doc") {
+                string query = "insert into Usuarios (id_usuarios,tipo_usuario,nm_usuario,nmFll_usuario,psswrd,telefono,correo)" +
+                        "values (@id,@tipuser,@nmUser,@nmFll,@pss,@tel,@crro);";
+                SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
+                comando.Parameters.AddWithValue("@id", id.ToString());
+                comando.Parameters.AddWithValue("@tipuser", tp);
+                comando.Parameters.AddWithValue("@nmUser", txtbx_tagUser.Text);
+                comando.Parameters.AddWithValue("@nmFll", txtbx_nmFullUser.Text);
+                comando.Parameters.AddWithValue("@pss", txtbx_confirmPass.Text);
+                comando.Parameters.AddWithValue("@tel", txtbx_tel.Text);
+                comando.Parameters.AddWithValue("@crro", txtbx_crro.Text);
+                comando.ExecuteNonQuery();
+                conexionDB.cerrar();
+                conexionDB.abrir();
+                string querydoc = "insert into Perfiles_Doctores (id_usuarios,nombre_doc,fch_nacimiento,sexo_doc,especialidad_doc,telefono_doc,correo_doc,cedula_doc)" +
+                    "values(@iddoc,@nmDoc,@fchNac,@sxDoc,@especDoc,@telDoc,@corrDoc,@cedlDoc);";
+                SqlCommand comandodoc = new SqlCommand(querydoc, conexionDB.Conectarbd);
+                comandodoc.Parameters.AddWithValue("@iddoc", id.ToString());
+                comandodoc.Parameters.AddWithValue("@nmDoc", txtbx_nmFullUser.Text);
+                string fechanc = dtatim_docAn.Value.ToShortDateString();
+                comandodoc.Parameters.AddWithValue("@fchNac", fechanc);
+                comandodoc.Parameters.AddWithValue("@sxDoc", cmbx_sxDoc.Text);
+                comandodoc.Parameters.AddWithValue("@especDoc", txtbx_docEsp.Text);
+                comandodoc.Parameters.AddWithValue("@telDoc", txtbx_tel.Text);
+                comandodoc.Parameters.AddWithValue("@corrDoc", txtbx_crro.Text);
+                comandodoc.Parameters.AddWithValue("@cedlDoc", txtbx_docCdprf.Text);
+                comandodoc.ExecuteNonQuery();
                 conexionDB.cerrar();
             }
             if (tp == "sec") {
@@ -128,5 +161,36 @@ namespace MediClic_v._0._0._1
 
         }
 
+        private void chckbx_most_CheckedChanged(object sender, EventArgs e)
+        {
+            mostrarPass();
+        }
+
+        //Metodos
+        public void mostrarPass()
+        {
+            if (chckbx_most.Checked == true)
+            {
+                txtbx_pass.UseSystemPasswordChar = false;
+                txtbx_confirmPass.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtbx_pass.UseSystemPasswordChar = true;
+                txtbx_confirmPass.UseSystemPasswordChar = true;
+            }
+
+        }
+
+        private void txtbx_confirmPass_TextChanged(object sender, EventArgs e)
+        {
+            if (txtbx_confirmPass.Text != txtbx_pass.Text)
+            {
+                lb_concidencia.Visible = true;
+            }
+            else {
+                lb_concidencia.Visible = false;
+            }
+        }
     }
 }

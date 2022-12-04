@@ -33,6 +33,7 @@
             this.btn_savePct = new System.Windows.Forms.Button();
             this.btn_cancelAcc = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbx_tpSg = new System.Windows.Forms.ComboBox();
             this.txtbx_Adcc = new System.Windows.Forms.TextBox();
             this.txtbx_Alg = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.cmbx_tpSg = new System.Windows.Forms.ComboBox();
             this.panel11.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -138,6 +138,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(323, 399);
             this.panel2.TabIndex = 1;
+            // 
+            // cmbx_tpSg
+            // 
+            this.cmbx_tpSg.FormattingEnabled = true;
+            this.cmbx_tpSg.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "AB",
+            "O"});
+            this.cmbx_tpSg.Location = new System.Drawing.Point(140, 67);
+            this.cmbx_tpSg.Name = "cmbx_tpSg";
+            this.cmbx_tpSg.Size = new System.Drawing.Size(71, 21);
+            this.cmbx_tpSg.TabIndex = 11;
             // 
             // txtbx_Adcc
             // 
@@ -457,19 +470,6 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Datos Generales";
             // 
-            // cmbx_tpSg
-            // 
-            this.cmbx_tpSg.FormattingEnabled = true;
-            this.cmbx_tpSg.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "AB",
-            "O"});
-            this.cmbx_tpSg.Location = new System.Drawing.Point(140, 67);
-            this.cmbx_tpSg.Name = "cmbx_tpSg";
-            this.cmbx_tpSg.Size = new System.Drawing.Size(71, 21);
-            this.cmbx_tpSg.TabIndex = 11;
-            // 
             // frm_AddPct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,6 +482,7 @@
             this.Name = "frm_AddPct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo Paciente";
+            this.Load += new System.EventHandler(this.frm_AddPct_Load);
             this.panel11.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

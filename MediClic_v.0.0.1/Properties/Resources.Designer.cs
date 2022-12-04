@@ -81,6 +81,37 @@ namespace MediClic_v._0._0._1.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
+        ///&lt;html lang=&quot;es&quot; xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+        ///&lt;head&gt;
+        ///    &lt;style&gt;
+        ///
+        ///        .espacio {
+        ///            height: 30px;
+        ///        }
+        ///
+        ///        p {
+        ///            text-align: left;
+        ///            background-color: white;
+        ///            color: black;
+        ///            font-weight: bold;
+        ///            font-family: &apos;Times New Roman&apos;;
+        ///        }
+        ///
+        ///        .title {
+        ///            text-align: center;
+        ///            background-color: white;
+        ///            color: rgb(7, 25, 104);
+        ///            margin-bottom: 0%;
+        /// [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string RecetaMediClicOffc {
+            get {
+                return ResourceManager.GetString("RecetaMediClicOffc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Tabla_IMC {
