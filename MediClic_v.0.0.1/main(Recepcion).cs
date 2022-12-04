@@ -73,29 +73,29 @@ namespace MediClic_v._0._0._1
         {
             if (act == true)
             {
-                btnactv.IconColor = System.Drawing.Color.FromArgb(33, 171, 138);
-                btnactv.ForeColor = System.Drawing.Color.FromArgb(33, 171, 138);
+                btnactv.IconColor = System.Drawing.Color.FromArgb(0, 167, 238);
+                btnactv.ForeColor = System.Drawing.Color.FromArgb(0, 167, 238);
                 btnactv.BackColor = System.Drawing.Color.White;
                 //others
                 btn2.IconColor = System.Drawing.Color.White;
                 btn2.ForeColor = System.Drawing.Color.White;
-                btn2.BackColor = System.Drawing.Color.FromArgb(33, 171, 138);
+                btn2.BackColor = System.Drawing.Color.FromArgb(0, 167, 238);
                 btn3.IconColor = System.Drawing.Color.White;
                 btn3.ForeColor = System.Drawing.Color.White;
-                btn3.BackColor = System.Drawing.Color.FromArgb(33, 171, 138);
+                btn3.BackColor = System.Drawing.Color.FromArgb(0, 167, 238);
             }
             else
             {
                 btnactv.IconColor = System.Drawing.Color.White;
                 btnactv.ForeColor = System.Drawing.Color.White;
-                btnactv.BackColor = System.Drawing.Color.FromArgb(33, 171, 138);
+                btnactv.BackColor = System.Drawing.Color.FromArgb(0, 167, 238);
                 //others
                 btn2.IconColor = System.Drawing.Color.White;
                 btn2.ForeColor = System.Drawing.Color.White;
-                btn2.BackColor = System.Drawing.Color.FromArgb(33, 171, 138);
+                btn2.BackColor = System.Drawing.Color.FromArgb(0, 167, 238);
                 btn3.IconColor = System.Drawing.Color.White;
                 btn3.ForeColor = System.Drawing.Color.White;
-                btn3.BackColor = System.Drawing.Color.FromArgb(33, 171, 138);
+                btn3.BackColor = System.Drawing.Color.FromArgb(0, 167, 238);
             }
 
         }

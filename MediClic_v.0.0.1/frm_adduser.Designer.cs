@@ -31,6 +31,7 @@
             this.btn_addUser = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.chckbx_most = new System.Windows.Forms.CheckBox();
             this.lb_concidencia = new System.Windows.Forms.Label();
             this.pnl_ContDoc = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
@@ -63,7 +64,6 @@
             this.txtbx_nmFullUser = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.chckbx_most = new System.Windows.Forms.CheckBox();
             this.panel3.SuspendLayout();
             this.pnl_ContDoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icnbtn_figurativa)).BeginInit();
@@ -74,10 +74,10 @@
             // 
             // btn_addUser
             // 
-            this.btn_addUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.btn_addUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
             this.btn_addUser.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_addUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_addUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_addUser.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_addUser.ForeColor = System.Drawing.Color.White;
             this.btn_addUser.Location = new System.Drawing.Point(591, 179);
             this.btn_addUser.Name = "btn_addUser";
@@ -91,7 +91,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 12);
+            this.label3.Location = new System.Drawing.Point(11, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 18);
             this.label3.TabIndex = 10;
@@ -120,13 +120,26 @@
             this.panel3.Size = new System.Drawing.Size(724, 226);
             this.panel3.TabIndex = 5;
             // 
+            // chckbx_most
+            // 
+            this.chckbx_most.AutoSize = true;
+            this.chckbx_most.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbx_most.Location = new System.Drawing.Point(561, 126);
+            this.chckbx_most.Name = "chckbx_most";
+            this.chckbx_most.Size = new System.Drawing.Size(118, 22);
+            this.chckbx_most.TabIndex = 25;
+            this.chckbx_most.Text = "Mostrar contraseña";
+            this.chckbx_most.UseVisualStyleBackColor = true;
+            this.chckbx_most.CheckedChanged += new System.EventHandler(this.chckbx_most_CheckedChanged);
+            // 
             // lb_concidencia
             // 
             this.lb_concidencia.AutoSize = true;
+            this.lb_concidencia.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_concidencia.ForeColor = System.Drawing.Color.DarkRed;
-            this.lb_concidencia.Location = new System.Drawing.Point(558, 98);
+            this.lb_concidencia.Location = new System.Drawing.Point(547, 94);
             this.lb_concidencia.Name = "lb_concidencia";
-            this.lb_concidencia.Size = new System.Drawing.Size(153, 13);
+            this.lb_concidencia.Size = new System.Drawing.Size(147, 18);
             this.lb_concidencia.TabIndex = 24;
             this.lb_concidencia.Text = "Las Contraseñas no coinciden.";
             this.lb_concidencia.Visible = false;
@@ -150,54 +163,55 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(295, 12);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 18);
+            this.label13.Size = new System.Drawing.Size(45, 25);
             this.label13.TabIndex = 27;
             this.label13.Text = "Sexo:";
             // 
             // cmbx_sxDoc
             // 
-            this.cmbx_sxDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_sxDoc.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_sxDoc.FormattingEnabled = true;
             this.cmbx_sxDoc.Items.AddRange(new object[] {
             "M",
             "F"});
             this.cmbx_sxDoc.Location = new System.Drawing.Point(343, 12);
             this.cmbx_sxDoc.Name = "cmbx_sxDoc";
-            this.cmbx_sxDoc.Size = new System.Drawing.Size(47, 24);
+            this.cmbx_sxDoc.Size = new System.Drawing.Size(47, 30);
             this.cmbx_sxDoc.TabIndex = 26;
             // 
             // txtbx_docCdprf
             // 
-            this.txtbx_docCdprf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_docCdprf.Location = new System.Drawing.Point(160, 11);
+            this.txtbx_docCdprf.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_docCdprf.Location = new System.Drawing.Point(154, 8);
             this.txtbx_docCdprf.Name = "txtbx_docCdprf";
-            this.txtbx_docCdprf.Size = new System.Drawing.Size(115, 22);
+            this.txtbx_docCdprf.Size = new System.Drawing.Size(95, 33);
             this.txtbx_docCdprf.TabIndex = 25;
             // 
             // txtbx_docEsp
             // 
-            this.txtbx_docEsp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_docEsp.Location = new System.Drawing.Point(160, 39);
+            this.txtbx_docEsp.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_docEsp.Location = new System.Drawing.Point(134, 60);
             this.txtbx_docEsp.Name = "txtbx_docEsp";
-            this.txtbx_docEsp.Size = new System.Drawing.Size(115, 22);
+            this.txtbx_docEsp.Size = new System.Drawing.Size(115, 33);
             this.txtbx_docEsp.TabIndex = 24;
             // 
             // dtatim_docAn
             // 
+            this.dtatim_docAn.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtatim_docAn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtatim_docAn.Location = new System.Drawing.Point(160, 73);
+            this.dtatim_docAn.Location = new System.Drawing.Point(281, 70);
             this.dtatim_docAn.Name = "dtatim_docAn";
-            this.dtatim_docAn.Size = new System.Drawing.Size(115, 20);
+            this.dtatim_docAn.Size = new System.Drawing.Size(115, 26);
             this.dtatim_docAn.TabIndex = 22;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(17, 40);
+            this.label10.Location = new System.Drawing.Point(17, 65);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(95, 18);
             this.label10.TabIndex = 20;
@@ -206,86 +220,86 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(17, 73);
+            this.label11.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(276, 45);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(137, 18);
+            this.label11.Size = new System.Drawing.Size(132, 25);
             this.label11.TabIndex = 21;
             this.label11.Text = "Año de Nacimiento:";
             // 
             // txtbx_crro
             // 
-            this.txtbx_crro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_crro.Location = new System.Drawing.Point(81, 31);
+            this.txtbx_crro.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_crro.Location = new System.Drawing.Point(82, 16);
             this.txtbx_crro.Name = "txtbx_crro";
-            this.txtbx_crro.Size = new System.Drawing.Size(194, 22);
+            this.txtbx_crro.Size = new System.Drawing.Size(194, 35);
             this.txtbx_crro.TabIndex = 16;
             // 
             // txtbx_tel
             // 
-            this.txtbx_tel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_tel.Location = new System.Drawing.Point(82, 76);
+            this.txtbx_tel.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_tel.Location = new System.Drawing.Point(82, 60);
             this.txtbx_tel.MaxLength = 10;
             this.txtbx_tel.Name = "txtbx_tel";
-            this.txtbx_tel.Size = new System.Drawing.Size(193, 22);
+            this.txtbx_tel.Size = new System.Drawing.Size(193, 35);
             this.txtbx_tel.TabIndex = 22;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(17, 77);
+            this.label9.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(38, 60);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 18);
+            this.label9.Size = new System.Drawing.Size(38, 27);
             this.label9.TabIndex = 19;
             this.label9.Text = "Tel.:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(17, 32);
+            this.label8.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(17, 19);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 18);
+            this.label8.Size = new System.Drawing.Size(59, 27);
             this.label8.TabIndex = 18;
             this.label8.Text = "Correo:";
             // 
             // txtbx_confirmPass
             // 
-            this.txtbx_confirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_confirmPass.Location = new System.Drawing.Point(568, 73);
+            this.txtbx_confirmPass.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_confirmPass.Location = new System.Drawing.Point(561, 58);
             this.txtbx_confirmPass.Name = "txtbx_confirmPass";
-            this.txtbx_confirmPass.Size = new System.Drawing.Size(132, 22);
+            this.txtbx_confirmPass.Size = new System.Drawing.Size(132, 33);
             this.txtbx_confirmPass.TabIndex = 17;
             this.txtbx_confirmPass.UseSystemPasswordChar = true;
             this.txtbx_confirmPass.TextChanged += new System.EventHandler(this.txtbx_confirmPass_TextChanged);
             // 
             // txtbx_pass
             // 
-            this.txtbx_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_pass.Location = new System.Drawing.Point(568, 32);
+            this.txtbx_pass.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_pass.Location = new System.Drawing.Point(561, 13);
             this.txtbx_pass.Name = "txtbx_pass";
-            this.txtbx_pass.Size = new System.Drawing.Size(132, 22);
+            this.txtbx_pass.Size = new System.Drawing.Size(132, 33);
             this.txtbx_pass.TabIndex = 15;
             this.txtbx_pass.UseSystemPasswordChar = true;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(403, 77);
+            this.label7.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(387, 63);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(159, 18);
+            this.label7.Size = new System.Drawing.Size(157, 27);
             this.label7.TabIndex = 16;
             this.label7.Text = "Confirmar Contraseña:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(473, 33);
+            this.label6.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(456, 16);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 18);
+            this.label6.Size = new System.Drawing.Size(88, 27);
             this.label6.TabIndex = 15;
             this.label6.Text = "Contraseña:";
             // 
@@ -293,8 +307,8 @@
             // 
             this.btn_cnlAcc.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_cnlAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cnlAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cnlAcc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.btn_cnlAcc.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cnlAcc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
             this.btn_cnlAcc.Location = new System.Drawing.Point(476, 179);
             this.btn_cnlAcc.Name = "btn_cnlAcc";
             this.btn_cnlAcc.Size = new System.Drawing.Size(109, 34);
@@ -306,9 +320,9 @@
             // icnbtn_figurativa
             // 
             this.icnbtn_figurativa.BackColor = System.Drawing.Color.White;
-            this.icnbtn_figurativa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_figurativa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
             this.icnbtn_figurativa.IconChar = FontAwesome.Sharp.IconChar.ShieldHalved;
-            this.icnbtn_figurativa.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_figurativa.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
             this.icnbtn_figurativa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icnbtn_figurativa.IconSize = 82;
             this.icnbtn_figurativa.Location = new System.Drawing.Point(461, 86);
@@ -320,16 +334,16 @@
             // 
             // txtbx_idUser
             // 
-            this.txtbx_idUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_idUser.Location = new System.Drawing.Point(232, 75);
+            this.txtbx_idUser.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_idUser.Location = new System.Drawing.Point(232, 68);
             this.txtbx_idUser.Name = "txtbx_idUser";
             this.txtbx_idUser.ReadOnly = true;
-            this.txtbx_idUser.Size = new System.Drawing.Size(95, 22);
+            this.txtbx_idUser.Size = new System.Drawing.Size(95, 35);
             this.txtbx_idUser.TabIndex = 2;
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(188)))), ((int)(((byte)(247)))));
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
@@ -351,20 +365,21 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(451, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 20);
+            this.label2.Size = new System.Drawing.Size(115, 27);
             this.label2.TabIndex = 6;
             this.label2.Text = "Tipo de usuario:";
             // 
             // rdbtn_rolDoc
             // 
             this.rdbtn_rolDoc.AutoSize = true;
-            this.rdbtn_rolDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtn_rolDoc.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
+            this.rdbtn_rolDoc.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtn_rolDoc.Location = new System.Drawing.Point(580, 86);
             this.rdbtn_rolDoc.Name = "rdbtn_rolDoc";
-            this.rdbtn_rolDoc.Size = new System.Drawing.Size(72, 22);
+            this.rdbtn_rolDoc.Size = new System.Drawing.Size(76, 31);
             this.rdbtn_rolDoc.TabIndex = 7;
             this.rdbtn_rolDoc.TabStop = true;
             this.rdbtn_rolDoc.Text = "Doctor";
@@ -374,10 +389,11 @@
             // rdbtn_rolRec
             // 
             this.rdbtn_rolRec.AutoSize = true;
-            this.rdbtn_rolRec.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtn_rolRec.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
+            this.rdbtn_rolRec.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtn_rolRec.Location = new System.Drawing.Point(580, 127);
             this.rdbtn_rolRec.Name = "rdbtn_rolRec";
-            this.rdbtn_rolRec.Size = new System.Drawing.Size(120, 22);
+            this.rdbtn_rolRec.Size = new System.Drawing.Size(119, 31);
             this.rdbtn_rolRec.TabIndex = 8;
             this.rdbtn_rolRec.TabStop = true;
             this.rdbtn_rolRec.Text = "Recepcionista";
@@ -387,9 +403,9 @@
             // icnbtn_Rol
             // 
             this.icnbtn_Rol.BackColor = System.Drawing.Color.White;
-            this.icnbtn_Rol.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_Rol.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
             this.icnbtn_Rol.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.icnbtn_Rol.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_Rol.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
             this.icnbtn_Rol.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.icnbtn_Rol.IconSize = 121;
             this.icnbtn_Rol.Location = new System.Drawing.Point(20, 60);
@@ -401,47 +417,47 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(168, 118);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 18);
+            this.label4.Size = new System.Drawing.Size(66, 27);
             this.label4.TabIndex = 11;
             this.label4.Text = "Usuario:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(168, 160);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 18);
+            this.label5.Size = new System.Drawing.Size(67, 27);
             this.label5.TabIndex = 12;
             this.label5.Text = "Nombre:";
             // 
             // txtbx_tagUser
             // 
-            this.txtbx_tagUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_tagUser.Location = new System.Drawing.Point(232, 117);
+            this.txtbx_tagUser.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_tagUser.Location = new System.Drawing.Point(232, 115);
             this.txtbx_tagUser.MaxLength = 8;
             this.txtbx_tagUser.Name = "txtbx_tagUser";
-            this.txtbx_tagUser.Size = new System.Drawing.Size(95, 22);
+            this.txtbx_tagUser.Size = new System.Drawing.Size(95, 35);
             this.txtbx_tagUser.TabIndex = 13;
             // 
             // txtbx_nmFullUser
             // 
-            this.txtbx_nmFullUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_nmFullUser.Location = new System.Drawing.Point(232, 159);
+            this.txtbx_nmFullUser.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_nmFullUser.Location = new System.Drawing.Point(232, 157);
             this.txtbx_nmFullUser.Name = "txtbx_nmFullUser";
-            this.txtbx_nmFullUser.Size = new System.Drawing.Size(194, 22);
+            this.txtbx_nmFullUser.Size = new System.Drawing.Size(194, 35);
             this.txtbx_nmFullUser.TabIndex = 14;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(168, 76);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(26, 18);
+            this.label12.Size = new System.Drawing.Size(30, 27);
             this.label12.TabIndex = 15;
             this.label12.Text = "ID:";
             // 
@@ -466,17 +482,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(724, 209);
             this.panel1.TabIndex = 4;
-            // 
-            // chckbx_most
-            // 
-            this.chckbx_most.AutoSize = true;
-            this.chckbx_most.Location = new System.Drawing.Point(561, 126);
-            this.chckbx_most.Name = "chckbx_most";
-            this.chckbx_most.Size = new System.Drawing.Size(117, 17);
-            this.chckbx_most.TabIndex = 25;
-            this.chckbx_most.Text = "Mostrar contraseña";
-            this.chckbx_most.UseVisualStyleBackColor = true;
-            this.chckbx_most.CheckedChanged += new System.EventHandler(this.chckbx_most_CheckedChanged);
             // 
             // frm_adduser
             // 

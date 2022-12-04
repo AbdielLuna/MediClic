@@ -65,7 +65,7 @@
             this.btn_startSession.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
             this.btn_startSession.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_startSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_startSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_startSession.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_startSession.ForeColor = System.Drawing.Color.White;
             this.btn_startSession.Location = new System.Drawing.Point(107, 446);
             this.btn_startSession.Name = "btn_startSession";
@@ -80,10 +80,11 @@
             this.chckbx_showpass.AutoSize = true;
             this.chckbx_showpass.BackColor = System.Drawing.Color.Transparent;
             this.chckbx_showpass.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.chckbx_showpass.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chckbx_showpass.ForeColor = System.Drawing.Color.Black;
-            this.chckbx_showpass.Location = new System.Drawing.Point(83, 391);
+            this.chckbx_showpass.Location = new System.Drawing.Point(83, 381);
             this.chckbx_showpass.Name = "chckbx_showpass";
-            this.chckbx_showpass.Size = new System.Drawing.Size(118, 17);
+            this.chckbx_showpass.Size = new System.Drawing.Size(119, 22);
             this.chckbx_showpass.TabIndex = 4;
             this.chckbx_showpass.Text = "Mostrar Contraseña";
             this.chckbx_showpass.UseVisualStyleBackColor = false;
@@ -92,22 +93,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(79, 260);
+            this.label1.Location = new System.Drawing.Point(77, 248);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 20);
+            this.label1.Size = new System.Drawing.Size(79, 32);
             this.label1.TabIndex = 5;
             this.label1.Text = "Usuario:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(79, 326);
+            this.label2.Location = new System.Drawing.Point(77, 314);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 20);
+            this.label2.Size = new System.Drawing.Size(108, 32);
             this.label2.TabIndex = 6;
             this.label2.Text = "Contraseña:";
             // 
@@ -126,7 +127,7 @@
             this.btn_exit.BackColor = System.Drawing.Color.White;
             this.btn_exit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exit.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
             this.btn_exit.Location = new System.Drawing.Point(107, 498);
             this.btn_exit.Name = "btn_exit";
@@ -139,11 +140,12 @@
             // lb_errorAut
             // 
             this.lb_errorAut.AutoSize = true;
-            this.lb_errorAut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_errorAut.BackColor = System.Drawing.Color.Transparent;
+            this.lb_errorAut.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_errorAut.ForeColor = System.Drawing.Color.DarkRed;
-            this.lb_errorAut.Location = new System.Drawing.Point(67, 411);
+            this.lb_errorAut.Location = new System.Drawing.Point(90, 406);
             this.lb_errorAut.Name = "lb_errorAut";
-            this.lb_errorAut.Size = new System.Drawing.Size(247, 32);
+            this.lb_errorAut.Size = new System.Drawing.Size(201, 44);
             this.lb_errorAut.TabIndex = 8;
             this.lb_errorAut.Text = "Usuario o Contraseña incorrectos, \r\nporfavor ingrese un usuario valido.";
             this.lb_errorAut.Visible = false;

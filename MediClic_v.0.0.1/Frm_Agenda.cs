@@ -84,9 +84,13 @@ namespace MediClic_v._0._0._1
 
         private void dtgrd_listCitas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Cdlselection = dtgrd_listCitas.Rows[e.RowIndex].Cells[0].Value.ToString();
-            pnl_campModif.Visible = true;
-            SeleccionDtsdoc();
+            try {
+                Cdlselection = dtgrd_listCitas.Rows[e.RowIndex].Cells[0].Value.ToString();
+                pnl_campModif.Visible = true;
+                SeleccionDtsdoc();
+            }
+            catch { }
+            
         }
         //Metodos
         public void cargarListcitas()

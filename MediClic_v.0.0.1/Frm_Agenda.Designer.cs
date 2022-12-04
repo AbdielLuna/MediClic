@@ -28,15 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pnl_campModif = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.cmbx_modfEstado = new System.Windows.Forms.ComboBox();
+            this.cmbx_modfAMPM = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.cmbx_modfMin = new System.Windows.Forms.ComboBox();
+            this.cmbx_modfHrs = new System.Windows.Forms.ComboBox();
             this.btn_modfCita = new System.Windows.Forms.Button();
             this.btn_cancelAccion = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -53,17 +57,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dtpic_fch = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.cmbx_hrsAMPM = new System.Windows.Forms.ComboBox();
             this.cmbx_mins = new System.Windows.Forms.ComboBox();
             this.cmbx_hrs = new System.Windows.Forms.ComboBox();
             this.txtbx_nmPacFull = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cmbx_modfAMPM = new System.Windows.Forms.ComboBox();
-            this.cmbx_modfMin = new System.Windows.Forms.ComboBox();
-            this.cmbx_modfHrs = new System.Windows.Forms.ComboBox();
             this.panel5.SuspendLayout();
             this.pnl_campModif.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -126,6 +126,16 @@
             this.pnl_campModif.TabIndex = 1;
             this.pnl_campModif.Visible = false;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(147, 87);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(11, 16);
+            this.label9.TabIndex = 20;
+            this.label9.Text = ":";
+            // 
             // cmbx_modfEstado
             // 
             this.cmbx_modfEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,6 +148,19 @@
             this.cmbx_modfEstado.Size = new System.Drawing.Size(120, 24);
             this.cmbx_modfEstado.TabIndex = 31;
             // 
+            // cmbx_modfAMPM
+            // 
+            this.cmbx_modfAMPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_modfAMPM.FormattingEnabled = true;
+            this.cmbx_modfAMPM.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.cmbx_modfAMPM.Location = new System.Drawing.Point(214, 84);
+            this.cmbx_modfAMPM.Name = "cmbx_modfAMPM";
+            this.cmbx_modfAMPM.Size = new System.Drawing.Size(48, 24);
+            this.cmbx_modfAMPM.TabIndex = 19;
+            this.cmbx_modfAMPM.Text = "AM";
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -147,6 +170,53 @@
             this.label12.Size = new System.Drawing.Size(59, 18);
             this.label12.TabIndex = 22;
             this.label12.Text = "Estado:";
+            // 
+            // cmbx_modfMin
+            // 
+            this.cmbx_modfMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_modfMin.FormattingEnabled = true;
+            this.cmbx_modfMin.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "25",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55",
+            "60"});
+            this.cmbx_modfMin.Location = new System.Drawing.Point(163, 84);
+            this.cmbx_modfMin.Name = "cmbx_modfMin";
+            this.cmbx_modfMin.Size = new System.Drawing.Size(45, 24);
+            this.cmbx_modfMin.TabIndex = 18;
+            this.cmbx_modfMin.Text = "00";
+            // 
+            // cmbx_modfHrs
+            // 
+            this.cmbx_modfHrs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_modfHrs.FormattingEnabled = true;
+            this.cmbx_modfHrs.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12"});
+            this.cmbx_modfHrs.Location = new System.Drawing.Point(99, 84);
+            this.cmbx_modfHrs.Name = "cmbx_modfHrs";
+            this.cmbx_modfHrs.Size = new System.Drawing.Size(45, 24);
+            this.cmbx_modfHrs.TabIndex = 17;
+            this.cmbx_modfHrs.Text = "00";
             // 
             // btn_modfCita
             // 
@@ -221,7 +291,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label7);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -249,36 +319,36 @@
             this.dtgrd_listCitas.AllowUserToOrderColumns = true;
             this.dtgrd_listCitas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgrd_listCitas.BackgroundColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgrd_listCitas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgrd_listCitas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgrd_listCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgrd_listCitas.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgrd_listCitas.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgrd_listCitas.EnableHeadersVisualStyles = false;
             this.dtgrd_listCitas.Location = new System.Drawing.Point(4, 54);
             this.dtgrd_listCitas.MultiSelect = false;
             this.dtgrd_listCitas.Name = "dtgrd_listCitas";
             this.dtgrd_listCitas.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgrd_listCitas.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgrd_listCitas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgrd_listCitas.RowHeadersVisible = false;
             this.dtgrd_listCitas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgrd_listCitas.Size = new System.Drawing.Size(556, 270);
@@ -288,7 +358,7 @@
             // 
             // btn_saveCita
             // 
-            this.btn_saveCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.btn_saveCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(167)))), ((int)(((byte)(238)))));
             this.btn_saveCita.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_saveCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_saveCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -316,7 +386,7 @@
             this.btn_cancelCita.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_cancelCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cancelCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelCita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.btn_cancelCita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(167)))), ((int)(((byte)(238)))));
             this.btn_cancelCita.Location = new System.Drawing.Point(22, 412);
             this.btn_cancelCita.Name = "btn_cancelCita";
             this.btn_cancelCita.Size = new System.Drawing.Size(108, 37);
@@ -378,6 +448,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(322, 463);
             this.panel1.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(157, 224);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(11, 16);
+            this.label8.TabIndex = 16;
+            this.label8.Text = ":";
             // 
             // cmbx_hrsAMPM
             // 
@@ -449,7 +529,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(138)))), ((int)(((byte)(197)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -469,86 +549,6 @@
             this.label1.Size = new System.Drawing.Size(149, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Agendar Cita";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(157, 224);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(11, 16);
-            this.label8.TabIndex = 16;
-            this.label8.Text = ":";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(147, 87);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(11, 16);
-            this.label9.TabIndex = 20;
-            this.label9.Text = ":";
-            // 
-            // cmbx_modfAMPM
-            // 
-            this.cmbx_modfAMPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbx_modfAMPM.FormattingEnabled = true;
-            this.cmbx_modfAMPM.Items.AddRange(new object[] {
-            "AM",
-            "PM"});
-            this.cmbx_modfAMPM.Location = new System.Drawing.Point(214, 84);
-            this.cmbx_modfAMPM.Name = "cmbx_modfAMPM";
-            this.cmbx_modfAMPM.Size = new System.Drawing.Size(48, 24);
-            this.cmbx_modfAMPM.TabIndex = 19;
-            this.cmbx_modfAMPM.Text = "AM";
-            // 
-            // cmbx_modfMin
-            // 
-            this.cmbx_modfMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbx_modfMin.FormattingEnabled = true;
-            this.cmbx_modfMin.Items.AddRange(new object[] {
-            "00",
-            "05",
-            "10",
-            "25",
-            "20",
-            "25",
-            "30",
-            "35",
-            "40",
-            "45",
-            "50",
-            "55",
-            "60"});
-            this.cmbx_modfMin.Location = new System.Drawing.Point(163, 84);
-            this.cmbx_modfMin.Name = "cmbx_modfMin";
-            this.cmbx_modfMin.Size = new System.Drawing.Size(45, 24);
-            this.cmbx_modfMin.TabIndex = 18;
-            this.cmbx_modfMin.Text = "00";
-            // 
-            // cmbx_modfHrs
-            // 
-            this.cmbx_modfHrs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbx_modfHrs.FormattingEnabled = true;
-            this.cmbx_modfHrs.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12"});
-            this.cmbx_modfHrs.Location = new System.Drawing.Point(99, 84);
-            this.cmbx_modfHrs.Name = "cmbx_modfHrs";
-            this.cmbx_modfHrs.Size = new System.Drawing.Size(45, 24);
-            this.cmbx_modfHrs.TabIndex = 17;
-            this.cmbx_modfHrs.Text = "00";
             // 
             // Frm_Agenda
             // 

@@ -73,11 +73,12 @@
             // 
             this.linkInfo2.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(157)))), ((int)(((byte)(127)))));
             this.linkInfo2.AutoSize = true;
-            this.linkInfo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkInfo2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkInfo2.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkInfo2.LinkColor = System.Drawing.Color.MidnightBlue;
-            this.linkInfo2.Location = new System.Drawing.Point(131, 315);
+            this.linkInfo2.Location = new System.Drawing.Point(131, 310);
             this.linkInfo2.Name = "linkInfo2";
-            this.linkInfo2.Size = new System.Drawing.Size(173, 20);
+            this.linkInfo2.Size = new System.Drawing.Size(181, 36);
             this.linkInfo2.TabIndex = 12;
             this.linkInfo2.TabStop = true;
             this.linkInfo2.Text = "Acerca de MediClic";
@@ -87,11 +88,12 @@
             // 
             this.linkInfo1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(157)))), ((int)(((byte)(127)))));
             this.linkInfo1.AutoSize = true;
-            this.linkInfo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkInfo1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkInfo1.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkInfo1.LinkColor = System.Drawing.Color.MidnightBlue;
-            this.linkInfo1.Location = new System.Drawing.Point(131, 83);
+            this.linkInfo1.Location = new System.Drawing.Point(130, 68);
             this.linkInfo1.Name = "linkInfo1";
-            this.linkInfo1.Size = new System.Drawing.Size(189, 20);
+            this.linkInfo1.Size = new System.Drawing.Size(203, 36);
             this.linkInfo1.TabIndex = 11;
             this.linkInfo1.TabStop = true;
             this.linkInfo1.Text = "Preguntas frecuentes";
@@ -102,7 +104,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label7.Location = new System.Drawing.Point(288, 201);
+            this.label7.Location = new System.Drawing.Point(289, 212);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(136, 60);
             this.label7.TabIndex = 10;
@@ -127,7 +129,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(130, 201);
+            this.label4.Location = new System.Drawing.Point(131, 212);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 60);
             this.label4.TabIndex = 7;
@@ -136,11 +138,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label5.Location = new System.Drawing.Point(130, 176);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 20);
+            this.label5.Size = new System.Drawing.Size(95, 36);
             this.label5.TabIndex = 6;
             this.label5.Text = "Contacto";
             // 
@@ -149,7 +151,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(132, 106);
+            this.label3.Location = new System.Drawing.Point(134, 104);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(419, 36);
             this.label3.TabIndex = 5;
@@ -199,11 +201,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(63, 12);
+            this.label1.Location = new System.Drawing.Point(63, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 29);
+            this.label1.Size = new System.Drawing.Size(141, 40);
             this.label1.TabIndex = 1;
             this.label1.Text = "Informacion";
             // 
