@@ -12,8 +12,10 @@ using System.Windows.Media.Media3D;
 
 namespace MediClic_v._0._0._1
 {
+    
     public partial class login : Form
     {
+        string id,tp;
         //Inicializacion
         main_Doctor_ startsesionDOC = new main_Doctor_();
         main_Recepcion_ startsesionRec = new main_Recepcion_();
@@ -73,21 +75,28 @@ namespace MediClic_v._0._0._1
 
                 if (reader.Read()) {
                     
-                    string id = reader["id_usuarios"].ToString();
+                    id = reader["id_usuarios"].ToString();
+                    tp = reader["tipo_usuario"].ToString();
                     string iduser = (txtbx_user.Text + "#"+ id );
                     if (reader["tipo_usuario"].ToString() == "doc") {
                         startsesionDOC.lb_nmUser.Text = iduser;
+                        conexionDB.cerrar();
+                        Bitacora();
                         startsesionDOC.Show();
                         this.Close();
                     }
                     if (reader["tipo_usuario"].ToString() == "sec") {
                         startsesionRec.lb_nmUser.Text = iduser;
+                        conexionDB.cerrar();
+                        Bitacora();
                         startsesionRec.Show();
                         this.Close();
                     }
                     if (reader["tipo_usuario"].ToString() == "adm")
                     {
                         startsesionAdm.lb_nmUser.Text = iduser;
+                        conexionDB.cerrar();
+                        Bitacora();
                         startsesionAdm.Show();
                         this.Close();
                     }
@@ -97,7 +106,7 @@ namespace MediClic_v._0._0._1
                     lb_errorAut.Visible = true;
                     conexionDB.cerrar();
                 }
-
+                conexionDB.cerrar();
             }
             catch {
                 MessageBox.Show("Losiento! \n Ocurrio un error, porfavor intentelo mas tarde.","Advertencia",MessageBoxButtons.OK);
@@ -118,6 +127,23 @@ namespace MediClic_v._0._0._1
             if ((int)e.KeyChar == (int)Keys.Enter)
             {
                 autentificacion();
+            }
+        }
+
+        public void Bitacora() {
+            try {
+                conexionDB.abrir();
+                string query = "insert into Bitacora (id_usuario_Copia,userCopia,tipo_userCopia,Entrada) " +
+                    "values(@iduser,@nmuser,@tpuser,@entrada)";
+                SqlCommand comando = new SqlCommand(query,conexionDB.Conectarbd);
+                comando.Parameters.AddWithValue("@iduser",id);
+                comando.Parameters.AddWithValue("@nmuser",txtbx_user.Text);
+                comando.Parameters.AddWithValue("@tpuser",tp);
+                comando.Parameters.AddWithValue("@entrada",DateTime.Now.ToString());
+                comando.ExecuteNonQuery();
+                conexionDB.cerrar();
+            } catch(Exception e) {
+                MessageBox.Show(">>"+e,"ESTE ES");
             }
         }
     }

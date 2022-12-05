@@ -114,6 +114,7 @@ namespace MediClic_v._0._0._1
                 txtbx_tagUser.ReadOnly = false;
                 txtbx_nmFull.ReadOnly = false;
                 txtbx_correo.ReadOnly = false;
+                txtbx_modfPass.ReadOnly = false;
                 txtbx_Tel.ReadOnly = false;
                 btn_deleteUser.Enabled = true;
                 btn_modfUser.Enabled = true;
@@ -140,6 +141,7 @@ namespace MediClic_v._0._0._1
                     txtbx_nmFull.Text = read["nmFll_usuario"].ToString();
                     txtbx_Tel.Text = read["telefono"].ToString();
                     txtbx_correo.Text = read["correo"].ToString();
+                    txtbx_modfPass.Text = read["psswrd"].ToString();
 
                 }
             }
@@ -154,13 +156,14 @@ namespace MediClic_v._0._0._1
             try
             {
                 conexionDB.abrir();
-                string query = "update Usuarios set nm_usuario = @nmuser,nmFll_usuario=@nmFull,telefono=@tel,correo=@crro where id_usuarios=@idUser";
+                string query = "update Usuarios set nm_usuario = @nmuser,nmFll_usuario=@nmFull,telefono=@tel,correo=@crro,psswrd=@pss where id_usuarios=@idUser";
                 SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
                 comando.Parameters.AddWithValue("@idUser", Cdlselection);
                 comando.Parameters.AddWithValue("@nmuser",txtbx_tagUser.Text);
                 comando.Parameters.AddWithValue("@nmFull",txtbx_nmFull.Text);
                 comando.Parameters.AddWithValue("@tel",txtbx_Tel.Text);
                 comando.Parameters.AddWithValue("@crro",txtbx_correo.Text);
+                comando.Parameters.AddWithValue("@pss", txtbx_modfPass.Text);
                 comando.ExecuteNonQuery();
                 conexionDB.cerrar();
                 conexionDB.abrir();
@@ -196,6 +199,13 @@ namespace MediClic_v._0._0._1
             txtbx_nmFull.Text = "";
             txtbx_Tel.Text = "";
             txtbx_correo.Text = "";
+            txtbx_modfPass.Text = "";
+            txtbx_tpUser.ReadOnly = true;
+            txtbx_tagUser.ReadOnly = true;
+            txtbx_nmFull.ReadOnly = true;
+            txtbx_Tel.ReadOnly = true;
+            txtbx_correo.ReadOnly = true;
+            txtbx_modfPass.ReadOnly = true;
             btn_deleteUser.Enabled = false;
             btn_modfUser.Enabled = false;
             btn_deleteUser.Visible = false;

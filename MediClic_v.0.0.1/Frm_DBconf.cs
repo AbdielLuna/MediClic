@@ -19,7 +19,10 @@ namespace MediClic_v._0._0._1
         {
             InitializeComponent();
         }
-
+        private void Frm_DBconf_Load(object sender, EventArgs e)
+        {
+            CargarDts();
+        }
         //Btn Acciones 
         private void btn_Export_Click(object sender, EventArgs e)
         {
@@ -28,7 +31,7 @@ namespace MediClic_v._0._0._1
                 try {
                     int i=0;
                     conexionDB.abrir();
-                    string Query = "BACKUP DATABASE [MediClic] TO  DISK = N'"+txtbx_ubiexprt.Text+"\\MediClic.bak' WITH NOFORMAT, NOINIT,  NAME = N'MediClic-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, STATS = 10";
+                    string Query = "BACKUP DATABASE [MediClic] TO  DISK = N'" + txtbx_ubiexprt.Text+ "\\MediClic.bak' WITH NOFORMAT, NOINIT,  NAME = N'MediClic-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, STATS = 10";
                     SqlCommand comando = new SqlCommand(Query,conexionDB.Conectarbd);
                     comando.ExecuteNonQuery();
                     conexionDB.cerrar();
@@ -38,7 +41,7 @@ namespace MediClic_v._0._0._1
                         lb_nota.Visible = true;
                     }
                     lb_nota.Visible = false;
-                } catch(Exception ex){                    MessageBox.Show("Hubo un error con la ruta de direccion\nintente con una nueva"+ex,"Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                } catch{MessageBox.Show("Hubo un error con la ruta de direccion\nintente con una nueva","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
                 }
             }
             
@@ -68,23 +71,26 @@ namespace MediClic_v._0._0._1
             
 
         }
-
-        private void icnbtn_Srchimp_Click(object sender, EventArgs e)
+        //Metodos
+        public void CargarDts()
         {
-            try
-            {
-                using (var fbd = new FolderBrowserDialog())
-                {
-                    DialogResult result = fbd.ShowDialog();
-
-                    if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
-                    {
-                        string path = fbd.SelectedPath;
-                        txtbx_ubiexprt.Text = path;
-                    }
-                }
+            try {
+                conexionDB.abrir();
+                string query = "select * from Bitacora";
+                SqlDataAdapter apt = new SqlDataAdapter(query, conexionDB.Conectarbd);
+                DataTable dt = new DataTable();
+                apt.Fill(dt);
+                dtgrd_Bitacora.DataSource = dt;
+                conexionDB.cerrar();
+                dtgrd_Bitacora.Columns[0].HeaderText = "ID";
+                dtgrd_Bitacora.Columns[1].HeaderText = "Nombre";
+                dtgrd_Bitacora.Columns[2].HeaderText = "Rol";
+                dtgrd_Bitacora.Columns[3].HeaderText = "Fecha E/S";
             }
             catch { }
         }
+
+
+        
     }
 }
