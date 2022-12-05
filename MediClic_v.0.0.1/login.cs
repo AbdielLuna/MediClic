@@ -27,7 +27,6 @@ namespace MediClic_v._0._0._1
         {
             InitializeComponent();
             this.MaximizeBox = false;
-            conexionDB.abrir();
             mostrarPass();
         }
 
@@ -109,7 +108,7 @@ namespace MediClic_v._0._0._1
                 conexionDB.cerrar();
             }
             catch {
-                MessageBox.Show("Losiento! \n Ocurrio un error, porfavor intentelo mas tarde.","Advertencia",MessageBoxButtons.OK);
+                Console.WriteLine("Error en el login Mijin");
             }
 
         }
