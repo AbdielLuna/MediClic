@@ -76,20 +76,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(19, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 18);
+            this.label2.Size = new System.Drawing.Size(70, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cita para:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(23, 167);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 18);
+            this.label4.Size = new System.Drawing.Size(51, 25);
             this.label4.TabIndex = 5;
             this.label4.Text = "Fecha:";
             // 
@@ -138,6 +138,7 @@
             // 
             // cmbx_modfEstado
             // 
+            this.cmbx_modfEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_modfEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_modfEstado.FormattingEnabled = true;
             this.cmbx_modfEstado.Items.AddRange(new object[] {
@@ -150,6 +151,7 @@
             // 
             // cmbx_modfAMPM
             // 
+            this.cmbx_modfAMPM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_modfAMPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_modfAMPM.FormattingEnabled = true;
             this.cmbx_modfAMPM.Items.AddRange(new object[] {
@@ -159,20 +161,20 @@
             this.cmbx_modfAMPM.Name = "cmbx_modfAMPM";
             this.cmbx_modfAMPM.Size = new System.Drawing.Size(48, 24);
             this.cmbx_modfAMPM.TabIndex = 19;
-            this.cmbx_modfAMPM.Text = "AM";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(26, 24);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(59, 18);
+            this.label12.Size = new System.Drawing.Size(57, 25);
             this.label12.TabIndex = 22;
             this.label12.Text = "Estado:";
             // 
             // cmbx_modfMin
             // 
+            this.cmbx_modfMin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_modfMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_modfMin.FormattingEnabled = true;
             this.cmbx_modfMin.Items.AddRange(new object[] {
@@ -193,10 +195,10 @@
             this.cmbx_modfMin.Name = "cmbx_modfMin";
             this.cmbx_modfMin.Size = new System.Drawing.Size(45, 24);
             this.cmbx_modfMin.TabIndex = 18;
-            this.cmbx_modfMin.Text = "00";
             // 
             // cmbx_modfHrs
             // 
+            this.cmbx_modfHrs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_modfHrs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_modfHrs.FormattingEnabled = true;
             this.cmbx_modfHrs.Items.AddRange(new object[] {
@@ -216,11 +218,11 @@
             this.cmbx_modfHrs.Name = "cmbx_modfHrs";
             this.cmbx_modfHrs.Size = new System.Drawing.Size(45, 24);
             this.cmbx_modfHrs.TabIndex = 17;
-            this.cmbx_modfHrs.Text = "00";
             // 
             // btn_modfCita
             // 
             this.btn_modfCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.btn_modfCita.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_modfCita.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_modfCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_modfCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -236,6 +238,7 @@
             // btn_cancelAccion
             // 
             this.btn_cancelAccion.BackColor = System.Drawing.Color.White;
+            this.btn_cancelAccion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cancelAccion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_cancelAccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cancelAccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -251,10 +254,10 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(26, 90);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(45, 18);
+            this.label10.Size = new System.Drawing.Size(46, 25);
             this.label10.TabIndex = 27;
             this.label10.Text = "Hora:";
             // 
@@ -271,10 +274,10 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(26, 54);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 18);
+            this.label11.Size = new System.Drawing.Size(51, 25);
             this.label11.TabIndex = 24;
             this.label11.Text = "Fecha:";
             // 
@@ -304,11 +307,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Dubai", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(249, 8);
+            this.label7.Location = new System.Drawing.Point(244, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 25);
+            this.label7.Size = new System.Drawing.Size(78, 45);
             this.label7.TabIndex = 1;
             this.label7.Text = "Citas";
             // 
@@ -359,6 +362,7 @@
             // btn_saveCita
             // 
             this.btn_saveCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(167)))), ((int)(((byte)(238)))));
+            this.btn_saveCita.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_saveCita.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_saveCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_saveCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -383,6 +387,7 @@
             // btn_cancelCita
             // 
             this.btn_cancelCita.BackColor = System.Drawing.Color.White;
+            this.btn_cancelCita.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cancelCita.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_cancelCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cancelCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -398,20 +403,20 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(19, 272);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 18);
+            this.label6.Size = new System.Drawing.Size(58, 25);
             this.label6.TabIndex = 11;
             this.label6.Text = "Motivo:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(21, 221);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 18);
+            this.label5.Size = new System.Drawing.Size(46, 25);
             this.label5.TabIndex = 8;
             this.label5.Text = "Hora:";
             // 
@@ -461,6 +466,7 @@
             // 
             // cmbx_hrsAMPM
             // 
+            this.cmbx_hrsAMPM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_hrsAMPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_hrsAMPM.FormattingEnabled = true;
             this.cmbx_hrsAMPM.Items.AddRange(new object[] {
@@ -470,10 +476,10 @@
             this.cmbx_hrsAMPM.Name = "cmbx_hrsAMPM";
             this.cmbx_hrsAMPM.Size = new System.Drawing.Size(48, 24);
             this.cmbx_hrsAMPM.TabIndex = 14;
-            this.cmbx_hrsAMPM.Text = "AM";
             // 
             // cmbx_mins
             // 
+            this.cmbx_mins.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_mins.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_mins.FormattingEnabled = true;
             this.cmbx_mins.Items.AddRange(new object[] {
@@ -494,10 +500,10 @@
             this.cmbx_mins.Name = "cmbx_mins";
             this.cmbx_mins.Size = new System.Drawing.Size(45, 24);
             this.cmbx_mins.TabIndex = 13;
-            this.cmbx_mins.Text = "00";
             // 
             // cmbx_hrs
             // 
+            this.cmbx_hrs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_hrs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_hrs.FormattingEnabled = true;
             this.cmbx_hrs.Items.AddRange(new object[] {
@@ -517,14 +523,13 @@
             this.cmbx_hrs.Name = "cmbx_hrs";
             this.cmbx_hrs.Size = new System.Drawing.Size(45, 24);
             this.cmbx_hrs.TabIndex = 12;
-            this.cmbx_hrs.Text = "00";
             // 
             // txtbx_nmPacFull
             // 
-            this.txtbx_nmPacFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_nmPacFull.Location = new System.Drawing.Point(22, 107);
+            this.txtbx_nmPacFull.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_nmPacFull.Location = new System.Drawing.Point(22, 103);
             this.txtbx_nmPacFull.Name = "txtbx_nmPacFull";
-            this.txtbx_nmPacFull.Size = new System.Drawing.Size(250, 22);
+            this.txtbx_nmPacFull.Size = new System.Drawing.Size(276, 33);
             this.txtbx_nmPacFull.TabIndex = 2;
             // 
             // panel2
@@ -542,11 +547,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Dubai", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(18, 9);
+            this.label1.Location = new System.Drawing.Point(17, -1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 25);
+            this.label1.Size = new System.Drawing.Size(170, 45);
             this.label1.TabIndex = 1;
             this.label1.Text = "Agendar Cita";
             // 

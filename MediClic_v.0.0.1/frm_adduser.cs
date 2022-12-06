@@ -64,6 +64,7 @@ namespace MediClic_v._0._0._1
                 if (r == DialogResult.Yes)
                 {
                     addUsuarios();
+                    MessageBox.Show("Se agrego correctamente.","Exito!",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     this.Close();
                 }
             }

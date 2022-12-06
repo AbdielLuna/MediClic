@@ -135,11 +135,11 @@ namespace MediClic_v._0._0._1
                 comando.Parameters.AddWithValue("@estd", estado);
                 comando.ExecuteNonQuery();
                 conexionDB.cerrar();
-                MessageBox.Show("Se Agrego la cita Correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);         
+                MessageBox.Show("Se agrego correctamente.", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);         
             }
             catch(Exception e)
             {
-                MessageBox.Show("Ocurrio un error en la conexion \n porfavor vuelvalo a intentar mas tarde"+e.Message, "Lo sentimos!", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Ocurrio un error en la conexion\nporfavor vuelvalo a intentar mas tarde"+e.Message, "Lo sentimos!", MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
         }
         public void asignacionID()

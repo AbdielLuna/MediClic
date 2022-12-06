@@ -75,6 +75,7 @@
             // btn_addUser
             // 
             this.btn_addUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
+            this.btn_addUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_addUser.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_addUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_addUser.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -172,6 +173,7 @@
             // 
             // cmbx_sxDoc
             // 
+            this.cmbx_sxDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_sxDoc.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_sxDoc.FormattingEnabled = true;
             this.cmbx_sxDoc.Items.AddRange(new object[] {
@@ -305,6 +307,7 @@
             // 
             // btn_cnlAcc
             // 
+            this.btn_cnlAcc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cnlAcc.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_cnlAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cnlAcc.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -344,6 +347,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(188)))), ((int)(((byte)(247)))));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
@@ -375,6 +379,7 @@
             // rdbtn_rolDoc
             // 
             this.rdbtn_rolDoc.AutoSize = true;
+            this.rdbtn_rolDoc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rdbtn_rolDoc.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
             this.rdbtn_rolDoc.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtn_rolDoc.Location = new System.Drawing.Point(580, 86);
@@ -389,6 +394,7 @@
             // rdbtn_rolRec
             // 
             this.rdbtn_rolRec.AutoSize = true;
+            this.rdbtn_rolRec.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rdbtn_rolRec.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
             this.rdbtn_rolRec.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtn_rolRec.Location = new System.Drawing.Point(580, 127);

@@ -76,6 +76,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Help;
             this.pictureBox1.Image = global::MediClic_v._0._0._1.Properties.Resources.Prototipo_LOGO_200x200;
             this.pictureBox1.Location = new System.Drawing.Point(12, 6);
             this.pictureBox1.Name = "pictureBox1";
@@ -102,20 +103,21 @@
             this.panel6.Controls.Add(this.icnpic_perfiluser);
             this.panel6.Controls.Add(this.lb_nmUser);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(797, 0);
+            this.panel6.Location = new System.Drawing.Point(777, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(274, 95);
+            this.panel6.Size = new System.Drawing.Size(294, 95);
             this.panel6.TabIndex = 0;
             // 
             // icnpic_perfiluser
             // 
             this.icnpic_perfiluser.BackColor = System.Drawing.Color.Transparent;
             this.icnpic_perfiluser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.icnpic_perfiluser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnpic_perfiluser.IconChar = FontAwesome.Sharp.IconChar.UserNurse;
             this.icnpic_perfiluser.IconColor = System.Drawing.Color.White;
             this.icnpic_perfiluser.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icnpic_perfiluser.IconSize = 86;
-            this.icnpic_perfiluser.Location = new System.Drawing.Point(175, 6);
+            this.icnpic_perfiluser.Location = new System.Drawing.Point(196, 6);
             this.icnpic_perfiluser.Name = "icnpic_perfiluser";
             this.icnpic_perfiluser.Size = new System.Drawing.Size(87, 86);
             this.icnpic_perfiluser.TabIndex = 1;
@@ -127,7 +129,7 @@
             this.lb_nmUser.AutoSize = true;
             this.lb_nmUser.Font = new System.Drawing.Font("Dubai", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_nmUser.ForeColor = System.Drawing.Color.White;
-            this.lb_nmUser.Location = new System.Drawing.Point(27, 46);
+            this.lb_nmUser.Location = new System.Drawing.Point(26, 39);
             this.lb_nmUser.Name = "lb_nmUser";
             this.lb_nmUser.Size = new System.Drawing.Size(122, 36);
             this.lb_nmUser.TabIndex = 0;
@@ -150,6 +152,7 @@
             // icnbtn_home
             // 
             this.icnbtn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(167)))), ((int)(((byte)(238)))));
+            this.icnbtn_home.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_home.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_home.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,6 +174,7 @@
             // icnbtn_docList
             // 
             this.icnbtn_docList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(167)))), ((int)(((byte)(238)))));
+            this.icnbtn_docList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_docList.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_docList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_docList.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,6 +196,7 @@
             // icnbtn_citas
             // 
             this.icnbtn_citas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(167)))), ((int)(((byte)(238)))));
+            this.icnbtn_citas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_citas.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_citas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_citas.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -213,6 +218,7 @@
             // icnbtn_info
             // 
             this.icnbtn_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(167)))), ((int)(((byte)(238)))));
+            this.icnbtn_info.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_info.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_info.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

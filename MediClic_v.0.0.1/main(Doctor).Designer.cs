@@ -112,6 +112,7 @@
             // 
             this.icpic_perfiluser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(185)))), ((int)(((byte)(146)))));
             this.icpic_perfiluser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.icpic_perfiluser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icpic_perfiluser.IconChar = FontAwesome.Sharp.IconChar.UserDoctor;
             this.icpic_perfiluser.IconColor = System.Drawing.Color.White;
             this.icpic_perfiluser.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -152,6 +153,7 @@
             // icnbtn_home
             // 
             this.icnbtn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_home.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_home.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.icnbtn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -172,6 +174,7 @@
             // icnbtn_pacientes
             // 
             this.icnbtn_pacientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_pacientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_pacientes.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.icnbtn_pacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_pacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,6 +195,7 @@
             // icnbtn_citas
             // 
             this.icnbtn_citas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_citas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_citas.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.icnbtn_citas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_citas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -212,6 +216,7 @@
             // icnbtn_receta
             // 
             this.icnbtn_receta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_receta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_receta.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.icnbtn_receta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_receta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -232,6 +237,7 @@
             // icnbtn_info
             // 
             this.icnbtn_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icnbtn_info.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_info.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.icnbtn_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

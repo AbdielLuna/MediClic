@@ -62,6 +62,7 @@
             // 
             // icbtn_Refresh
             // 
+            this.icbtn_Refresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icbtn_Refresh.FlatAppearance.BorderSize = 0;
             this.icbtn_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icbtn_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -139,9 +140,10 @@
             // icbtn_addPaciente
             // 
             this.icbtn_addPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.icbtn_addPaciente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icbtn_addPaciente.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.icbtn_addPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.icbtn_addPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icbtn_addPaciente.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icbtn_addPaciente.ForeColor = System.Drawing.Color.White;
             this.icbtn_addPaciente.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.icbtn_addPaciente.IconColor = System.Drawing.Color.White;
@@ -159,6 +161,7 @@
             // 
             // icnbtn_bsqP
             // 
+            this.icnbtn_bsqP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_bsqP.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.icnbtn_bsqP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_bsqP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -144,6 +144,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label4);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
@@ -185,6 +186,7 @@
             // 
             // txtbx_addcPdts
             // 
+            this.txtbx_addcPdts.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_addcPdts.Location = new System.Drawing.Point(317, 154);
             this.txtbx_addcPdts.Multiline = true;
             this.txtbx_addcPdts.Name = "txtbx_addcPdts";
@@ -194,6 +196,7 @@
             // 
             // txtbx_algPdts
             // 
+            this.txtbx_algPdts.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_algPdts.Location = new System.Drawing.Point(317, 73);
             this.txtbx_algPdts.Multiline = true;
             this.txtbx_algPdts.Name = "txtbx_algPdts";
@@ -213,15 +216,17 @@
             // 
             // txtbx_kgPhm
             // 
+            this.txtbx_kgPhm.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_kgPhm.Location = new System.Drawing.Point(129, 168);
             this.txtbx_kgPhm.Name = "txtbx_kgPhm";
             this.txtbx_kgPhm.ReadOnly = true;
-            this.txtbx_kgPhm.Size = new System.Drawing.Size(74, 20);
+            this.txtbx_kgPhm.Size = new System.Drawing.Size(74, 33);
             this.txtbx_kgPhm.TabIndex = 12;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.btn_saveHM);
             this.panel7.Controls.Add(this.icnbtn_editHM);
             this.panel7.Controls.Add(this.label2);
@@ -233,6 +238,7 @@
             // 
             // btn_saveHM
             // 
+            this.btn_saveHM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_saveHM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_saveHM.ForeColor = System.Drawing.Color.DarkGray;
             this.btn_saveHM.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
@@ -252,6 +258,7 @@
             // 
             // icnbtn_editHM
             // 
+            this.icnbtn_editHM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_editHM.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
             this.icnbtn_editHM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_editHM.ForeColor = System.Drawing.Color.DarkGray;
@@ -282,10 +289,11 @@
             // 
             // txtbx_mtsPhm
             // 
+            this.txtbx_mtsPhm.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_mtsPhm.Location = new System.Drawing.Point(129, 124);
             this.txtbx_mtsPhm.Name = "txtbx_mtsPhm";
             this.txtbx_mtsPhm.ReadOnly = true;
-            this.txtbx_mtsPhm.Size = new System.Drawing.Size(74, 20);
+            this.txtbx_mtsPhm.Size = new System.Drawing.Size(74, 33);
             this.txtbx_mtsPhm.TabIndex = 11;
             // 
             // label9
@@ -300,10 +308,11 @@
             // 
             // txtbx_tsgPhm
             // 
+            this.txtbx_tsgPhm.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_tsgPhm.Location = new System.Drawing.Point(129, 73);
             this.txtbx_tsgPhm.Name = "txtbx_tsgPhm";
             this.txtbx_tsgPhm.ReadOnly = true;
-            this.txtbx_tsgPhm.Size = new System.Drawing.Size(74, 20);
+            this.txtbx_tsgPhm.Size = new System.Drawing.Size(74, 33);
             this.txtbx_tsgPhm.TabIndex = 10;
             // 
             // label15
@@ -366,7 +375,8 @@
             // 
             // txtbx_enffPant
             // 
-            this.txtbx_enffPant.Location = new System.Drawing.Point(150, 159);
+            this.txtbx_enffPant.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_enffPant.Location = new System.Drawing.Point(150, 171);
             this.txtbx_enffPant.Multiline = true;
             this.txtbx_enffPant.Name = "txtbx_enffPant";
             this.txtbx_enffPant.ReadOnly = true;
@@ -376,6 +386,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.btn_saveANT);
             this.panel6.Controls.Add(this.icnbtn_editAnt);
             this.panel6.Controls.Add(this.label3);
@@ -387,6 +398,7 @@
             // 
             // btn_saveANT
             // 
+            this.btn_saveANT.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_saveANT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_saveANT.ForeColor = System.Drawing.Color.DarkGray;
             this.btn_saveANT.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
@@ -406,6 +418,7 @@
             // 
             // icnbtn_editAnt
             // 
+            this.icnbtn_editAnt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_editAnt.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
             this.icnbtn_editAnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_editAnt.ForeColor = System.Drawing.Color.DarkGray;
@@ -425,7 +438,8 @@
             // 
             // txtbx_notpatPant
             // 
-            this.txtbx_notpatPant.Location = new System.Drawing.Point(151, 106);
+            this.txtbx_notpatPant.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_notpatPant.Location = new System.Drawing.Point(151, 119);
             this.txtbx_notpatPant.Multiline = true;
             this.txtbx_notpatPant.Name = "txtbx_notpatPant";
             this.txtbx_notpatPant.ReadOnly = true;
@@ -444,7 +458,8 @@
             // 
             // txtbx_patPant
             // 
-            this.txtbx_patPant.Location = new System.Drawing.Point(151, 54);
+            this.txtbx_patPant.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_patPant.Location = new System.Drawing.Point(151, 65);
             this.txtbx_patPant.Multiline = true;
             this.txtbx_patPant.Name = "txtbx_patPant";
             this.txtbx_patPant.ReadOnly = true;
@@ -492,34 +507,38 @@
             // 
             // txtbx_telPdg
             // 
+            this.txtbx_telPdg.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_telPdg.Location = new System.Drawing.Point(129, 193);
             this.txtbx_telPdg.Name = "txtbx_telPdg";
             this.txtbx_telPdg.ReadOnly = true;
-            this.txtbx_telPdg.Size = new System.Drawing.Size(161, 20);
+            this.txtbx_telPdg.Size = new System.Drawing.Size(193, 33);
             this.txtbx_telPdg.TabIndex = 9;
             // 
             // txtbx_sxPdg
             // 
+            this.txtbx_sxPdg.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_sxPdg.Location = new System.Drawing.Point(129, 150);
             this.txtbx_sxPdg.Name = "txtbx_sxPdg";
             this.txtbx_sxPdg.ReadOnly = true;
-            this.txtbx_sxPdg.Size = new System.Drawing.Size(161, 20);
+            this.txtbx_sxPdg.Size = new System.Drawing.Size(86, 33);
             this.txtbx_sxPdg.TabIndex = 8;
             // 
             // txtbx_namePdg
             // 
-            this.txtbx_namePdg.Location = new System.Drawing.Point(129, 111);
+            this.txtbx_namePdg.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_namePdg.Location = new System.Drawing.Point(129, 107);
             this.txtbx_namePdg.Name = "txtbx_namePdg";
             this.txtbx_namePdg.ReadOnly = true;
-            this.txtbx_namePdg.Size = new System.Drawing.Size(161, 20);
+            this.txtbx_namePdg.Size = new System.Drawing.Size(273, 33);
             this.txtbx_namePdg.TabIndex = 7;
             // 
             // txtbx_idPdg
             // 
-            this.txtbx_idPdg.Location = new System.Drawing.Point(129, 75);
+            this.txtbx_idPdg.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_idPdg.Location = new System.Drawing.Point(129, 69);
             this.txtbx_idPdg.Name = "txtbx_idPdg";
             this.txtbx_idPdg.ReadOnly = true;
-            this.txtbx_idPdg.Size = new System.Drawing.Size(161, 20);
+            this.txtbx_idPdg.Size = new System.Drawing.Size(86, 33);
             this.txtbx_idPdg.TabIndex = 6;
             // 
             // label8
@@ -565,6 +584,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.btn_saveDg);
             this.panel5.Controls.Add(this.icnbtn_editDG);
             this.panel5.Controls.Add(this.label5);
@@ -576,6 +596,7 @@
             // 
             // btn_saveDg
             // 
+            this.btn_saveDg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_saveDg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_saveDg.ForeColor = System.Drawing.Color.DarkGray;
             this.btn_saveDg.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
@@ -595,6 +616,7 @@
             // 
             // icnbtn_editDG
             // 
+            this.icnbtn_editDG.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_editDG.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
             this.icnbtn_editDG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_editDG.ForeColor = System.Drawing.Color.DarkGray;

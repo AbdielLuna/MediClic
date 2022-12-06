@@ -35,11 +35,13 @@
             this.icbtn_addUser = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dtgrd_listUsuarios = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.icnbtn_refreshDtg = new FontAwesome.Sharp.IconButton();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtbx_modfPass = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtbx_correo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtbx_Tel = new System.Windows.Forms.TextBox();
@@ -55,8 +57,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtbx_modfPass = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrd_listUsuarios)).BeginInit();
             this.panel4.SuspendLayout();
@@ -79,6 +79,7 @@
             // icbtn_addUser
             // 
             this.icbtn_addUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
+            this.icbtn_addUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icbtn_addUser.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.icbtn_addUser.FlatAppearance.BorderSize = 0;
             this.icbtn_addUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -154,20 +155,9 @@
             this.dtgrd_listUsuarios.TabIndex = 7;
             this.dtgrd_listUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrd_listUsuarios_CellClick);
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(188)))), ((int)(((byte)(247)))));
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.icbtn_addUser);
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(473, 45);
-            this.panel4.TabIndex = 6;
-            // 
             // icnbtn_refreshDtg
             // 
+            this.icnbtn_refreshDtg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_refreshDtg.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(188)))), ((int)(((byte)(247)))));
             this.icnbtn_refreshDtg.FlatAppearance.BorderSize = 0;
             this.icnbtn_refreshDtg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -186,6 +176,18 @@
             this.icnbtn_refreshDtg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.icnbtn_refreshDtg.UseVisualStyleBackColor = true;
             this.icnbtn_refreshDtg.Click += new System.EventHandler(this.icnbtn_refreshDtg_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(188)))), ((int)(((byte)(247)))));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.icbtn_addUser);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(473, 45);
+            this.panel4.TabIndex = 6;
             // 
             // label1
             // 
@@ -232,6 +234,26 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(413, 482);
             this.panel5.TabIndex = 0;
+            // 
+            // txtbx_modfPass
+            // 
+            this.txtbx_modfPass.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_modfPass.Location = new System.Drawing.Point(143, 346);
+            this.txtbx_modfPass.Name = "txtbx_modfPass";
+            this.txtbx_modfPass.ReadOnly = true;
+            this.txtbx_modfPass.Size = new System.Drawing.Size(191, 28);
+            this.txtbx_modfPass.TabIndex = 15;
+            this.txtbx_modfPass.UseSystemPasswordChar = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(52, 346);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 27);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Contraseña:";
             // 
             // txtbx_correo
             // 
@@ -293,6 +315,7 @@
             // btn_modfUser
             // 
             this.btn_modfUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
+            this.btn_modfUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_modfUser.Enabled = false;
             this.btn_modfUser.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_modfUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -309,6 +332,7 @@
             // 
             // btn_deleteUser
             // 
+            this.btn_deleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_deleteUser.Enabled = false;
             this.btn_deleteUser.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_deleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -400,26 +424,6 @@
             this.label2.Size = new System.Drawing.Size(126, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Perfil Usuarios";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(52, 346);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 27);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Contraseña:";
-            // 
-            // txtbx_modfPass
-            // 
-            this.txtbx_modfPass.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_modfPass.Location = new System.Drawing.Point(143, 346);
-            this.txtbx_modfPass.Name = "txtbx_modfPass";
-            this.txtbx_modfPass.ReadOnly = true;
-            this.txtbx_modfPass.Size = new System.Drawing.Size(191, 28);
-            this.txtbx_modfPass.TabIndex = 15;
-            this.txtbx_modfPass.UseSystemPasswordChar = true;
             // 
             // Frm_Users
             // 

@@ -27,6 +27,7 @@ namespace MediClic_v._0._0._1
         private void Frm_receta_Load(object sender, EventArgs e)
         {
             cargarListdocs();
+            idFl += 1;
             txtbx_idFolio.Text = idFl.ToString();
         }
 

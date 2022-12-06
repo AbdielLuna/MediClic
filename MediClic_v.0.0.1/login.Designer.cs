@@ -63,6 +63,7 @@
             // btn_startSession
             // 
             this.btn_startSession.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
+            this.btn_startSession.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_startSession.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_startSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_startSession.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,6 +126,7 @@
             // btn_exit
             // 
             this.btn_exit.BackColor = System.Drawing.Color.White;
+            this.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_exit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

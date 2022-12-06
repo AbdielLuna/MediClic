@@ -26,11 +26,14 @@ namespace MediClic_v._0._0._1
         {
             if (!string.IsNullOrEmpty(txtbx_nmFull.Text) || !string.IsNullOrEmpty(txtbx_Mts.Text))
             {
-                var r = MessageBox.Show("Esta seguro de cancelar?\nLos datos no se guardaran", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                var r = MessageBox.Show("Esta seguro de cancelar?\nLos datos no se guardaran", "Confirmación", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                 if (r == DialogResult.Yes)
                 {
                     this.Close();
                 }
+            }
+            else { 
+            this.Close();
             }
             
         }

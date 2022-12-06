@@ -98,6 +98,7 @@ namespace MediClic_v._0._0._1
             var res = MessageBox.Show("Seguro que quiere actualizar los datos?","Confirmacion",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Question);
             if (res == DialogResult.Yes) { 
             updateDts();
+                MessageBox.Show("Se actualizó correctamente.","Exito!",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
         }
 

@@ -111,6 +111,7 @@
             // 
             this.icnbtn_perfiluser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
             this.icnbtn_perfiluser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.icnbtn_perfiluser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_perfiluser.IconChar = FontAwesome.Sharp.IconChar.UserCog;
             this.icnbtn_perfiluser.IconColor = System.Drawing.Color.White;
             this.icnbtn_perfiluser.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -150,6 +151,7 @@
             // icnbtn_users
             // 
             this.icnbtn_users.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
+            this.icnbtn_users.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_users.Dock = System.Windows.Forms.DockStyle.Top;
             this.icnbtn_users.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_users.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -172,6 +174,7 @@
             // icnbtn_docList
             // 
             this.icnbtn_docList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
+            this.icnbtn_docList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_docList.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_docList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_docList.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -193,6 +196,7 @@
             // icnbtn_DBconfig
             // 
             this.icnbtn_DBconfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
+            this.icnbtn_DBconfig.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_DBconfig.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_DBconfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_DBconfig.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -214,6 +218,7 @@
             // icnbtn_info
             // 
             this.icnbtn_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(62)))), ((int)(((byte)(210)))));
+            this.icnbtn_info.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icnbtn_info.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.icnbtn_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnbtn_info.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
