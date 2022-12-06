@@ -11,15 +11,15 @@ namespace MediClic_v._0._0._1
     internal class ConexionDB
     {
         //Conexion en la nube
-        /*static string servidor = "sql8002.site4now.net";
+        static string servidor = "sql8002.site4now.net";
         static string bd = "db_a90a16_mediclicdb";
         static string usuario = "db_a90a16_mediclicdb_admin";
         static string password = "lunal321";
 
         string cadena = "Data Source=" + servidor + ";" + "user id=" + usuario + ";" + "password=" + password + ";" + "Initial Catalog=" + bd + ";" + "Persist Security Info=true";
-        */
+        
         //Conexion de Prueba HostLocal
-        string cadena = "data source = DESKTOP-D9LJ3R4\\SQLEXPRESS; initial catalog = MediClic; Integrated Security=True;";
+        //string cadena = "data source = DESKTOP-D9LJ3R4\\SQLEXPRESS; initial catalog = MediClic; Integrated Security=True;";
 
 
         public SqlConnection Conectarbd = new SqlConnection();
