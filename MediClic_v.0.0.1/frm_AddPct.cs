@@ -46,12 +46,10 @@ namespace MediClic_v._0._0._1
                 if (!string.IsNullOrEmpty(txtbx_nmFull.Text) && !string.IsNullOrEmpty(txtbx_kg.Text) && !string.IsNullOrEmpty(txtbx_Mts.Text))
                 {
                     almacenPacientes();
-                    conexionDB.cerrar();
-                    MessageBox.Show("Se agrego correctamente.", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
                 else {
-                    MessageBox.Show("No ahi datos que registrar o faltan campos por llenar\nPorfavor rellene los campos para poder guardar.","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Stop);
+                    MessageBox.Show("No ahi datos que registrar o faltan campos por llenar\nPorfavor rellene los campos para poder guardar.","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
                 
             }
@@ -59,9 +57,10 @@ namespace MediClic_v._0._0._1
 
         //Metodos
         public void almacenPacientes() {
+            conexionDB.abrir();
             try
             {
-                conexionDB.abrir();
+                
                 string query = "insert into Pacientes(id_paciente,nombre_pac,sexo_pac,telefono_pac,tipo_sangre,estatura_pac,peso_pac,alergias,enfermedades,patologicos,nopatologicos,adicciones) values(@id,@namefull,@sx,@tel,@tpsg,@alt,@kg,@alergias,@enf,@pat,@nopat,@adcc)";
                 SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
                 comando.Parameters.AddWithValue("@id",id.ToString());
@@ -77,12 +76,14 @@ namespace MediClic_v._0._0._1
                 comando.Parameters.AddWithValue("@nopat", txtbx_Pat.Text);
                 comando.Parameters.AddWithValue("@adcc", txtbx_Adcc.Text);
                 comando.ExecuteNonQuery();
-                conexionDB.cerrar();
+                MessageBox.Show("Se agrego correctamente.", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             catch
             {
                 MessageBox.Show("Ocurrio un error en la conexión\nporfavor vuelvalo a intentar mas tarde","Lo sentimos!",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             }
+            conexionDB.cerrar();
         }
 
         public void asignacionID() {
