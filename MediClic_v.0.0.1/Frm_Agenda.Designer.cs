@@ -64,6 +64,7 @@
             this.txtbx_nmPacFull = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_deleteCta = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.pnl_campModif.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -108,6 +109,7 @@
             // pnl_campModif
             // 
             this.pnl_campModif.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_campModif.Controls.Add(this.btn_deleteCta);
             this.pnl_campModif.Controls.Add(this.label9);
             this.pnl_campModif.Controls.Add(this.cmbx_modfEstado);
             this.pnl_campModif.Controls.Add(this.cmbx_modfAMPM);
@@ -225,11 +227,11 @@
             this.btn_modfCita.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_modfCita.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_modfCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_modfCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modfCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_modfCita.ForeColor = System.Drawing.Color.White;
-            this.btn_modfCita.Location = new System.Drawing.Point(435, 24);
+            this.btn_modfCita.Location = new System.Drawing.Point(455, 43);
             this.btn_modfCita.Name = "btn_modfCita";
-            this.btn_modfCita.Size = new System.Drawing.Size(108, 37);
+            this.btn_modfCita.Size = new System.Drawing.Size(89, 37);
             this.btn_modfCita.TabIndex = 25;
             this.btn_modfCita.Text = "Modificar";
             this.btn_modfCita.UseVisualStyleBackColor = false;
@@ -241,11 +243,11 @@
             this.btn_cancelAccion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cancelAccion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_cancelAccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancelAccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelAccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancelAccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
-            this.btn_cancelAccion.Location = new System.Drawing.Point(435, 71);
+            this.btn_cancelAccion.Location = new System.Drawing.Point(455, 84);
             this.btn_cancelAccion.Name = "btn_cancelAccion";
-            this.btn_cancelAccion.Size = new System.Drawing.Size(108, 37);
+            this.btn_cancelAccion.Size = new System.Drawing.Size(89, 37);
             this.btn_cancelAccion.TabIndex = 23;
             this.btn_cancelAccion.Text = "Cancelar";
             this.btn_cancelAccion.UseVisualStyleBackColor = false;
@@ -555,6 +557,22 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Agendar Cita";
             // 
+            // btn_deleteCta
+            // 
+            this.btn_deleteCta.BackColor = System.Drawing.Color.Maroon;
+            this.btn_deleteCta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_deleteCta.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_deleteCta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_deleteCta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_deleteCta.ForeColor = System.Drawing.Color.White;
+            this.btn_deleteCta.Location = new System.Drawing.Point(455, 3);
+            this.btn_deleteCta.Name = "btn_deleteCta";
+            this.btn_deleteCta.Size = new System.Drawing.Size(89, 37);
+            this.btn_deleteCta.TabIndex = 32;
+            this.btn_deleteCta.Text = "Eliminar";
+            this.btn_deleteCta.UseVisualStyleBackColor = false;
+            this.btn_deleteCta.Click += new System.EventHandler(this.btn_deleteCta_Click);
+            // 
             // Frm_Agenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -616,5 +634,6 @@
         private System.Windows.Forms.ComboBox cmbx_modfAMPM;
         private System.Windows.Forms.ComboBox cmbx_modfMin;
         private System.Windows.Forms.ComboBox cmbx_modfHrs;
+        private System.Windows.Forms.Button btn_deleteCta;
     }
 }

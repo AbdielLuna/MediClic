@@ -24,7 +24,7 @@ namespace MediClic_v._0._0._1
         //Botones accion
         private void btn_cancelAcc_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtbx_nmFull.Text) || !string.IsNullOrEmpty(txtbx_Mts.Text))
+            if (!string.IsNullOrEmpty(txtbx_nmFull.Text) || !string.IsNullOrEmpty(txtbx_Mts.Text)|| !string.IsNullOrEmpty(txtbx_kg.Text))
             {
                 var r = MessageBox.Show("Esta seguro de cancelar?\nLos datos no se guardaran", "Confirmación", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                 if (r == DialogResult.Yes)
@@ -40,12 +40,20 @@ namespace MediClic_v._0._0._1
 
         private void btn_savePct_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("Agregar Nuevo Paciente", "Confirmacion", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            var result = MessageBox.Show("Agregar Nuevo Paciente", "Confirmación", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes) {
-                almacenPacientes();
-                conexionDB.cerrar();
-                this.Close();
+                if (!string.IsNullOrEmpty(txtbx_nmFull.Text) && !string.IsNullOrEmpty(txtbx_kg.Text) && !string.IsNullOrEmpty(txtbx_Mts.Text))
+                {
+                    almacenPacientes();
+                    conexionDB.cerrar();
+                    MessageBox.Show("Se agrego correctamente.", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else {
+                    MessageBox.Show("No ahi datos que registrar o faltan campos por llenar\nPorfavor rellene los campos para poder guardar.","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Stop);
+                }
+                
             }
         }
 
@@ -73,7 +81,7 @@ namespace MediClic_v._0._0._1
             }
             catch
             {
-                MessageBox.Show("Ocurrio un error en la conexion \n porfavor vuelvalo a intentar mas tarde","Lo sentimos!",MessageBoxButtons.OK);
+                MessageBox.Show("Ocurrio un error en la conexión\nporfavor vuelvalo a intentar mas tarde","Lo sentimos!",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             }
         }
 

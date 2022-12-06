@@ -31,7 +31,7 @@ namespace MediClic_v._0._0._1
             conexionDB.abrir();
             try
             {
-                string query = "Select * from Citas";
+                string query = "select * from Citas order by fecha DESC";
                 SqlDataAdapter apt = new SqlDataAdapter(query, conexionDB.Conectarbd);
                 DataTable dt = new DataTable();
                 apt.Fill(dt);

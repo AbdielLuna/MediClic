@@ -45,7 +45,6 @@
             this.txtbx_rcEdd = new System.Windows.Forms.TextBox();
             this.txtbx_rcKg = new System.Windows.Forms.TextBox();
             this.txtbx_rcAlg = new System.Windows.Forms.TextBox();
-            this.txtbx_idFolio = new System.Windows.Forms.TextBox();
             this.icnbtn_editIdfl = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -53,6 +52,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtbx_idFolio = new System.Windows.Forms.MaskedTextBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrd_listPac)).BeginInit();
@@ -173,7 +173,7 @@
             this.txtbx_rcNmfull.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_rcNmfull.Location = new System.Drawing.Point(150, 136);
             this.txtbx_rcNmfull.Name = "txtbx_rcNmfull";
-            this.txtbx_rcNmfull.Size = new System.Drawing.Size(297, 24);
+            this.txtbx_rcNmfull.Size = new System.Drawing.Size(237, 24);
             this.txtbx_rcNmfull.TabIndex = 9;
             // 
             // txtbx_rcmts
@@ -209,15 +209,6 @@
             this.txtbx_rcAlg.Size = new System.Drawing.Size(183, 72);
             this.txtbx_rcAlg.TabIndex = 13;
             // 
-            // txtbx_idFolio
-            // 
-            this.txtbx_idFolio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_idFolio.Location = new System.Drawing.Point(150, 79);
-            this.txtbx_idFolio.Name = "txtbx_idFolio";
-            this.txtbx_idFolio.ReadOnly = true;
-            this.txtbx_idFolio.Size = new System.Drawing.Size(69, 24);
-            this.txtbx_idFolio.TabIndex = 14;
-            // 
             // icnbtn_editIdfl
             // 
             this.icnbtn_editIdfl.BackColor = System.Drawing.Color.Transparent;
@@ -228,7 +219,7 @@
             this.icnbtn_editIdfl.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(171)))), ((int)(((byte)(138)))));
             this.icnbtn_editIdfl.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icnbtn_editIdfl.IconSize = 25;
-            this.icnbtn_editIdfl.Location = new System.Drawing.Point(225, 80);
+            this.icnbtn_editIdfl.Location = new System.Drawing.Point(216, 80);
             this.icnbtn_editIdfl.Name = "icnbtn_editIdfl";
             this.icnbtn_editIdfl.Size = new System.Drawing.Size(29, 24);
             this.icnbtn_editIdfl.TabIndex = 16;
@@ -239,12 +230,12 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.txtbx_idFolio);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.icnbtn_editIdfl);
             this.panel3.Controls.Add(this.txtbx_rcNmfull);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.txtbx_idFolio);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.txtbx_rcAlg);
             this.panel3.Controls.Add(this.label4);
@@ -349,6 +340,17 @@
             this.panel1.Size = new System.Drawing.Size(913, 49);
             this.panel1.TabIndex = 19;
             // 
+            // txtbx_idFolio
+            // 
+            this.txtbx_idFolio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.txtbx_idFolio.Location = new System.Drawing.Point(150, 80);
+            this.txtbx_idFolio.Mask = "99999";
+            this.txtbx_idFolio.Name = "txtbx_idFolio";
+            this.txtbx_idFolio.ReadOnly = true;
+            this.txtbx_idFolio.Size = new System.Drawing.Size(54, 24);
+            this.txtbx_idFolio.TabIndex = 21;
+            this.txtbx_idFolio.ValidatingType = typeof(int);
+            // 
             // Frm_receta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -388,7 +390,6 @@
         private System.Windows.Forms.TextBox txtbx_rcEdd;
         private System.Windows.Forms.TextBox txtbx_rcKg;
         private System.Windows.Forms.TextBox txtbx_rcAlg;
-        private System.Windows.Forms.TextBox txtbx_idFolio;
         private FontAwesome.Sharp.IconButton icnbtn_editIdfl;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
@@ -396,5 +397,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dtgrd_listPac;
+        private System.Windows.Forms.MaskedTextBox txtbx_idFolio;
     }
 }

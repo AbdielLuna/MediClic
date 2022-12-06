@@ -37,8 +37,6 @@
             this.txtbx_Adcc = new System.Windows.Forms.TextBox();
             this.txtbx_Alg = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtbx_kg = new System.Windows.Forms.TextBox();
-            this.txtbx_Mts = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -57,7 +55,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbx_Sx = new System.Windows.Forms.ComboBox();
-            this.txtbx_Tel = new System.Windows.Forms.TextBox();
             this.txtbx_nmFull = new System.Windows.Forms.TextBox();
             this.txtbx_idP = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -66,6 +63,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtbx_Mts = new System.Windows.Forms.MaskedTextBox();
+            this.txtbx_kg = new System.Windows.Forms.MaskedTextBox();
+            this.txtbx_Tel = new System.Windows.Forms.MaskedTextBox();
             this.panel11.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -124,12 +124,12 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.txtbx_kg);
+            this.panel2.Controls.Add(this.txtbx_Mts);
             this.panel2.Controls.Add(this.cmbx_tpSg);
             this.panel2.Controls.Add(this.txtbx_Adcc);
             this.panel2.Controls.Add(this.txtbx_Alg);
             this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.txtbx_kg);
-            this.panel2.Controls.Add(this.txtbx_Mts);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label14);
@@ -143,23 +143,22 @@
             // 
             // cmbx_tpSg
             // 
-            this.cmbx_tpSg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbx_tpSg.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_tpSg.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_tpSg.FormattingEnabled = true;
             this.cmbx_tpSg.Items.AddRange(new object[] {
             "A",
             "B",
             "AB",
             "O"});
-            this.cmbx_tpSg.Location = new System.Drawing.Point(140, 67);
+            this.cmbx_tpSg.Location = new System.Drawing.Point(140, 65);
             this.cmbx_tpSg.Name = "cmbx_tpSg";
-            this.cmbx_tpSg.Size = new System.Drawing.Size(71, 26);
+            this.cmbx_tpSg.Size = new System.Drawing.Size(71, 30);
             this.cmbx_tpSg.TabIndex = 11;
             // 
             // txtbx_Adcc
             // 
             this.txtbx_Adcc.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbx_Adcc.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Adcc.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_Adcc.Location = new System.Drawing.Point(140, 255);
             this.txtbx_Adcc.Multiline = true;
             this.txtbx_Adcc.Name = "txtbx_Adcc";
@@ -169,7 +168,7 @@
             // txtbx_Alg
             // 
             this.txtbx_Alg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbx_Alg.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Alg.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_Alg.Location = new System.Drawing.Point(140, 161);
             this.txtbx_Alg.Multiline = true;
             this.txtbx_Alg.Name = "txtbx_Alg";
@@ -185,24 +184,6 @@
             this.label16.Size = new System.Drawing.Size(85, 27);
             this.label16.TabIndex = 19;
             this.label16.Text = "Adicciones:";
-            // 
-            // txtbx_kg
-            // 
-            this.txtbx_kg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbx_kg.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_kg.Location = new System.Drawing.Point(140, 130);
-            this.txtbx_kg.Name = "txtbx_kg";
-            this.txtbx_kg.Size = new System.Drawing.Size(71, 26);
-            this.txtbx_kg.TabIndex = 22;
-            // 
-            // txtbx_Mts
-            // 
-            this.txtbx_Mts.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbx_Mts.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_Mts.Location = new System.Drawing.Point(140, 98);
-            this.txtbx_Mts.Name = "txtbx_Mts";
-            this.txtbx_Mts.Size = new System.Drawing.Size(71, 26);
-            this.txtbx_Mts.TabIndex = 21;
             // 
             // label9
             // 
@@ -247,6 +228,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
@@ -268,7 +250,7 @@
             // txtbx_Enf
             // 
             this.txtbx_Enf.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbx_Enf.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Enf.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_Enf.Location = new System.Drawing.Point(129, 166);
             this.txtbx_Enf.Multiline = true;
             this.txtbx_Enf.Name = "txtbx_Enf";
@@ -289,7 +271,7 @@
             // txtbx_noPat
             // 
             this.txtbx_noPat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbx_noPat.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_noPat.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_noPat.Location = new System.Drawing.Point(129, 111);
             this.txtbx_noPat.Multiline = true;
             this.txtbx_noPat.Name = "txtbx_noPat";
@@ -309,7 +291,7 @@
             // txtbx_Pat
             // 
             this.txtbx_Pat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbx_Pat.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Pat.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_Pat.Location = new System.Drawing.Point(129, 54);
             this.txtbx_Pat.Multiline = true;
             this.txtbx_Pat.Name = "txtbx_Pat";
@@ -367,6 +349,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.label3);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
@@ -378,8 +361,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.cmbx_Sx);
             this.panel1.Controls.Add(this.txtbx_Tel);
+            this.panel1.Controls.Add(this.cmbx_Sx);
             this.panel1.Controls.Add(this.txtbx_nmFull);
             this.panel1.Controls.Add(this.txtbx_idP);
             this.panel1.Controls.Add(this.label8);
@@ -395,43 +378,34 @@
             // 
             // cmbx_Sx
             // 
-            this.cmbx_Sx.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.cmbx_Sx.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_Sx.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbx_Sx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbx_Sx.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_Sx.FormattingEnabled = true;
             this.cmbx_Sx.Items.AddRange(new object[] {
             "M",
             "F"});
             this.cmbx_Sx.Location = new System.Drawing.Point(110, 132);
             this.cmbx_Sx.Name = "cmbx_Sx";
-            this.cmbx_Sx.Size = new System.Drawing.Size(61, 29);
+            this.cmbx_Sx.Size = new System.Drawing.Size(61, 30);
             this.cmbx_Sx.TabIndex = 10;
-            // 
-            // txtbx_Tel
-            // 
-            this.txtbx_Tel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbx_Tel.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_Tel.Location = new System.Drawing.Point(110, 167);
-            this.txtbx_Tel.MaxLength = 10;
-            this.txtbx_Tel.Name = "txtbx_Tel";
-            this.txtbx_Tel.Size = new System.Drawing.Size(180, 28);
-            this.txtbx_Tel.TabIndex = 9;
             // 
             // txtbx_nmFull
             // 
             this.txtbx_nmFull.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbx_nmFull.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_nmFull.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_nmFull.Location = new System.Drawing.Point(110, 99);
             this.txtbx_nmFull.Name = "txtbx_nmFull";
-            this.txtbx_nmFull.Size = new System.Drawing.Size(180, 28);
+            this.txtbx_nmFull.Size = new System.Drawing.Size(180, 29);
             this.txtbx_nmFull.TabIndex = 7;
             // 
             // txtbx_idP
             // 
-            this.txtbx_idP.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_idP.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbx_idP.Location = new System.Drawing.Point(110, 68);
             this.txtbx_idP.Name = "txtbx_idP";
             this.txtbx_idP.ReadOnly = true;
-            this.txtbx_idP.Size = new System.Drawing.Size(61, 28);
+            this.txtbx_idP.Size = new System.Drawing.Size(61, 29);
             this.txtbx_idP.TabIndex = 6;
             // 
             // label8
@@ -477,6 +451,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label5);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
@@ -494,6 +469,35 @@
             this.label5.Size = new System.Drawing.Size(143, 32);
             this.label5.TabIndex = 0;
             this.label5.Text = "Datos Generales";
+            // 
+            // txtbx_Mts
+            // 
+            this.txtbx_Mts.BeepOnError = true;
+            this.txtbx_Mts.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Mts.Location = new System.Drawing.Point(140, 97);
+            this.txtbx_Mts.Mask = "0.99";
+            this.txtbx_Mts.Name = "txtbx_Mts";
+            this.txtbx_Mts.Size = new System.Drawing.Size(71, 29);
+            this.txtbx_Mts.TabIndex = 25;
+            // 
+            // txtbx_kg
+            // 
+            this.txtbx_kg.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_kg.Location = new System.Drawing.Point(140, 129);
+            this.txtbx_kg.Mask = "99";
+            this.txtbx_kg.Name = "txtbx_kg";
+            this.txtbx_kg.Size = new System.Drawing.Size(71, 29);
+            this.txtbx_kg.TabIndex = 26;
+            this.txtbx_kg.ValidatingType = typeof(int);
+            // 
+            // txtbx_Tel
+            // 
+            this.txtbx_Tel.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Tel.Location = new System.Drawing.Point(110, 168);
+            this.txtbx_Tel.Mask = "(000)000-0000";
+            this.txtbx_Tel.Name = "txtbx_Tel";
+            this.txtbx_Tel.Size = new System.Drawing.Size(180, 29);
+            this.txtbx_Tel.TabIndex = 27;
             // 
             // frm_AddPct
             // 
@@ -543,7 +547,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtbx_Tel;
         private System.Windows.Forms.TextBox txtbx_nmFull;
         private System.Windows.Forms.TextBox txtbx_idP;
         private System.Windows.Forms.Label label8;
@@ -557,13 +560,14 @@
         private System.Windows.Forms.TextBox txtbx_Adcc;
         private System.Windows.Forms.TextBox txtbx_Alg;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtbx_kg;
-        private System.Windows.Forms.TextBox txtbx_Mts;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cmbx_Sx;
         private System.Windows.Forms.ComboBox cmbx_tpSg;
+        private System.Windows.Forms.MaskedTextBox txtbx_kg;
+        private System.Windows.Forms.MaskedTextBox txtbx_Mts;
+        private System.Windows.Forms.MaskedTextBox txtbx_Tel;
     }
 }

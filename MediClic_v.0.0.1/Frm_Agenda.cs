@@ -98,7 +98,7 @@ namespace MediClic_v._0._0._1
             conexionDB.abrir();
             try
             {
-                string query = "Select * from Citas";
+                string query = "select * from Citas order by fecha DESC";
                 SqlDataAdapter apt = new SqlDataAdapter(query, conexionDB.Conectarbd);
                 DataTable dt = new DataTable();
                 apt.Fill(dt);
@@ -106,7 +106,7 @@ namespace MediClic_v._0._0._1
             }
             catch
             {
-                MessageBox.Show("Lo sentimos \nHubo un problema con la Conexion porfavor itentelo mas tarde", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Lo sentimos\nHubo un problema con la Conexion porfavor itentelo mas tarde", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             conexionDB.cerrar();
             dtgrd_listCitas.Columns[0].HeaderText = "Folio";
@@ -191,6 +191,29 @@ namespace MediClic_v._0._0._1
             }
             catch { }
             conexionDB.cerrar();
+        }
+
+        private void btn_deleteCta_Click(object sender, EventArgs e)
+        {
+            var dlt = MessageBox.Show("Deseas eliminar la cita?", "Avisó", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            if (dlt == DialogResult.Yes)
+            {
+                conexionDB.abrir();
+                try
+                {
+                    string query1 = "delete from Citas where id_cita = @iduser";
+                    SqlCommand comando1 = new SqlCommand(query1, conexionDB.Conectarbd);
+                    comando1.Parameters.AddWithValue("@iduser", Cdlselection);
+                    comando1.ExecuteNonQuery();
+                    MessageBox.Show("Se elimino correctamente.", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cargarListcitas();
+                    pnl_campModif.Visible = false;
+                }
+                catch { }
+                conexionDB.cerrar();
+            }
+
+
         }
 
         public void actualizarCita() {

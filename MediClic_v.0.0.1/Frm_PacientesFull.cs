@@ -140,7 +140,7 @@ namespace MediClic_v._0._0._1
                             estatura = Convert.ToDouble(viwpac.txtbx_mtsPhm.Text);
                             peso = Convert.ToDouble(viwpac.txtbx_kgPhm.Text);
                         }
-                    MessageBox.Show("Se agrego correctamente.", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
 
                 }
                     catch

@@ -44,7 +44,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtbx_correo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtbx_Tel = new System.Windows.Forms.TextBox();
             this.txtbx_nmFull = new System.Windows.Forms.TextBox();
             this.txtbx_tagUser = new System.Windows.Forms.TextBox();
             this.txtbx_tpUser = new System.Windows.Forms.TextBox();
@@ -57,6 +56,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtbx_Tel = new System.Windows.Forms.MaskedTextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrd_listUsuarios)).BeginInit();
             this.panel4.SuspendLayout();
@@ -213,11 +213,11 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.txtbx_Tel);
             this.panel5.Controls.Add(this.txtbx_modfPass);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.txtbx_correo);
             this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.txtbx_Tel);
             this.panel5.Controls.Add(this.txtbx_nmFull);
             this.panel5.Controls.Add(this.txtbx_tagUser);
             this.panel5.Controls.Add(this.txtbx_tpUser);
@@ -273,16 +273,6 @@
             this.label7.Size = new System.Drawing.Size(59, 27);
             this.label7.TabIndex = 12;
             this.label7.Text = "Correo:";
-            // 
-            // txtbx_Tel
-            // 
-            this.txtbx_Tel.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_Tel.Location = new System.Drawing.Point(144, 269);
-            this.txtbx_Tel.MaxLength = 10;
-            this.txtbx_Tel.Name = "txtbx_Tel";
-            this.txtbx_Tel.ReadOnly = true;
-            this.txtbx_Tel.Size = new System.Drawing.Size(190, 28);
-            this.txtbx_Tel.TabIndex = 11;
             // 
             // txtbx_nmFull
             // 
@@ -425,6 +415,16 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Perfil Usuarios";
             // 
+            // txtbx_Tel
+            // 
+            this.txtbx_Tel.Font = new System.Drawing.Font("Dubai", 8.999999F);
+            this.txtbx_Tel.Location = new System.Drawing.Point(144, 269);
+            this.txtbx_Tel.Mask = "(999)000-0000";
+            this.txtbx_Tel.Name = "txtbx_Tel";
+            this.txtbx_Tel.ReadOnly = true;
+            this.txtbx_Tel.Size = new System.Drawing.Size(190, 28);
+            this.txtbx_Tel.TabIndex = 16;
+            // 
             // Frm_Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -465,7 +465,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtbx_Tel;
         private System.Windows.Forms.TextBox txtbx_nmFull;
         private System.Windows.Forms.TextBox txtbx_tagUser;
         private System.Windows.Forms.TextBox txtbx_tpUser;
@@ -481,5 +480,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtbx_modfPass;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.MaskedTextBox txtbx_Tel;
     }
 }

@@ -31,18 +31,16 @@
             this.btn_addUser = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtbx_tel = new System.Windows.Forms.MaskedTextBox();
             this.chckbx_most = new System.Windows.Forms.CheckBox();
             this.lb_concidencia = new System.Windows.Forms.Label();
             this.pnl_ContDoc = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.cmbx_sxDoc = new System.Windows.Forms.ComboBox();
-            this.txtbx_docCdprf = new System.Windows.Forms.TextBox();
             this.txtbx_docEsp = new System.Windows.Forms.TextBox();
             this.dtatim_docAn = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtbx_crro = new System.Windows.Forms.TextBox();
-            this.txtbx_tel = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtbx_confirmPass = new System.Windows.Forms.TextBox();
@@ -64,6 +62,8 @@
             this.txtbx_nmFullUser = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtbx_crro = new System.Windows.Forms.TextBox();
+            this.txtbx_docCdprf = new System.Windows.Forms.MaskedTextBox();
             this.panel3.SuspendLayout();
             this.pnl_ContDoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icnbtn_figurativa)).BeginInit();
@@ -102,11 +102,11 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.txtbx_crro);
+            this.panel3.Controls.Add(this.txtbx_tel);
             this.panel3.Controls.Add(this.chckbx_most);
             this.panel3.Controls.Add(this.lb_concidencia);
             this.panel3.Controls.Add(this.pnl_ContDoc);
-            this.panel3.Controls.Add(this.txtbx_crro);
-            this.panel3.Controls.Add(this.txtbx_tel);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.txtbx_confirmPass);
@@ -121,9 +121,19 @@
             this.panel3.Size = new System.Drawing.Size(724, 226);
             this.panel3.TabIndex = 5;
             // 
+            // txtbx_tel
+            // 
+            this.txtbx_tel.Font = new System.Drawing.Font("Dubai", 12F);
+            this.txtbx_tel.Location = new System.Drawing.Point(82, 58);
+            this.txtbx_tel.Mask = "(000)000-0000";
+            this.txtbx_tel.Name = "txtbx_tel";
+            this.txtbx_tel.Size = new System.Drawing.Size(193, 35);
+            this.txtbx_tel.TabIndex = 28;
+            // 
             // chckbx_most
             // 
             this.chckbx_most.AutoSize = true;
+            this.chckbx_most.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chckbx_most.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chckbx_most.Location = new System.Drawing.Point(561, 126);
             this.chckbx_most.Name = "chckbx_most";
@@ -147,9 +157,9 @@
             // 
             // pnl_ContDoc
             // 
+            this.pnl_ContDoc.Controls.Add(this.txtbx_docCdprf);
             this.pnl_ContDoc.Controls.Add(this.label13);
             this.pnl_ContDoc.Controls.Add(this.cmbx_sxDoc);
-            this.pnl_ContDoc.Controls.Add(this.txtbx_docCdprf);
             this.pnl_ContDoc.Controls.Add(this.txtbx_docEsp);
             this.pnl_ContDoc.Controls.Add(this.dtatim_docAn);
             this.pnl_ContDoc.Controls.Add(this.label3);
@@ -173,6 +183,7 @@
             // 
             // cmbx_sxDoc
             // 
+            this.cmbx_sxDoc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbx_sxDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_sxDoc.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_sxDoc.FormattingEnabled = true;
@@ -183,14 +194,6 @@
             this.cmbx_sxDoc.Name = "cmbx_sxDoc";
             this.cmbx_sxDoc.Size = new System.Drawing.Size(47, 30);
             this.cmbx_sxDoc.TabIndex = 26;
-            // 
-            // txtbx_docCdprf
-            // 
-            this.txtbx_docCdprf.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_docCdprf.Location = new System.Drawing.Point(154, 8);
-            this.txtbx_docCdprf.Name = "txtbx_docCdprf";
-            this.txtbx_docCdprf.Size = new System.Drawing.Size(95, 33);
-            this.txtbx_docCdprf.TabIndex = 25;
             // 
             // txtbx_docEsp
             // 
@@ -228,23 +231,6 @@
             this.label11.Size = new System.Drawing.Size(132, 25);
             this.label11.TabIndex = 21;
             this.label11.Text = "Año de Nacimiento:";
-            // 
-            // txtbx_crro
-            // 
-            this.txtbx_crro.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_crro.Location = new System.Drawing.Point(82, 16);
-            this.txtbx_crro.Name = "txtbx_crro";
-            this.txtbx_crro.Size = new System.Drawing.Size(194, 35);
-            this.txtbx_crro.TabIndex = 16;
-            // 
-            // txtbx_tel
-            // 
-            this.txtbx_tel.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_tel.Location = new System.Drawing.Point(82, 60);
-            this.txtbx_tel.MaxLength = 10;
-            this.txtbx_tel.Name = "txtbx_tel";
-            this.txtbx_tel.Size = new System.Drawing.Size(193, 35);
-            this.txtbx_tel.TabIndex = 22;
             // 
             // label9
             // 
@@ -489,6 +475,24 @@
             this.panel1.Size = new System.Drawing.Size(724, 209);
             this.panel1.TabIndex = 4;
             // 
+            // txtbx_crro
+            // 
+            this.txtbx_crro.Font = new System.Drawing.Font("Dubai", 12F);
+            this.txtbx_crro.Location = new System.Drawing.Point(82, 16);
+            this.txtbx_crro.Name = "txtbx_crro";
+            this.txtbx_crro.Size = new System.Drawing.Size(193, 35);
+            this.txtbx_crro.TabIndex = 30;
+            // 
+            // txtbx_docCdprf
+            // 
+            this.txtbx_docCdprf.Font = new System.Drawing.Font("Dubai", 11.25F);
+            this.txtbx_docCdprf.Location = new System.Drawing.Point(154, 13);
+            this.txtbx_docCdprf.Mask = "99999999";
+            this.txtbx_docCdprf.Name = "txtbx_docCdprf";
+            this.txtbx_docCdprf.Size = new System.Drawing.Size(71, 33);
+            this.txtbx_docCdprf.TabIndex = 16;
+            this.txtbx_docCdprf.ValidatingType = typeof(int);
+            // 
             // frm_adduser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -526,12 +530,9 @@
         private System.Windows.Forms.Panel pnl_ContDoc;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cmbx_sxDoc;
-        private System.Windows.Forms.TextBox txtbx_docCdprf;
         private System.Windows.Forms.TextBox txtbx_docEsp;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtbx_crro;
-        private System.Windows.Forms.TextBox txtbx_tel;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lb_concidencia;
@@ -551,5 +552,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.CheckBox chckbx_most;
+        private System.Windows.Forms.MaskedTextBox txtbx_tel;
+        private System.Windows.Forms.TextBox txtbx_crro;
+        private System.Windows.Forms.MaskedTextBox txtbx_docCdprf;
     }
 }

@@ -18,7 +18,7 @@ namespace MediClic_v._0._0._1
     public partial class Frm_receta : Form
     {
         String Cdlselection;
-        int idFl=0;
+        int idFl;
         ConexionDB conexionDB = new ConexionDB();
         public Frm_receta()
         {
@@ -27,8 +27,15 @@ namespace MediClic_v._0._0._1
         private void Frm_receta_Load(object sender, EventArgs e)
         {
             cargarListdocs();
-            idFl += 1;
-            txtbx_idFolio.Text = idFl.ToString();
+            if (idFl != 0 || idFl <= 0)
+            {
+                idFl += 1;
+                txtbx_idFolio.Text = idFl.ToString();
+            }
+            else {
+                txtbx_idFolio.Text = idFl.ToString();
+            }
+           
         }
 
         //btn Accions
@@ -39,6 +46,8 @@ namespace MediClic_v._0._0._1
                 idFl = Convert.ToInt32(txtbx_idFolio.Text) +1;
                 imprimir();
                 clearall();
+                idFl += 1;
+                txtbx_idFolio.Text = idFl.ToString();
             }
         }
         private void dtgrd_listPac_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -52,15 +61,15 @@ namespace MediClic_v._0._0._1
         }
         //Metodos
         public void clearall() {
-            var res = MessageBox.Show("Seguro que quieres cancelar?\nNo se guardaran los cambios realizados.", "Advertencia", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
-            if (res == DialogResult.Yes) {
-                txtbx_rcAlg.Text = "";
-                txtbx_rcNmfull.Text = "";
-                txtbx_rcEdd.Text = "";
-                txtbx_rcmts.Text = "";
-                txtbx_rcKg.Text = "";
-                txtbx_rcAlg.Text = "";
-            } 
+        
+                idFl= Convert.ToInt32(txtbx_idFolio.Text);
+                txtbx_rcAlg.Text = " ";
+                txtbx_rcNmfull.Text = " ";
+                txtbx_rcEdd.Text = " ";
+                txtbx_rcmts.Text = " ";
+                txtbx_rcKg.Text = " ";
+                txtbx_rcAlg.Text = " ";
+           
         }
         public void imprimir() {
             SaveFileDialog savefile = new SaveFileDialog();

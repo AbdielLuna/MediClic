@@ -33,19 +33,19 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lb_dtoIMC = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.icnbtn_delete = new FontAwesome.Sharp.IconButton();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtbx_kgPhm = new System.Windows.Forms.MaskedTextBox();
+            this.txtbx_mtsPhm = new System.Windows.Forms.MaskedTextBox();
             this.txtbx_addcPdts = new System.Windows.Forms.TextBox();
             this.txtbx_algPdts = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtbx_kgPhm = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btn_saveHM = new FontAwesome.Sharp.IconButton();
             this.icnbtn_editHM = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtbx_mtsPhm = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtbx_tsgPhm = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -61,7 +61,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtbx_telPdg = new System.Windows.Forms.TextBox();
+            this.txtbx_telPdg = new System.Windows.Forms.MaskedTextBox();
             this.txtbx_sxPdg = new System.Windows.Forms.TextBox();
             this.txtbx_namePdg = new System.Windows.Forms.TextBox();
             this.txtbx_idPdg = new System.Windows.Forms.TextBox();
@@ -75,6 +75,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.txtbx_tsgPhm = new System.Windows.Forms.ComboBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icnpic_pacienteIMC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -145,6 +146,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.icnbtn_delete);
             this.panel8.Controls.Add(this.label4);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
@@ -152,12 +154,33 @@
             this.panel8.Size = new System.Drawing.Size(465, 48);
             this.panel8.TabIndex = 2;
             // 
+            // icnbtn_delete
+            // 
+            this.icnbtn_delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.icnbtn_delete.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(228)))), ((int)(((byte)(183)))));
+            this.icnbtn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icnbtn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icnbtn_delete.ForeColor = System.Drawing.Color.DarkRed;
+            this.icnbtn_delete.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.icnbtn_delete.IconColor = System.Drawing.Color.White;
+            this.icnbtn_delete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icnbtn_delete.IconSize = 25;
+            this.icnbtn_delete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.icnbtn_delete.Location = new System.Drawing.Point(379, 11);
+            this.icnbtn_delete.Name = "icnbtn_delete";
+            this.icnbtn_delete.Size = new System.Drawing.Size(75, 23);
+            this.icnbtn_delete.TabIndex = 4;
+            this.icnbtn_delete.Text = "Eliminar";
+            this.icnbtn_delete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.icnbtn_delete.UseVisualStyleBackColor = true;
+            this.icnbtn_delete.Click += new System.EventHandler(this.icnbtn_delete_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(194, 15);
+            this.label4.Location = new System.Drawing.Point(52, 14);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 20);
             this.label4.TabIndex = 1;
@@ -167,14 +190,14 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.txtbx_tsgPhm);
+            this.panel3.Controls.Add(this.txtbx_kgPhm);
+            this.panel3.Controls.Add(this.txtbx_mtsPhm);
             this.panel3.Controls.Add(this.txtbx_addcPdts);
             this.panel3.Controls.Add(this.txtbx_algPdts);
             this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.txtbx_kgPhm);
             this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.txtbx_mtsPhm);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.txtbx_tsgPhm);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label13);
@@ -183,6 +206,28 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(466, 256);
             this.panel3.TabIndex = 2;
+            // 
+            // txtbx_kgPhm
+            // 
+            this.txtbx_kgPhm.Font = new System.Drawing.Font("Dubai", 11.25F);
+            this.txtbx_kgPhm.Location = new System.Drawing.Point(129, 168);
+            this.txtbx_kgPhm.Mask = "99";
+            this.txtbx_kgPhm.Name = "txtbx_kgPhm";
+            this.txtbx_kgPhm.ReadOnly = true;
+            this.txtbx_kgPhm.Size = new System.Drawing.Size(71, 33);
+            this.txtbx_kgPhm.TabIndex = 27;
+            this.txtbx_kgPhm.ValidatingType = typeof(int);
+            // 
+            // txtbx_mtsPhm
+            // 
+            this.txtbx_mtsPhm.BeepOnError = true;
+            this.txtbx_mtsPhm.Font = new System.Drawing.Font("Dubai", 11.25F);
+            this.txtbx_mtsPhm.Location = new System.Drawing.Point(129, 119);
+            this.txtbx_mtsPhm.Mask = "0.99";
+            this.txtbx_mtsPhm.Name = "txtbx_mtsPhm";
+            this.txtbx_mtsPhm.ReadOnly = true;
+            this.txtbx_mtsPhm.Size = new System.Drawing.Size(71, 33);
+            this.txtbx_mtsPhm.TabIndex = 26;
             // 
             // txtbx_addcPdts
             // 
@@ -213,15 +258,6 @@
             this.label16.Size = new System.Drawing.Size(90, 20);
             this.label16.TabIndex = 10;
             this.label16.Text = "Adicciones:";
-            // 
-            // txtbx_kgPhm
-            // 
-            this.txtbx_kgPhm.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_kgPhm.Location = new System.Drawing.Point(129, 168);
-            this.txtbx_kgPhm.Name = "txtbx_kgPhm";
-            this.txtbx_kgPhm.ReadOnly = true;
-            this.txtbx_kgPhm.Size = new System.Drawing.Size(74, 33);
-            this.txtbx_kgPhm.TabIndex = 12;
             // 
             // panel7
             // 
@@ -287,15 +323,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Historial Medico";
             // 
-            // txtbx_mtsPhm
-            // 
-            this.txtbx_mtsPhm.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_mtsPhm.Location = new System.Drawing.Point(129, 124);
-            this.txtbx_mtsPhm.Name = "txtbx_mtsPhm";
-            this.txtbx_mtsPhm.ReadOnly = true;
-            this.txtbx_mtsPhm.Size = new System.Drawing.Size(74, 33);
-            this.txtbx_mtsPhm.TabIndex = 11;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -305,15 +332,6 @@
             this.label9.Size = new System.Drawing.Size(70, 20);
             this.label9.TabIndex = 9;
             this.label9.Text = "Alergias:";
-            // 
-            // txtbx_tsgPhm
-            // 
-            this.txtbx_tsgPhm.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_tsgPhm.Location = new System.Drawing.Point(129, 73);
-            this.txtbx_tsgPhm.Name = "txtbx_tsgPhm";
-            this.txtbx_tsgPhm.ReadOnly = true;
-            this.txtbx_tsgPhm.Size = new System.Drawing.Size(74, 33);
-            this.txtbx_tsgPhm.TabIndex = 10;
             // 
             // label15
             // 
@@ -376,11 +394,11 @@
             // txtbx_enffPant
             // 
             this.txtbx_enffPant.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_enffPant.Location = new System.Drawing.Point(150, 171);
+            this.txtbx_enffPant.Location = new System.Drawing.Point(151, 177);
             this.txtbx_enffPant.Multiline = true;
             this.txtbx_enffPant.Name = "txtbx_enffPant";
             this.txtbx_enffPant.ReadOnly = true;
-            this.txtbx_enffPant.Size = new System.Drawing.Size(275, 38);
+            this.txtbx_enffPant.Size = new System.Drawing.Size(275, 52);
             this.txtbx_enffPant.TabIndex = 17;
             // 
             // panel6
@@ -443,7 +461,7 @@
             this.txtbx_notpatPant.Multiline = true;
             this.txtbx_notpatPant.Name = "txtbx_notpatPant";
             this.txtbx_notpatPant.ReadOnly = true;
-            this.txtbx_notpatPant.Size = new System.Drawing.Size(275, 37);
+            this.txtbx_notpatPant.Size = new System.Drawing.Size(275, 52);
             this.txtbx_notpatPant.TabIndex = 16;
             // 
             // label10
@@ -463,7 +481,7 @@
             this.txtbx_patPant.Multiline = true;
             this.txtbx_patPant.Name = "txtbx_patPant";
             this.txtbx_patPant.ReadOnly = true;
-            this.txtbx_patPant.Size = new System.Drawing.Size(275, 41);
+            this.txtbx_patPant.Size = new System.Drawing.Size(275, 48);
             this.txtbx_patPant.TabIndex = 15;
             // 
             // label12
@@ -507,12 +525,13 @@
             // 
             // txtbx_telPdg
             // 
-            this.txtbx_telPdg.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_telPdg.Location = new System.Drawing.Point(129, 193);
+            this.txtbx_telPdg.Font = new System.Drawing.Font("Dubai", 11.25F);
+            this.txtbx_telPdg.Location = new System.Drawing.Point(129, 191);
+            this.txtbx_telPdg.Mask = "(000)000-0000";
             this.txtbx_telPdg.Name = "txtbx_telPdg";
             this.txtbx_telPdg.ReadOnly = true;
-            this.txtbx_telPdg.Size = new System.Drawing.Size(193, 33);
-            this.txtbx_telPdg.TabIndex = 9;
+            this.txtbx_telPdg.Size = new System.Drawing.Size(180, 33);
+            this.txtbx_telPdg.TabIndex = 28;
             // 
             // txtbx_sxPdg
             // 
@@ -668,6 +687,22 @@
             this.panel11.Size = new System.Drawing.Size(469, 532);
             this.panel11.TabIndex = 4;
             // 
+            // txtbx_tsgPhm
+            // 
+            this.txtbx_tsgPhm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtbx_tsgPhm.Enabled = false;
+            this.txtbx_tsgPhm.Font = new System.Drawing.Font("Dubai", 11.25F);
+            this.txtbx_tsgPhm.FormattingEnabled = true;
+            this.txtbx_tsgPhm.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "AB",
+            "O"});
+            this.txtbx_tsgPhm.Location = new System.Drawing.Point(129, 74);
+            this.txtbx_tsgPhm.Name = "txtbx_tsgPhm";
+            this.txtbx_tsgPhm.Size = new System.Drawing.Size(71, 33);
+            this.txtbx_tsgPhm.TabIndex = 28;
+            // 
             // frm_Pacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -740,16 +775,17 @@
         public System.Windows.Forms.TextBox txtbx_idPdg;
         public System.Windows.Forms.TextBox txtbx_addcPdts;
         public System.Windows.Forms.TextBox txtbx_algPdts;
-        public System.Windows.Forms.TextBox txtbx_kgPhm;
-        public System.Windows.Forms.TextBox txtbx_mtsPhm;
-        public System.Windows.Forms.TextBox txtbx_tsgPhm;
         public System.Windows.Forms.TextBox txtbx_enffPant;
         public System.Windows.Forms.TextBox txtbx_notpatPant;
         public System.Windows.Forms.TextBox txtbx_patPant;
-        public System.Windows.Forms.TextBox txtbx_telPdg;
         public System.Windows.Forms.TextBox txtbx_sxPdg;
         public System.Windows.Forms.TextBox txtbx_namePdg;
         public FontAwesome.Sharp.IconPictureBox icnpic_pacienteIMC;
         public System.Windows.Forms.Label lb_dtoIMC;
+        public System.Windows.Forms.MaskedTextBox txtbx_telPdg;
+        public System.Windows.Forms.MaskedTextBox txtbx_mtsPhm;
+        public System.Windows.Forms.MaskedTextBox txtbx_kgPhm;
+        private FontAwesome.Sharp.IconButton icnbtn_delete;
+        public System.Windows.Forms.ComboBox txtbx_tsgPhm;
     }
 }

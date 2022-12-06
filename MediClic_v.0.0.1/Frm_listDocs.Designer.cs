@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.icnbtn_refreshDtg = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,11 +39,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtbx_modfNmfull = new System.Windows.Forms.TextBox();
-            this.txtbx_modfCdla = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.txtbx_modfTel = new System.Windows.Forms.TextBox();
             this.txtbx_modfCrro = new System.Windows.Forms.TextBox();
             this.txtbx_modfEspc = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -58,6 +56,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtbx_modfTel = new System.Windows.Forms.MaskedTextBox();
+            this.txtbx_modfCdla = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrd_listDoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -116,36 +116,36 @@
             this.dtgrd_listDoc.AllowUserToOrderColumns = true;
             this.dtgrd_listDoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgrd_listDoc.BackgroundColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(167)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(167)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgrd_listDoc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(167)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(167)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgrd_listDoc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgrd_listDoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(188)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgrd_listDoc.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(188)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgrd_listDoc.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgrd_listDoc.EnableHeadersVisualStyles = false;
             this.dtgrd_listDoc.Location = new System.Drawing.Point(12, 61);
             this.dtgrd_listDoc.MultiSelect = false;
             this.dtgrd_listDoc.Name = "dtgrd_listDoc";
             this.dtgrd_listDoc.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgrd_listDoc.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgrd_listDoc.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgrd_listDoc.RowHeadersVisible = false;
             this.dtgrd_listDoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgrd_listDoc.Size = new System.Drawing.Size(443, 394);
@@ -201,15 +201,6 @@
             this.txtbx_modfNmfull.Size = new System.Drawing.Size(192, 28);
             this.txtbx_modfNmfull.TabIndex = 10;
             // 
-            // txtbx_modfCdla
-            // 
-            this.txtbx_modfCdla.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_modfCdla.Location = new System.Drawing.Point(144, 154);
-            this.txtbx_modfCdla.Name = "txtbx_modfCdla";
-            this.txtbx_modfCdla.ReadOnly = true;
-            this.txtbx_modfCdla.Size = new System.Drawing.Size(113, 28);
-            this.txtbx_modfCdla.TabIndex = 8;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -233,6 +224,7 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.txtbx_modfCdla);
             this.panel5.Controls.Add(this.txtbx_modfTel);
             this.panel5.Controls.Add(this.txtbx_modfCrro);
             this.panel5.Controls.Add(this.txtbx_modfEspc);
@@ -243,7 +235,6 @@
             this.panel5.Controls.Add(this.dttm_modfAN);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.txtbx_modfNmfull);
-            this.panel5.Controls.Add(this.txtbx_modfCdla);
             this.panel5.Controls.Add(this.btn_modfDoc);
             this.panel5.Controls.Add(this.btn_cancelDoc);
             this.panel5.Controls.Add(this.iconPictureBox1);
@@ -256,15 +247,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(413, 482);
             this.panel5.TabIndex = 0;
-            // 
-            // txtbx_modfTel
-            // 
-            this.txtbx_modfTel.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_modfTel.Location = new System.Drawing.Point(144, 366);
-            this.txtbx_modfTel.Name = "txtbx_modfTel";
-            this.txtbx_modfTel.ReadOnly = true;
-            this.txtbx_modfTel.Size = new System.Drawing.Size(176, 28);
-            this.txtbx_modfTel.TabIndex = 20;
             // 
             // txtbx_modfCrro
             // 
@@ -306,6 +288,8 @@
             // 
             // cmbx_modfSx
             // 
+            this.cmbx_modfSx.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbx_modfSx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_modfSx.Enabled = false;
             this.cmbx_modfSx.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbx_modfSx.FormattingEnabled = true;
@@ -329,6 +313,7 @@
             // 
             // dttm_modfAN
             // 
+            this.dttm_modfAN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dttm_modfAN.CustomFormat = "yyyymmdd";
             this.dttm_modfAN.Enabled = false;
             this.dttm_modfAN.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -424,6 +409,27 @@
             this.panel1.Size = new System.Drawing.Size(905, 20);
             this.panel1.TabIndex = 3;
             // 
+            // txtbx_modfTel
+            // 
+            this.txtbx_modfTel.Font = new System.Drawing.Font("Dubai", 8.999999F);
+            this.txtbx_modfTel.Location = new System.Drawing.Point(144, 366);
+            this.txtbx_modfTel.Mask = "(000)000-0000";
+            this.txtbx_modfTel.Name = "txtbx_modfTel";
+            this.txtbx_modfTel.ReadOnly = true;
+            this.txtbx_modfTel.Size = new System.Drawing.Size(176, 28);
+            this.txtbx_modfTel.TabIndex = 29;
+            // 
+            // txtbx_modfCdla
+            // 
+            this.txtbx_modfCdla.Font = new System.Drawing.Font("Dubai", 8.999999F);
+            this.txtbx_modfCdla.Location = new System.Drawing.Point(144, 154);
+            this.txtbx_modfCdla.Mask = "99999999";
+            this.txtbx_modfCdla.Name = "txtbx_modfCdla";
+            this.txtbx_modfCdla.ReadOnly = true;
+            this.txtbx_modfCdla.Size = new System.Drawing.Size(71, 28);
+            this.txtbx_modfCdla.TabIndex = 30;
+            this.txtbx_modfCdla.ValidatingType = typeof(int);
+            // 
             // Frm_listDocs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -462,7 +468,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtbx_modfNmfull;
-        private System.Windows.Forms.TextBox txtbx_modfCdla;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
@@ -472,7 +477,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtbx_modfTel;
         private System.Windows.Forms.TextBox txtbx_modfCrro;
         private System.Windows.Forms.TextBox txtbx_modfEspc;
         private System.Windows.Forms.Label label9;
@@ -481,5 +485,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dttm_modfAN;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.MaskedTextBox txtbx_modfTel;
+        private System.Windows.Forms.MaskedTextBox txtbx_modfCdla;
     }
 }

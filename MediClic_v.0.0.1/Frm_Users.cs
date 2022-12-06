@@ -110,16 +110,22 @@ namespace MediClic_v._0._0._1
             try
             {
                 Cdlselection = dtgrd_listUsuarios.Rows[e.RowIndex].Cells[0].Value.ToString();
-                SeleccionDtsdoc();
-                txtbx_tagUser.ReadOnly = false;
-                txtbx_nmFull.ReadOnly = false;
-                txtbx_correo.ReadOnly = false;
-                txtbx_modfPass.ReadOnly = false;
-                txtbx_Tel.ReadOnly = false;
-                btn_deleteUser.Enabled = true;
-                btn_modfUser.Enabled = true;
-                btn_deleteUser.Visible = true;
-                btn_modfUser.Visible = true;
+                if (Cdlselection == 1.ToString())
+                {
+                    SeleccionDtsdoc();
+                }
+                else {
+                    SeleccionDtsdoc();
+                    txtbx_tagUser.ReadOnly = false;
+                    txtbx_nmFull.ReadOnly = false;
+                    txtbx_correo.ReadOnly = false;
+                    txtbx_modfPass.ReadOnly = false;
+                    txtbx_Tel.ReadOnly = false;
+                    btn_deleteUser.Enabled = true;
+                    btn_modfUser.Enabled = true;
+                    btn_deleteUser.Visible = true;
+                    btn_modfUser.Visible = true;
+                }
 
             }
             catch { }
