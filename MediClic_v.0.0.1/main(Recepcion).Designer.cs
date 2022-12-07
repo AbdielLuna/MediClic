@@ -188,7 +188,7 @@
             this.icnbtn_docList.Name = "icnbtn_docList";
             this.icnbtn_docList.Size = new System.Drawing.Size(147, 104);
             this.icnbtn_docList.TabIndex = 0;
-            this.icnbtn_docList.Text = "Pacientes";
+            this.icnbtn_docList.Text = "Lista de Doctores";
             this.icnbtn_docList.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.icnbtn_docList.UseVisualStyleBackColor = false;
             this.icnbtn_docList.Click += new System.EventHandler(this.icnbtn_docList_Click);
