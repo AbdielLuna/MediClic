@@ -145,15 +145,19 @@ namespace MediClic_v._0._0._1
         public void asignacionID()
         {
             conexionDB.abrir();
-            string query = ("select id_cita from Citas where id_cita = (Select MAX( id_cita) from Citas)");
-            SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
-            SqlDataReader read = comando.ExecuteReader();
-            if (read.Read())
+            try
             {
-                id = Convert.ToInt32(read["id_cita"].ToString());
-                id += 1;
-                read.Close();
+                string query = ("select id_cita from Citas where id_cita = (Select MAX( id_cita) from Citas)");
+                SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
+                SqlDataReader read = comando.ExecuteReader();
+                if (read.Read())
+                {
+                    id = Convert.ToInt32(read["id_cita"].ToString());
+                    id += 1;
+                    read.Close();
+                }
             }
+            catch { }
             conexionDB.cerrar();
             if (id <=0) {
             id = 1;
