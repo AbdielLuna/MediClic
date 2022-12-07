@@ -58,16 +58,21 @@ namespace MediClic_v._0._0._1
         }
         private void btn_addUser_Click(object sender, EventArgs e)
         {
-            if (txtbx_confirmPass.Text == txtbx_pass.Text)
-            {
-                var r = MessageBox.Show("Seguro que quieres agregar nuevo usuario?", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
-                if (r == DialogResult.Yes)
+            if (!string.IsNullOrEmpty(txtbx_idUser.Text)) {
+                if (!string.IsNullOrEmpty(txtbx_tagUser.Text) && !string.IsNullOrEmpty(txtbx_confirmPass.Text) && txtbx_confirmPass.Text == txtbx_pass.Text)
                 {
-                    addUsuarios();
-                    MessageBox.Show("Se agrego correctamente.","Exito!",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                    this.Close();
+                    var r = MessageBox.Show("Seguro que quieres agregar nuevo usuario?", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                    if (r == DialogResult.Yes)
+                    {
+                        addUsuarios();
+                        MessageBox.Show("Se agrego correctamente.", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+                    }
                 }
-            }
+                else {
+                    MessageBox.Show("Faltan datos por llenar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            } 
             else {
                 MessageBox.Show("Faltan datos por llenar","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             }
