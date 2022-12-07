@@ -87,6 +87,7 @@ namespace MediClic_v._0._0._1
                 {
                     SeleccionDtsdoc();
                     optID();
+                    txtbx_modfCdla.ReadOnly = false;
                     txtbx_modfNmfull.ReadOnly = false;
                     dttm_modfAN.Enabled = true;
                     txtbx_modfNmfull.ReadOnly = false;
@@ -131,6 +132,7 @@ namespace MediClic_v._0._0._1
         public void Clearall() {
             
             txtbx_modfCdla.Text = "";
+            txtbx_modfCdla.ReadOnly = true;
             txtbx_modfNmfull.ReadOnly = true;
             txtbx_modfNmfull.Text = "";
             dttm_modfAN.Text = (DateTime.Now.ToLocalTime()).ToShortDateString();
@@ -154,7 +156,7 @@ namespace MediClic_v._0._0._1
             {
                 conexionDB.abrir();
                 string fecha = dttm_modfAN.Value.ToShortDateString();
-                string query = "update Perfiles_Doctores set nombre_doc = @nmDco,fch_nacimiento=@fchNc,sexo_doc=@sxDoc,especialidad_doc=@espDoc,telefono_doc=@telDoc,correo_doc=@corr where id_usuarios=@idDoc";
+                string query = "update Perfiles_Doctores set nombre_doc = @nmDco,fch_nacimiento=@fchNc,sexo_doc=@sxDoc,especialidad_doc=@espDoc,telefono_doc=@telDoc,correo_doc=@corr,cedula_doc=@cdl where id_usuarios=@idDoc";
                 SqlCommand comando = new SqlCommand(query, conexionDB.Conectarbd);
                 comando.Parameters.AddWithValue("@idDoc", id);
                 comando.Parameters.AddWithValue("@nmDco", txtbx_modfNmfull.Text);
@@ -163,6 +165,7 @@ namespace MediClic_v._0._0._1
                 comando.Parameters.AddWithValue("@espDoc", txtbx_modfEspc.Text);
                 comando.Parameters.AddWithValue("@telDoc", txtbx_modfTel.Text);
                 comando.Parameters.AddWithValue("@corr", txtbx_modfCrro.Text);
+                comando.Parameters.AddWithValue("@cdl", txtbx_modfCdla.Text);
                 comando.ExecuteNonQuery();
                 conexionDB.cerrar();
                 conexionDB.abrir();
